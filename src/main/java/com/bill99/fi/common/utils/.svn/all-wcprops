@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fi/common/utils
+END
+Excel.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fi/common/utils/Excel.java
+END
+OrderQuery.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fi/common/utils/OrderQuery.java
+END
+MSOrderQuery.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fi/common/utils/MSOrderQuery.java
+END
+BankDirectCheck.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fi/common/utils/BankDirectCheck.java
+END
+Mobile_Verification.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fi/common/utils/Mobile_Verification.java
+END
+GetMobileValidateCode.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fi/common/utils/GetMobileValidateCode.java
+END
+ParameterCheck.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fi/common/utils/ParameterCheck.java
+END
+PKIUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fi/common/utils/PKIUtil.java
+END
+ErrorcodeCheck.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fi/common/utils/ErrorcodeCheck.java
+END
+SwitchToWithUrl.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fi/common/utils/SwitchToWithUrl.java
+END
+MD5Util.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fi/common/utils/MD5Util.java
+END
+Quartz.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fi/common/utils/Quartz.java
+END
+KillProcess.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fi/common/utils/KillProcess.java
+END
+ChinaUnicomUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fi/common/utils/ChinaUnicomUtil.java
+END
+CheckResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fi/common/utils/CheckResponse.java
+END

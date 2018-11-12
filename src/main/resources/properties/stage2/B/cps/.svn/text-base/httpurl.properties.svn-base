@@ -1,0 +1,49 @@
+#<project name="leo.feng-2013/09/24" default="all" basedir="." xmlns:sonar="antlib:org.sonar.ant">
+#Mgw http submit 配置
+cpsa.mgw.autip=192.168.52.221
+cpsa.mgw.sslport=8455
+cpsa.mgw.autuser=201000000000801
+cpsa.mgw.autuserpass=123456
+cpsa.mgw.tdeskey=dhb2c20100720161905dhb2c
+#cpsa.mgw.keystore=cpsa\\VPOS_cnp
+cpsa.mgw.keystorepass=123456
+#cpsa.mgw.trustkeystore=cpsa\\channel_srv_eval_ks
+cpsa.mgw.trustkeystorepass=mas123
+
+#加解密key
+key=E9E3CF7C1ABD8947
+
+#internal访问mock
+internal.mock_url=http://192.168.63.217:8092
+
+#CNP http 访问 Url
+cpsa.mgw.CnpPurchaseUrl=https://192.168.52.221:8455/cnp/purchase
+mgw.INP_url=https://192.168.52.221:8455/cnp/installment_purchase
+mgw.PRE_url=https://192.168.52.221:8455/cnp/preauth
+mgw.CFM_url=https://192.168.52.221:8455/cnp/confirm
+mgw.VTX_url=https://192.168.52.221:8455/cnp/void
+mgw.RFD_url=https://192.168.52.221:8455/cnp/refund
+
+#快捷支付 手机动态码 http 访问 Url
+cpsa.mgw.CnpGetDynNumUrl=https://192.168.52.221:8455/cnp/getDynNum
+#Pci
+cpsa.mgw.CnpPci_storeUrl=https://192.168.52.221:8455/cnp/pci_store
+cpsa.mgw.CnpPci_queryUrl=https://192.168.52.221:8455/cnp/pci_query
+cpsa.mgw.CnpPci_delUrl=https://192.168.52.221:8455/cnp/pci_del
+#交易查询
+cpsa.mgw.CnpQuery_ExnUrl=https://192.168.52.221:8455/cnp/query_txn
+cpsa.mgw.CnpQuery_txn_list=https://192.168.52.221:8455/cnp/query_txn_list
+#日查询
+cpsa.mgw.CnpQuery_confirm_txn_list=https://192.168.52.221:8455/cnp/query_confirm_txn_list
+cpsa.mgw.CnpQuery_settlement_txn_list=https://192.168.52.221:8455/cnp/query_settlement_txn_list
+#日下载
+cpsa.mgw.CnpGet_confirm_txnlist=https://192.168.52.221:8455/mcs/get_confirm_txnlist
+cpsa.mgw.CnpGet_settlement_list=https://192.168.52.221:8455/mcs/get_settlement_list
+#受理能力查询
+cpsa.mgw.CnpQuery_accept_capacity=https://192.168.52.221:8455/cnp/accept_capacity
+#卡信息查询
+cpsa.mgw.CnpQuery_cardinfo=https://192.168.52.221:8455/cnp/query_cardinfo
+#ivr交易查询
+cpsa.mgw.CnpQuery_ivr_txn=https://192.168.52.221:8455/cnp/query_ivr_txn
+
+cps.maspos.dbtype=oracle

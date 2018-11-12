@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/resources/datadriver/stage2/T/excel/com/bill99/cps/test/interfaces
+END
+MgwTxnQuery.xls
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/resources/datadriver/stage2/T/excel/com/bill99/cps/test/interfaces/MgwTxnQuery.xls
+END
+MgwBatchTxnQuery.xls
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/resources/datadriver/stage2/T/excel/com/bill99/cps/test/interfaces/MgwBatchTxnQuery.xls
+END
+MgwQueryAcceptCapacity.xls
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/resources/datadriver/stage2/T/excel/com/bill99/cps/test/interfaces/MgwQueryAcceptCapacity.xls
+END
+MgwCcsImport.xls
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/resources/datadriver/stage2/T/excel/com/bill99/cps/test/interfaces/MgwCcsImport.xls
+END
+MgwAmtPointPay.xls
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/resources/datadriver/stage2/T/excel/com/bill99/cps/test/interfaces/MgwAmtPointPay.xls
+END
+MgwAmtPointQpay1.xls
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/resources/datadriver/stage2/T/excel/com/bill99/cps/test/interfaces/MgwAmtPointQpay1.xls
+END
+MgwAmtPointQpay2.xls
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/resources/datadriver/stage2/T/excel/com/bill99/cps/test/interfaces/MgwAmtPointQpay2.xls
+END
+MgwQueryCardInfo.xls
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/resources/datadriver/stage2/T/excel/com/bill99/cps/test/interfaces/MgwQueryCardInfo.xls
+END
+MgwPci.xls
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/resources/datadriver/stage2/T/excel/com/bill99/cps/test/interfaces/MgwPci.xls
+END
+MgwSmsPay.xls
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/resources/datadriver/stage2/T/excel/com/bill99/cps/test/interfaces/MgwSmsPay.xls
+END
+MgwQueryConfirmTxn.xls
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/resources/datadriver/stage2/T/excel/com/bill99/cps/test/interfaces/MgwQueryConfirmTxn.xls
+END
+MgwIndependAuthent.xls
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/resources/datadriver/stage2/T/excel/com/bill99/cps/test/interfaces/MgwIndependAuthent.xls
+END
+MgwIvrTxnQuery.xls
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/resources/datadriver/stage2/T/excel/com/bill99/cps/test/interfaces/MgwIvrTxnQuery.xls
+END
+MgwQuerySettleTxn.xls
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/resources/datadriver/stage2/T/excel/com/bill99/cps/test/interfaces/MgwQuerySettleTxn.xls
+END
+MgwAuthAndCnp.xls
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/resources/datadriver/stage2/T/excel/com/bill99/cps/test/interfaces/MgwAuthAndCnp.xls
+END
+BDCA_MockInternalCnp.xls
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/resources/datadriver/stage2/T/excel/com/bill99/cps/test/interfaces/BDCA_MockInternalCnp.xls
+END
+MgwQuickPay.xls
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/resources/datadriver/stage2/T/excel/com/bill99/cps/test/interfaces/MgwQuickPay.xls
+END
+MgwWithPayEquity.xls
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/resources/datadriver/stage2/T/excel/com/bill99/cps/test/interfaces/MgwWithPayEquity.xls
+END
+MgwCnpWithPayEquity.xls
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/resources/datadriver/stage2/T/excel/com/bill99/cps/test/interfaces/MgwCnpWithPayEquity.xls
+END
+BDCA_MgwCnp.xls
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/resources/datadriver/stage2/T/excel/com/bill99/cps/test/interfaces/BDCA_MgwCnp.xls
+END
+MgwQuickPrePay.xls
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/resources/datadriver/stage2/T/excel/com/bill99/cps/test/interfaces/MgwQuickPrePay.xls
+END

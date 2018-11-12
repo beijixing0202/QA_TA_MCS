@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/cps/test/interfaces
+END
+MgwAuthAndCnp.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/cps/test/interfaces/MgwAuthAndCnp.java
+END
+BDCA_MockInternalCnp.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/cps/test/interfaces/BDCA_MockInternalCnp.java
+END
+MgwQuickPay.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/cps/test/interfaces/MgwQuickPay.java
+END
+MgwWithPayEquity.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/cps/test/interfaces/MgwWithPayEquity.java
+END
+MgwCnpWithPayEquity.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/cps/test/interfaces/MgwCnpWithPayEquity.java
+END
+BDCA_MgwCnp.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/cps/test/interfaces/BDCA_MgwCnp.java
+END
+MgwQuickPrePay.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/cps/test/interfaces/MgwQuickPrePay.java
+END
+MgwTxnQuery.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/cps/test/interfaces/MgwTxnQuery.java
+END
+MgwBatchTxnQuery.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/cps/test/interfaces/MgwBatchTxnQuery.java
+END
+MgwQueryAcceptCapacity.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/cps/test/interfaces/MgwQueryAcceptCapacity.java
+END
+MgwCcsImport.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/cps/test/interfaces/MgwCcsImport.java
+END
+MgwAmtPointPay.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/cps/test/interfaces/MgwAmtPointPay.java
+END
+MgwAmtPointQpay1.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/cps/test/interfaces/MgwAmtPointQpay1.java
+END
+MgwAmtPointQpay2.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/cps/test/interfaces/MgwAmtPointQpay2.java
+END
+MgwQueryCardInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/cps/test/interfaces/MgwQueryCardInfo.java
+END
+MgwPci.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/cps/test/interfaces/MgwPci.java
+END
+MgwSmsPay.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/cps/test/interfaces/MgwSmsPay.java
+END
+MgwQueryConfirmTxn.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/cps/test/interfaces/MgwQueryConfirmTxn.java
+END
+MgwIndependAuthent.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/cps/test/interfaces/MgwIndependAuthent.java
+END
+MgwIvrTxnQuery.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/cps/test/interfaces/MgwIvrTxnQuery.java
+END
+MgwQuerySettleTxn.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/cps/test/interfaces/MgwQuerySettleTxn.java
+END

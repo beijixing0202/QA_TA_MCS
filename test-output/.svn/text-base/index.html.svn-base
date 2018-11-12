@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Default_suite">
+              <span class="suite-name border-passed">Default suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
+                    <span>C:\Users\shengyuan.wang\AppData\Local\Temp\testng-eclipse--1090312303\testng-customsuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Default_suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Default_suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Default_suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Default_suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Default_suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Default_suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">1 method,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.bill99.mcs.test.MCS_AcctDepoistTest" hash-for-method="AteAcctDepositPay({taTaskIdParameter=null, ta_totalNum=2, 编号=1, 描述=MCS ATE充值交易, hessianUrl=, sendcont=, mockType=ACCT_...)">AteAcctDepositPay({taTaskIdParameter=null, ta_totalNum=2, 编号=1, 描述=MCS ATE充值交易, hessianUrl=, sendcont=, mockType=ACCT_...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.bill99.mcs.test.MCS_AcctDepoistTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AteAcctDepositPay({taTaskIdParameter=null, ta_totalNum=2, 编号=1, 描述=MCS ATE充值交易, hessianUrl=, sendcont=, mockType=ACCT_...)">
+                  </a> <!-- AteAcctDepositPay({taTaskIdParameter=null, ta_totalNum=2, 编号=1, 描述=MCS ATE充值交易, hessianUrl=, sendcont=, mockType=ACCT_...) -->
+                  <span class="method-name">AteAcctDepositPay</span>
+                  <span class="parameters">({taTaskIdParameter=null, ta_totalNum=2, 编号=1, 描述=MCS ATE充值交易, hessianUrl=, sendcont=, mockType=ACCT_DEPOSIT, appId=101, merchantCode=10013527714, outTradeNo=, channelType=25, orderType=250001, outOrderType=10, orderAmount=10000, payAmount=10000, secureType=0, memberCode=10013527714, pinNum=, payMode=11, bankAcctId=6226090000000048, bankAcctType=0002, expectedTxnFlg=S, expectedAppType=ACCT_DEPOSIT, expectedAMT_1=100, expectedStlFlg=0, expectedTermReconFlg=C, expectedPostingFlg=1, expectedAmt_2=100, expectedFee=0, expectedDiscAmt=-2, expectedDiscRate=0.02, expectedNum=0, expectedBkStatus=S, expectedStatus_2=S, expectedOrderAmt=2, expectedDealAmt=2, expectedDealStatus=1, expectedOrderAmount=2000, expectedDealAmount=2000, expectedEntryAmt1=2000, expectedEntryAmt2=2000, expectedACSOrderAmount=100000, expectedACSDealAmount=100000, expectedEntryAmt3=100000, expectedEntryAmt4=100000, ta_groupingId=1, functionCode=14})</span>
+                  <em>
+(MCS_ATE充值交易)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+        </div> <!-- panel Default_suite -->
+        <div panel-name="test-xml-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\shengyuan.wang\AppData\Local\Temp\testng-eclipse--1090312303\testng-customsuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Default suite&quot;&gt;
+  &lt;test verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.bill99.mcs.test.MCS_AcctDepoistTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;AteAcctDepositPay&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.bill99.mcs.test.MCS_AcctDepoistTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Default test --&gt;
+&lt;/suite&gt; &lt;!-- Default suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Default test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Default_suite');
+function tableData_Default_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(1);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'AteAcctDepositPay')
+data.setCell(0, 2, 'com.bill99.mcs.test.MCS_AcctDepoistTest')
+data.setCell(0, 3, 61579);
+window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Default_suite">
+              </div> <!-- times-div-Default_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">AteAcctDepositPay({taTaskIdParameter=null, ta_totalNum=2, 编号=1, 描述=MCS ATE充值交易, hessianUrl=, sendcont=, mockType=ACCT_...)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">----------测试开始----------测试场景：MCS ATE充值交易--------------</span>
+                <span class="reporter-method-output">Mock登录成功.</span>
+                <span class="reporter-method-output">交易请求Url为:http://192.168.14.88:8088/cap-mock/orderMdpBankProcess.jsp?functionCode=14&appId=101&merchantCode=10013527714&channelType=25&orderType=250001&outOrderType=10&orderAmount=10000&payAmount=10000&secureType=0&memberCode=10013527714&payMode=11&bankAcctId=6226090000000048&bankAcctType=0002</span>
+                <span class="reporter-method-output">交易返回报文：
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-----------functionCode:14</br>-----------appId:101</br>-----------merchantCode:10013527714</br>-----------outTradeNo:20181017190139508</br>----------channelType:25</br>-----------payAmount:10000</br>-----------txnTimeStart:20181017190139</br>-----------payMode:11</br>-----------bankAcctId:6226090000000048</br>-----------memberCode:10013527714</br>-----------secureType:0</br>----------orderType:250001</br>----------outOrderType:10</br>----------orderAmount:10000</br>----------bankAcctType:0002</br>Request: {"functionCode":14,"appId":"101","dataMap":{"payAmount":"10000","bankAcctType":"0002","appId":"101","channelType":"25","orderType":"250001","outTradeNo":"20181017190139508","bankAcctId":"6226090000000048","secureType":"0","outOrderType":"10","payMode":"11","orderAmount":"10000","txnTimeStart":"20181017190139","merchantCode":"10013527714","memberCode":"10013527714"},"itemList":[],"paramMap":{}}</br>Response: {"functionCode":14,"appId":"101","resultCode":1,"errorMsg":null,"dataMap":{"payAmount":"10000","equityAmount":"0","bankAcctName":"招商银行","currencyCode":"CNY","bankAcctType":"0002","channelType":"25","errorInfo":"成功","billOrderNo":"920181017190149500011018230","orderType":"250001","tradeId":"492000110","bankAcctId":"6226090048","outTradeNo":"20181017190139508","secureType":"0","orderStatus":"1","payMode":"11","refundAmount":"0","txnEndTime":"20181017190145","payStatus":"1","orderAmount":"10000","errorCode":"0000","txnTimeStart":"20181017190139","refIdTxn":"110011011591","merchantCode":"10013527714","outEquityAmount":"0","memberCode":"10013527714"},"itemList":[]}</br>第{1}交易结束</br>{14}交易结束;花费时间{6650}毫秒</br>数据存在MySql数据库中  数据库实例为ate0302 订单表为t_acc_order_master_110 流水表为 ate_transaction_flowing_110</br>通知 数据存储在MySQL数据库中 数据库实例为 ate0302 通知表为  T_ACC_NOTIFY_DETAIL_110</br><br/><br/><br/><center><a href='javascript:history.go(-1);'> 返  回 </a></center>
+</span>
+                <span class="reporter-method-output">{billOrderNo=920181017190149500011018230, tradeId=492000110, refIdTxn=110011011591}</span>
+                <span class="reporter-method-output">----------执行今日清分定时任务 mcs.quartz.txn.PostingTodayTxnTrigger----------</span>
+                <span class="reporter-method-output">登陆运维监控系统成功</span>
+                <span class="reporter-method-output">触发job成功：CPS.MCS.QUARTZ--mcs.quartz.txn.PostingTodayTxnTrigger</span>
+                <span class="reporter-method-output">T_ACCT_TXN表查询结果为：TAcctTxn{acctTxnId=158616, appSrc='ATE', appType='ACCT_DEPOSIT', srcRef='492000110', origSrcRef='null', bizType='SynClear', refCtrlId='15012554941', txnType='00200', txnStatus=S, txnTime=Wed Oct 17 00:00:00 CST 2018, amt='100', fee='null', cur='CNY', memberCode='10013527714', stlMemberCode='10013527714', authNetId='00010100', postingFlg='1', stlFlg='1', traceNo='null', orderSeqId='78913127', memo=null, crtTime=Wed Oct 17 00:00:00 CST 2018, updTime='Wed Oct 17 00:00:00 CST 2018', billingAmt='null', tunnelData='{"issuerId":"03080000","cardType":"0002"}'}</span>
+                <span class="reporter-method-output">校验表T_ACCT_TXN--TXN_STATUS 字段,期望值为：S;实际值为：S</span>
+                <span class="reporter-method-output">校验表T_ACCT_TXN--APP_TYPE 字段,期望值为：ACCT_DEPOSIT;实际值为：ACCT_DEPOSIT</span>
+                <span class="reporter-method-output">校验表T_ACCT_TXN--AMT 字段,期望值为：100;实际值为：100</span>
+                <span class="reporter-method-output">**********************************表T_ACCT_TXN校验结束**********************************</span>
+                <span class="reporter-method-output">----------CPS表数据校验==》对表T_TXN_CTRL开始校验----------</span>
+                <span class="reporter-method-output">表T_TXN_CTRL查询SQL：SELECT ID_TXN, TXN_FLG, APP_TYPE, AMT, STL_FLG, TERM_RECON_FLG, POSTING_FLG, TUNNEL_DATA FROM MASPOS.T_TXN_CTRL WHERE EXT_TRACE_NO = '920181017190149500011018230'</span>
+                <span class="reporter-method-output">查询结果为：{ID_TXN=110011011591, AMT=100, TXN_FLG=S, APP_TYPE=ACCT_DEPOSIT, TERM_RECON_FLG=C, STL_FLG=0, TUNNEL_DATA={"cup.shcnp.purchase.order.num":"901405012554941W","ch.name":"张三","bgw.merchant.stlAcctNo":"gyj1@qa.99bill.com","isInRiskCheckedRange":"true","real_bank_respmsg":"交易成功[0000000]","bgw.merchant.fullNameCN":"ATE大商户号-","merchant_code":"10013527714","bgw.sourceId":"bgw.00010100.77.3","ATE_ID_CONTEXT":"eca73a16-7655-4b26-ab57-6440f32522f0","riskCheckedStep":"2","proxy.to.syn.token.key":"7ed7f8f7-93ea-4f41-9194-0b4517a83abe","isMyCat":"0","bgw.merchant.stlAcctType":"0","ch.call_id":"#032E5D1056BDF7742853591A983FCF81","mas.system.id":"MAS1","aps.sourceId":"aps101","stl_member_code":"10013527714","ate.sourceId":"ATE.PROXY.A.77.6","ch.id":"#E78BA4B3E9630ABEF311C2887D4B0C50C3C42A797EE52053","real_bank_respcode":"0000000","FFANT_PROD_CODE":"AP","aps.timestamp":"1539774100458","bgw.merchant.stlAcctHolder":"测试2111回归","mas.source.id":"MAS101","fee":"0","billingAmt":"100.00","traceLogId":"20181017190139508","ATE_SEND_TIME":1539774100059,"ch.id_type":"0"}, POSTING_FLG=1}</span>
+                <span class="reporter-method-output">校验表T_TXN_CTRL--TXN_FLG字段,期望值为：S;实际值为：S</span>
+                <span class="reporter-method-output">校验表T_TXN_CTRL--APP_TYPE字段,期望值为：ACCT_DEPOSIT;实际值为：ACCT_DEPOSIT</span>
+                <span class="reporter-method-output">校验表T_TXN_CTRL--AMT字段,期望值为：100;实际值为：100</span>
+                <span class="reporter-method-output">校验表T_TXN_CTRL--STL_FLG字段,期望值为：0;实际值为：0</span>
+                <span class="reporter-method-output">校验表T_TXN_CTRL--TXN_Flg字段,期望值为：C;实际值为：C</span>
+                <span class="reporter-method-output">校验表T_TXN_CTRL--TXN_Flg字段,期望值为：1;实际值为：1</span>
+                <span class="reporter-method-output">**********************************表T_TXN_CTRL校验结束**********************************</span>
+                <span class="reporter-method-output">MCS清分表数据校验==》T_CLR_TXN_LIST表查询结果为：TClrTxnList{idTxn='110011011591', txnType='00200', vaTxnFlg='0', origIdTxn='null', merchantId='812140058130003', merchantName='ATE大商户号', stlMerchantId='10013527714', stlMerchantName='ATE大商户号', mcc='4511', terminalId='20151109', terminalName='22332233', pan='A979AA97CA086ADCC1BEF07B085B655C', sPan='6226090048', cardType='0002', cardOrg='CU', forCardOrg='CU', appType='ACCT_DEPOSIT', txnTime='2018-10-17.19.1. 40. 80000000', cur='CNY', amt='100', rewardPts='null', termInMonths='null', convRate='null', convCur='null', convAmt='null', trInAcctNo='null', termTxnTime='2018-10-17.19.1. 40. 59000000', termTraceNo='492000110', termInvoiceNo='000110', termBatchNo='null', extTraceNo='920181017190149500011018230', reconDate='2018-10-18 00:00:00.0', srvEntryMode='012', srvCondCode='14', srvChanType='J', acquirerId='00010001', issuerId='03080000', transferIn='null', onUs='0', authNetId='00010100', authTime='null', authMerchantId='812310045110003', authTerminalId='null', authRef='05012554941W', authTraceNo='994245', authInvoiceNo='null', authBatchNo='null', authCode='null', idAuthTermBatch='null', riskLv='0', riskResult='V0012', valueDate='2018-10-18 00:00:00.0', fee='0.0', feeRate='null', feeStlMethod='0', feeValueDate='null', discAmt='-2', discRate='0.02', discStlMethod='0', batchDate='2018-10-17 00:00:00.0', status='1', idEtlLog='0', expDate='null', riskStatus='P', stlFlg='0', stlLv='3', stlTime='null', authStlFlg='0', authStlTime='null', authPayRef='null', cnpFlg='1', acctDate='null', clearingHouseId='bill99_clr_house', quickRfdFlag='0', stpFlag='0', sumFlag='0', bkRefNumber='null', srvChanTraceNo='null', crtTime='2018-10-17 19:01:50.0', txnCompTime='2018-10-17 19:01:45.0', riskSuspendedFlag='0', idTxnCtrl='15012554941', authMcc='null', feeInstId='null', clrDealId='null', olRedType='null', tunnelData='{"fee":"0","billingAmt":"100.00","ch.name":"张三","stl_member_code":"10013527714","ch.id":"#E78BA4B3E9630ABEF311C2887D4B0C50C3C42A797EE52053","stlMerchantType":"3","FFANT_PROD_CODE":"AP"}', stlBizFlg='0', idClrTxnList='2012468263', appSrc='CPS', origRfdFee='null', RfdSrvFee='null', srvChanSrc='Z'}</span>
+                <span class="reporter-method-output">校验表T_CLR_TXN_LIST--AMT字段,期望值为：100;实际值为：100</span>
+                <span class="reporter-method-output">校验表T_CLR_TXN_LIST--AUTH_REF字段,期望值为有值;实际值为：05012554941W</span>
+                <span class="reporter-method-output">校验表T_CLR_TXN_LIST--FEE字段,期望值为：0;实际值为：0.0</span>
+                <span class="reporter-method-output">校验表T_CLR_TXN_LIST--FEE_RATE字段,期望值为：null;实际值为：null</span>
+                <span class="reporter-method-output">校验表T_CLR_TXN_LIST--DISC_AMT字段,期望值为：-2;实际值为：-2</span>
+                <span class="reporter-method-output">校验表T_CLR_TXN_LIST--DISC_RATE字段,期望值为：0.02;实际值为：0.02</span>
+                <span class="reporter-method-output">**********************************表T_CLR_TXN_LIST校验结束**********************************</span>
+                <span class="reporter-method-output">校验表T_STL_LIST记录数，期望值为：0;实际值为：0</span>
+                <span class="reporter-method-output">----------执行异步记账定时任务 mcs.quartz.cpspe.async.BookkeepingTrigger----------</span>
+                <span class="reporter-method-output">登陆运维监控系统成功</span>
+                <span class="reporter-method-output">触发job成功：CPS.MCS.QUARTZ--mcs.quartz.cpspe.async.BookkeepingTrigger</span>
+                <span class="reporter-method-output">CSPPE清分/结算表数据校验==》T_BK_APPLY表查询结果为：TBkApply{idBkApply=174633015, systemId='MCS', sourceId='MCS002', bkType='CLEAR', reference='110011011591', bkStatus='S', bkParams='{"TXN_BIZ_TYPE":"ACCT_DEPOSIT","STL_MEM_TYPE":"3","APP_TYPE":"ACCT_DEPOSIT"}', appExcCode='null', appTime=Wed Oct 17 00:00:00 CST 2018, updTime=Wed Oct 17 00:00:00 CST 2018, revType='null', respCode='00', additionalCode='null', asyncFlag='A', notifyResult='1'}</span>
+                <span class="reporter-method-output">校验表T_BK_APPLY--BK_STATUS字段,期望值为：S;实际值为：S</span>
+                <span class="reporter-method-output">**********************************表T_BK_APPLY校验结束**********************************</span>
+                <span class="reporter-method-output">CSPPE清分/结算表数据校验==》T_BK_RECORD表查询结果为：TBkRecord{idBkRecord=1364402, systemId='MCS', bkType='CLEAR', reference='110011011591', status='S', bkTimes=1, attr1='00', attr2='78913140', attr3='null', attr4='null', attr5='null', attr6='null', crtTime=Wed Oct 17 00:00:00 CST 2018, updTime=Wed Oct 17 00:00:00 CST 2018, origIdBkRecord=null, revType='null', bizDate=Wed Oct 17 00:00:00 CST 2018, respCode='00', bkParams='{"TXN_BIZ_TYPE":"ACCT_DEPOSIT","APP_TYPE":"ACCT_DEPOSIT","STL_MEM_TYPE":"3","pe_param_order_code":"711"}', additionalCode='null'}</span>
+                <span class="reporter-method-output">校验表T_BK_RECORD--STATUS字段,期望值为：S;实际值为：S</span>
+                <span class="reporter-method-output">**********************************表T_BK_RECORD校验结束**********************************</span>
+                <span class="reporter-method-output">CSPPE清分表数据校验==》T_BK_PE_PAYMENT_ORDER表查询结果为：TBkPePaymentOrder{idBkPePaymentOrder=329489, orderId='110011011591', orderType=711, orderAmt=2.0, orderStatus=111, orderTime=Wed Oct 17 00:00:00 CST 2018, prodNum=1, prodName='充值至C端快钱账户-成本', payMethod=1, payerOrgType=null, payerOrgCode=null, payerAcctType=null, payerAcctCode='null', payeeOrgType=null, payeeOrgCode=null, payeeAcctType=null, payeeAcctCode='null', version='1.0', memo='null', crtTime=Wed Oct 17 00:00:00 CST 2018, updTime=Wed Oct 17 00:00:00 CST 2018, seqId=78913140, payerChan='1280020050002', payeeChan='null', relationSeqId='null'}</span>
+                <span class="reporter-method-output">校验表T_BK_PE_PAYMENT_ORDER--ORDER_AMT字段,期望值为：2;实际值为：2.0</span>
+                <span class="reporter-method-output">**********************************表T_BK_PE_PAYMENT_ORDER校验结束**********************************</span>
+                <span class="reporter-method-output">CSPPE清分表数据校验==》T_BK_DEAL表查询结果为：TBkPeDeal{idBkPeDeal=490389, idBkPePaymentOrder=329489, dealId='104688625', dealType=30, dealCode=231, dealAmt=2.0, dealStatus=1, dealBeginDate=Wed Oct 17 00:00:00 CST 2018, paymentSrvPkgCode='754', payerOrgType=null, payerOrgCode=null, payerAcctType=null, payerAcctCode='null', payeeOrgType=null, payeeOrgCode=null, payeeAcctType=null, payeeAcctCode='null', crtTime=Wed Oct 17 00:00:00 CST 2018, updTime=Wed Oct 17 00:00:00 CST 2018, payerChan='1280020050002', payeeChan='null', feeType='null', payeeFee=null, hasCalcFee='1', priority='null', idBkPeDealExt=null, transDate=Wed Oct 17 00:00:00 CST 2018}</span>
+                <span class="reporter-method-output">校验表T_BK_PE_DEAL--DEAL_AMT字段,期望值为：2;实际值为：2.0</span>
+                <span class="reporter-method-output">校验表T_BK_PE_DEAL--DEAL_STATUS字段,期望值为：1;实际值为：1</span>
+                <span class="reporter-method-output">**********************************表T_BK_DEAL校验结束**********************************</span>
+                <span class="reporter-method-output">PE清分记账表数据校验==》PAYMENTORDER表查询结果为：PaymentOrder{sequenceid=78913140, orderId='110011011591', submitacctcode=null, ordercode=711, paymethod=1, orgorderid='null', productname='充值至C端快钱账户-成本', productnum=1, orderamount=2000, discountamount=null, couponnumber='null', payeracctcode=null, payeraccttype=null, payerorgcode=null, payerorgtype=null, payeeacctcode=null, payeeaccttype=null, payeeorgcode=null, payeeorgtype=null, ordertime=Wed Oct 17 00:00:00 CST 2018, orderstatus=111, lastupdatetime=Wed Oct 17 00:00:00 CST 2018, returnurl='null', version='1.0', memo='null', relatedsequenceid='null', relatedtype=null, payeeidentity='null', orderdigest='null', terminaltypecode=null, orderorigin=null, isreversed=0, ip='null', referencenum='null', loyalcardnumber='null', merchantordertime=null, opversion=null, currencycode='null', payerdisplayname='null', payeedisplayname='null', payeechannel='null', payerchannel='1280020050002'}</span>
+                <span class="reporter-method-output">校验表PAYMENTORDER--ORDERAMOUNT字段,期望值为：2000;实际值为：2000</span>
+                <span class="reporter-method-output">校验表PAYMENTORDER--ORDERSTATUS字段,期望值为：111;实际值为：111</span>
+                <span class="reporter-method-output">**********************************表PAYMENTORDER校验结束**********************************</span>
+                <span class="reporter-method-output">PE清分记账表数据校验==》DEAL表查询结果为：[Deal{dealid='104688625', dealbegindate=Wed Oct 17 00:00:00 CST 2018, orderSeqId=78913140, dealamount=2000.0, payeracctcode=null, payeeacctcode=null, dealstatus=1, dealenddate=Wed Oct 17 00:00:00 CST 2018, orgorderid='null', dealcode=231, paymentservicepkgcode='754', payerorgcode=null, payeeorgcode=null, ordertime=null, submitacctcode=null, payeraccttype=null, payerorgtype=null, payeeaccttype=null, payeeorgtype=null, dealtype=30, payeefee=null, payerfee=null, synctoken=0, payeeservicelevel=null, payerservicelevel=null, payercurrencycode='null', exchangerate=null, payeecurrencycode='null', hascaculatedprice=1, asynaccounting=0, transactiondate=Wed Oct 17 00:00:00 CST 2018, payeechannel='null', payerchannel='1280020050002', feetype=null, payerfeeacctcode=null, payeefeeacctcode=null}]</span>
+                <span class="reporter-method-output">校验表DEAL--DEALAmount字段,期望值为：2000;实际值为：2000.0</span>
+                <span class="reporter-method-output">校验表DEAL--DEALStatus字段,期望值为：1;实际值为：1</span>
+                <span class="reporter-method-output">**********************************表DEAL校验结束**********************************</span>
+                <span class="reporter-method-output">PE记账表数据校验==》ENTRY表查询结果为：[Entry{voucherCode=2018101700043969797, acctCode=1280020050002, crdr=2, value=2000.0, text='null', dealId='104688625', paymentServiceCode=7000704, creationDate=Wed Oct 17 00:00:00 CST 2018, status=0, entryCode=2, postDate=null, entryType=1, currencyCode='CNY', exchangeRate=10000, transactionDate=Wed Oct 17 00:00:00 CST 2018, asynAccounting=1}, Entry{voucherCode=2018101700043969797, acctCode=5451020080001, crdr=1, value=2000.0, text='null', dealId='104688625', paymentServiceCode=7000704, creationDate=Wed Oct 17 00:00:00 CST 2018, status=1, entryCode=1, postDate=Wed Oct 17 00:00:00 CST 2018, entryType=1, currencyCode='CNY', exchangeRate=10000, transactionDate=Wed Oct 17 00:00:00 CST 2018, asynAccounting=0}]</span>
+                <span class="reporter-method-output">校验表DEAL--授权网络科目,科目号：1280020050002;额度为：2000.0;借贷标志(1:DR,2:CR)为：2</span>
+                <span class="reporter-method-output">校验表DEAL--银行成本手续费科目,科目号：5451020080001;额度为：2000.0;借贷标志(1:DR,2:CR)为：1</span>
+                <span class="reporter-method-output">PE清分记账表数据校验==》PAYMENTORDER表查询结果为：PaymentOrder{sequenceid=78913127, orderId='492000110', submitacctcode=null, ordercode=711, paymethod=null, orgorderid='null', productname='充值至C端快钱账户', productnum=1, orderamount=100000, discountamount=null, couponnumber='null', payeracctcode=null, payeraccttype=null, payerorgcode=null, payerorgtype=null, payeeacctcode=1001352771401, payeeaccttype=null, payeeorgcode=null, payeeorgtype=null, ordertime=Wed Oct 17 00:00:00 CST 2018, orderstatus=111, lastupdatetime=Wed Oct 17 00:00:00 CST 2018, returnurl='null', version='2.0', memo='null', relatedsequenceid='null', relatedtype=null, payeeidentity='null', orderdigest='null', terminaltypecode=null, orderorigin=null, isreversed=0, ip='null', referencenum='null', loyalcardnumber='null', merchantordertime=null, opversion=null, currencycode='null', payerdisplayname='null', payeedisplayname='null', payeechannel='null', payerchannel='1280020050002'}</span>
+                <span class="reporter-method-output">校验表PAYMENTORDER--ORDERAMOUNT字段,期望值为：100000;实际值为：100000</span>
+                <span class="reporter-method-output">校验表PAYMENTORDER--ORDERSTATUS字段,期望值为：111;实际值为：111</span>
+                <span class="reporter-method-output">**********************************表PAYMENTORDER校验结束**********************************</span>
+                <span class="reporter-method-output">PE清分记账表数据校验==》DEAL表查询结果为：[Deal{dealid='104688607', dealbegindate=Wed Oct 17 00:00:00 CST 2018, orderSeqId=78913127, dealamount=100000.0, payeracctcode=null, payeeacctcode=1001352771401, dealstatus=1, dealenddate=Wed Oct 17 00:00:00 CST 2018, orgorderid='null', dealcode=180, paymentservicepkgcode='751', payerorgcode=null, payeeorgcode=null, ordertime=null, submitacctcode=null, payeraccttype=null, payerorgtype=null, payeeaccttype=null, payeeorgtype=null, dealtype=30, payeefee=0, payerfee=null, synctoken=0, payeeservicelevel=110, payerservicelevel=null, payercurrencycode='null', exchangerate=null, payeecurrencycode='null', hascaculatedprice=1, asynaccounting=0, transactiondate=Wed Oct 17 00:00:00 CST 2018, payeechannel='null', payerchannel='1280020050002', feetype=null, payerfeeacctcode=null, payeefeeacctcode=null}]</span>
+                <span class="reporter-method-output">校验表DEAL--DEALAmount字段,期望值为：100000;实际值为：100000.0</span>
+                <span class="reporter-method-output">校验表DEAL--DEALStatus字段,期望值为：1;实际值为：1</span>
+                <span class="reporter-method-output">**********************************表DEAL校验结束**********************************</span>
+                <span class="reporter-method-output">PE记账表数据校验==》ENTRY表查询结果为：[Entry{voucherCode=2018101700043969790, acctCode=1280020050002, crdr=1, value=100000.0, text='null', dealId='104688607', paymentServiceCode=7000701, creationDate=Wed Oct 17 00:00:00 CST 2018, status=0, entryCode=1, postDate=null, entryType=1, currencyCode='CNY', exchangeRate=10000, transactionDate=Wed Oct 17 00:00:00 CST 2018, asynAccounting=1}, Entry{voucherCode=2018101700043969790, acctCode=201002011001352771401, crdr=2, value=100000.0, text='null', dealId='104688607', paymentServiceCode=7000701, creationDate=Wed Oct 17 00:00:00 CST 2018, status=1, entryCode=2, postDate=Wed Oct 17 00:00:00 CST 2018, entryType=1, currencyCode='CNY', exchangeRate=10000, transactionDate=Wed Oct 17 00:00:00 CST 2018, asynAccounting=0}]</span>
+                <span class="reporter-method-output">校验表DEAL--授权网络科目,科目号：1280020050002;额度为：100000.0;借贷标志(1:DR,2:CR)为：1</span>
+                <span class="reporter-method-output">校验表DEAL--人民币账户,科目号：201002011001352771401;额度为：100000.0;借贷标志(1:DR,2:CR)为：2</span>
+                <span class="reporter-method-output">----------测试结束----------测试场景：MCS ATE充值交易--------------</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">1 ignored method</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.bill99.mcs.test.MCS_AcctDepoistTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">test</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.bill99.mcs.test.MCS_AcctDepoistTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">springTestContextBeforeTestClass</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">springTestContextPrepareTestInstance</span>
+                <span class="method-start">31 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeTest</span>
+                <span class="method-start">11012 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">springTestContextBeforeTestMethod(public void com.bill99.mcs.test.MCS_AcctDepoistTest.AteAcctDepositPay(java.util.Map))</span>
+                <span class="method-start">11289 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">AteAcctDepositPay({taTaskIdParameter=null, ta_totalNum=2, 编号=1, 描述=MCS ATE充值交易, hessianUrl=, sendcont=, mockType=ACCT_...)</span>
+                <span class="method-start">11289 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">springTestContextAfterTestMethod(public void com.bill99.mcs.test.MCS_AcctDepoistTest.AteAcctDepositPay(java.util.Map))</span>
+                <span class="method-start">72870 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">73054 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-class after">
+                <span class="method-name">springTestContextAfterTestClass</span>
+                <span class="method-start">73055 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

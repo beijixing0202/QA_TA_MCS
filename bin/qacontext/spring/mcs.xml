@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop" xmlns:util="http://www.springframework.org/schema/util"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+		http://www.springframework.org/schema/aop
+		http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+		http://www.springframework.org/schema/context
+		http://www.springframework.org/schema/context/spring-context-2.5.xsd
+		http://www.springframework.org/schema/util
+        http://www.springframework.org/schema/util/spring-util-2.5.xsd">
+
+    <bean id="mcsServiceImpl" class="com.bill99.mcs.service.impl.McsServiceImpl">
+        <property name="monitorQuartzFrameworkMng" ref="monitorQuartzFrameworkMng"/>
+        <property name="cpsDbMng" ref="cpsDbMng"/>
+        <property name="mcsUrl" value="${mcs.url}"/>
+        <property name="idsUrl" value="${ids.url}"/>
+        <property name="cpsUser" value="${quartz.cpsUser}"/>
+        <property name="cpsPass" value="${quartz.cpsPass}"/>
+        <property name="fscUser" value="${quartz.fscUser}"/>
+        <property name="fscPass" value="${quartz.fscPass}"/>
+    </bean>
+
+
+    <bean id="pay" class="com.bill99.mcs.service.impl.PayImpl">
+    </bean>
+
+    <bean id="rfd" class="com.bill99.mcs.service.impl.RfdImpl">
+    </bean>
+
+    <bean id="manualClearing" class="com.bill99.mcs.service.impl.ManualClearingImp">
+    </bean>
+    <bean id="mockLoginService" class="com.bill99.mcs.service.impl.MockLoginServiceImpl">
+        <property name="loginUrl" value="${ate.login.url}"/>
+    </bean>
+
+    <bean id="unionpayCode" class="com.bill99.mcs.common.helper.UnionpayCode">
+
+    </bean>
+    <bean id="mcsOracleDao" class="com.bill99.mcs.orm.impl.OracleDaoImpl">
+        <property name="vposConnect" value="${db.vposdb.connect}"/>
+        <property name="vposUserName" value="${db.vposdb.username}"/>
+        <property name="vposPassWord" value="${db.vposdb.password}"/>
+    </bean>
+
+    <bean id="mcsMysqlDao" class="com.bill99.mcs.orm.impl.MySqlDaoImpl">
+        <property name="vposConnect" value="${vposdb.mysql.connect}"/>
+        <property name="vposUserName" value="${vposdb.mysql.username}"/>
+        <property name="vposPassWord" value="${vposdb.mysql.password}"/>
+    </bean>
+
+    <bean id="dbCheckServiceService" class="com.bill99.mcs.orm.impl.DbCheckServiceImpl">
+    </bean>
+
+    <bean id="masposDBService" class="com.bill99.mcs.orm.impl.MasposDBImpl">
+        <property name="taMasposDbHandller" ref="taMasposDbHandller"/>
+        <property name="username" value="${db.maspos.username}"/>
+        <property name="password" value="${db.maspos.password}"/>
+    </bean>
+
+    <bean id="masposDBAccessService" class="com.bill99.mcs.orm.impl.MasposDBAccessImpl">
+    </bean>
+
+    <bean id="stlDBService" class="com.bill99.mcs.orm.impl.StlDBImpl">
+        <property name="taStlDbHandller" ref="taStlDbHandller"/>
+       <!-- <property name="username" value="${db.stldb.username}"/>
+        <property name="password" value="${db.stldb.password}"/>-->
+    </bean>
+
+    <bean id="stldbAccessService" class="com.bill99.mcs.orm.impl.StldbAccessImpl">
+    </bean>
+
+    <bean id="seaShellDBService" class="com.bill99.mcs.orm.impl.SeaShellDBImpl">
+        <property name="taSeashellDbHandller" ref="taSeashellDbHandller"/>
+        <property name="username" value="${db.seashell.username}"/>
+        <property name="password" value="${db.seashell.password}"/>
+    </bean>
+
+    <bean id="seaShellDBAccessService" class="com.bill99.mcs.orm.impl.SeaShellDBAccessImpl">
+    </bean>
+
+
+
+</beans>

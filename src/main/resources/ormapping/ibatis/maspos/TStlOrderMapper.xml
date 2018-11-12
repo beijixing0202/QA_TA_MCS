@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+        "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="TStlOrder">
+    <resultMap class="com.bill99.mcs.common.dto.TStlOrder" id="BaseResultMap">
+        <result column="ID_STL_ORDER" jdbcType="DECIMAL" property="idStlOrder" />
+        <result column="ID_STL_BATCH" jdbcType="DECIMAL" property="idStlBatch" />
+        <result column="STL_DATE" jdbcType="DATE" property="stlDate" />
+        <result column="ORDER_TYPE" jdbcType="CHAR" property="orderType" />
+        <result column="STL_TYPES" jdbcType="VARCHAR" property="stlTypes" />
+        <result column="STL_CTR_PARTY_TYPE" jdbcType="CHAR" property="stlCtrPartyType" />
+        <result column="STL_CTR_PARTY" jdbcType="VARCHAR" property="stlCtrParty" />
+        <result column="AMT" jdbcType="DECIMAL" property="amt" />
+        <result column="CLR_ACCT_NO" jdbcType="VARCHAR" property="clrAcctNo" />
+        <result column="STL_BANK_ID" jdbcType="VARCHAR" property="stlBankId" />
+        <result column="STL_BANK" jdbcType="VARCHAR" property="stlBank" />
+        <result column="STL_ACCT_NO" jdbcType="VARCHAR" property="stlAcctNo" />
+        <result column="STL_ACCT_HOLDER" jdbcType="VARCHAR" property="stlAcctHolder" />
+        <result column="CRT_TIME" jdbcType="DATE" property="crtTime" />
+        <result column="STATUS" jdbcType="CHAR" property="status" />
+        <result column="ACCT_DATE" jdbcType="DATE" property="acctDate" />
+        <result column="ID_ETL_LOG" jdbcType="DECIMAL" property="idEtlLog" />
+        <result column="PAY_REF" jdbcType="VARCHAR" property="payRef" />
+        <result column="STP_FLAG" jdbcType="CHAR" property="stpFlag" />
+        <result column="TXN_DATE" jdbcType="DATE" property="txnDate" />
+        <result column="DIG_ACT_FLAG" jdbcType="CHAR" property="digActFlag" />
+        <result column="MEMO" jdbcType="VARCHAR" property="memo" />
+        <result column="STL_ACCT_TYPE" jdbcType="CHAR" property="stlAcctType" />
+        <result column="STL_BANK_NAME" jdbcType="VARCHAR" property="stlBankName" />
+        <result column="STL_BANK_ACCT_TYPE" jdbcType="CHAR" property="stlBankAcctType" />
+        <result column="STL_BANK_PROVINCE" jdbcType="VARCHAR" property="stlBankProvince" />
+        <result column="STL_BANK_CITY" jdbcType="VARCHAR" property="stlBankCity" />
+        <result column="BK_REF_NUMBER" jdbcType="VARCHAR" property="bkRefNumber" />
+        <result column="RELATED_ID_STL_ORDER" jdbcType="DECIMAL" property="relatedIdStlOrder" />
+        <result column="GROSS_RFD_FLAG" jdbcType="CHAR" property="grossRfdFlag" />
+        <result column="STL_LV" jdbcType="DECIMAL" property="stlLv" />
+        <result column="STL_ORDER_EXE_TIME" jdbcType="DATE" property="stlOrderExeTime" />
+        <result column="PAY_RESULT" jdbcType="VARCHAR" property="payResult" />
+        <result column="RECHARGE_REF" jdbcType="VARCHAR" property="rechargeRef" />
+        <result column="RECHARGE_STATUS" jdbcType="CHAR" property="rechargeStatus" />
+        <result column="STL_BIZ_FLG" jdbcType="CHAR" property="stlBizFlg" />
+        <result column="TRANS_OUT_FLG" jdbcType="CHAR" property="transOutFlg" />
+        <result column="TRANS_INCEPT_ACCT_TYPE" jdbcType="CHAR" property="transInceptAcctType" />
+        <result column="TRANS_INCEPT_ACCT_NO" jdbcType="VARCHAR" property="transInceptAcctNo" />
+        <result column="STL_BIZ_TYPE" jdbcType="VARCHAR" property="stlBizType" />
+    </resultMap>
+    <sql id="BaseColumnList">
+        ID_STL_ORDER, ID_STL_BATCH, STL_DATE, ORDER_TYPE, STL_TYPES, STL_CTR_PARTY_TYPE,
+        STL_CTR_PARTY, AMT, CLR_ACCT_NO, STL_BANK_ID, STL_BANK, STL_ACCT_NO, STL_ACCT_HOLDER,
+        CRT_TIME, STATUS, ACCT_DATE, ID_ETL_LOG, PAY_REF, STP_FLAG, TXN_DATE, DIG_ACT_FLAG,
+        MEMO, STL_ACCT_TYPE, STL_BANK_NAME, STL_BANK_ACCT_TYPE, STL_BANK_PROVINCE, STL_BANK_CITY,
+        BK_REF_NUMBER, RELATED_ID_STL_ORDER, GROSS_RFD_FLAG, STL_LV, STL_ORDER_EXE_TIME,
+        PAY_RESULT, RECHARGE_REF, RECHARGE_STATUS, STL_BIZ_FLG, TRANS_OUT_FLG, TRANS_INCEPT_ACCT_TYPE,
+        TRANS_INCEPT_ACCT_NO, STL_BIZ_TYPE
+    </sql>
+    <select id="getTStlOrder" parameterClass="com.bill99.mcs.common.dto.TStlOrder" resultMap="BaseResultMap">
+        select
+        <include refid="BaseColumnList"/>
+        from maspos.t_stl_order
+        <dynamic prepend="where">
+            <isNotEmpty prepend="and" property="idStlOrder">
+                ID_STL_ORDER=#idStlOrder#
+            </isNotEmpty>
+        </dynamic>
+    </select>
+</sqlMap>

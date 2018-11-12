@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/opt/99billdoc/!svn/ver/465311/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/resources/ormapping/ibatis/seashell
+END
+PaymentOrderMapper.xml
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/opt/99billdoc/!svn/ver/465311/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/resources/ormapping/ibatis/seashell/PaymentOrderMapper.xml
+END
+DealMapper.xml
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/resources/ormapping/ibatis/seashell/DealMapper.xml
+END
+seashellDB.xml
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/resources/ormapping/ibatis/seashell/seashellDB.xml
+END
+TestSeashellDb.xml
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/resources/ormapping/ibatis/seashell/TestSeashellDb.xml
+END
+EntryMapper.xml
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/resources/ormapping/ibatis/seashell/EntryMapper.xml
+END
+TAcctTxnMapper.xml
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/resources/ormapping/ibatis/seashell/TAcctTxnMapper.xml
+END

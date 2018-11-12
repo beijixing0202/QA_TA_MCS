@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+		http://www.springframework.org/schema/aop
+		http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+		http://www.springframework.org/schema/context
+		http://www.springframework.org/schema/context/spring-context-2.5.xsd">
+
+    <bean id="ateDbCheck" class="com.bill99.ate.service.ate.check.AteDbCheck">
+        <property name="ateDb" ref="ateDb"></property>
+    </bean>
+
+    <bean id="postHttpClient" class="com.bill99.ate.common.httpclient.PostHttpClient"></bean>
+
+    <bean id="paymentCodeService" class="com.bill99.ate.service.mam.PaymentCodeService">
+        <property name="url" value="${mam.intergration.url}"></property>
+        <property name="serviceId" value="MS106001"></property>
+        <property name="BIZ_CODE" value="99bill99002015060101"></property>
+        <property name="APP_ID" value="121"></property>
+    </bean>
+
+    <bean id="cancelOrderHttpRequest"
+          class="com.bill99.ate.service.ate.mockHttp.CancelOrderHttpRequest">
+        <property name="functionCode" value="21"></property>
+    </bean>
+
+    <bean id="orderHttpRequest" class="com.bill99.ate.service.ate.mockHttp.OrderHttpRequest">
+        <property name="functionCode" value="20"></property>
+    </bean>
+
+    <bean id="payConfirmHttpRequest"
+          class="com.bill99.ate.service.ate.mockHttp.PayConfirmHttpRequest">
+        <property name="functionCode" value="13"></property>
+        <property name="paymentCodeService" ref="paymentCodeService"></property>
+    </bean>
+
+    <bean id="payInterfaceHttpRequest"
+          class="com.bill99.ate.service.ate.mockHttp.PayInterfaceHttpRequest">
+        <property name="functionCode" value="10"></property>
+        <property name="paymentCodeService" ref="paymentCodeService"></property>
+    </bean>
+
+    <bean id="rechargeHttpRequest" class="com.bill99.ate.service.ate.mockHttp.RechargeHttpRequest">
+        <property name="functionCode" value="14"></property>
+    </bean>
+
+    <bean id="revokeHttpRequest" class="com.bill99.ate.service.ate.mockHttp.RevokeHttpRequest">
+        <property name="functionCode" value="11"></property>
+    </bean>
+
+    <bean id="refundHttpRequest" class="com.bill99.ate.service.ate.mockHttp.RefundHttpRequest">
+        <property name="functionCode" value="12"></property>
+    </bean>
+
+    <bean id="withDrawHttpRequest" class="com.bill99.ate.service.ate.mockHttp.WithDrawHttpRequest">
+        <property name="functionCode" value="15"></property>
+    </bean>
+
+    <bean id="quatoService" class="com.bill99.ate.service.rm.QuatoService">
+        <property name="strHashRedisTemplate" ref="strHashRedisTemplate"></property>
+        <property name="stringRedisTemplate" ref="stringRedisTemplate"></property>
+    </bean>
+
+</beans>

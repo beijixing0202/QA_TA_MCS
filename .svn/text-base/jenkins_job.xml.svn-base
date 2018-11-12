@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<suite name="QA_TA_BDCA">
+    <test name="QA_TA_BDCA">
+        <classes>
+            <class name="com.bill99.fi.test.DepositCardClickPayRefund">
+                <methods>
+                    <include name="depositCardClickPayRefund"/>
+                </methods>
+            </class>
+            <class name="com.bill99.fi.test.MsgatewayBankPay">
+                <methods>
+                    <include name="msgatewayBankPay"/>
+                </methods>
+            </class>
+            <class name="com.bill99.fi.test.RechargeWithBankCard">
+                <methods>
+                    <include name="rechargeWithBankCard"/>
+                </methods>
+            </class>
+            <class name="com.bill99.fi.test.MsgatewayaccountPay">
+                <methods>
+                    <include name="msgatewayaccountPay"/>
+                </methods>
+            </class>
+            <class name="com.bill99.fi.test.GateWay3AccountPay">
+                <methods>
+                    <include name="gateway3AccountPay"/>
+                </methods>
+            </class>
+            <class name="com.bill99.fi.test.SingleRfdPrepaidCardPay">
+                <methods>
+                    <include name="singleRfdPrepaidCardPay"/>
+                </methods>
+            </class>
+            <class name="com.bill99.fi.test.SingleRfdBankPay">
+                <methods>
+                    <include name="singleRfdBankPay"/>
+                </methods>
+            </class>
+            <class name="com.bill99.fi.test.GatewayPrepaidCardPay">
+                <methods>
+                    <include name="gatewayPrepaidCardPay"/>
+                </methods>
+            </class>
+            <class name="com.bill99.fi.test.DepositCardClickFirstPay">
+                <methods>
+                    <include name="depositCardClickFirstPay"/>
+                </methods>
+            </class>
+            <class name="com.bill99.fi.test.MsGatewayRefundTolerance">
+                <methods>
+                    <include name="refundTolerance"/>
+                </methods>
+            </class>
+            <class name="com.bill99.fi.test.GateWay3AcctPayRfd">
+                <methods>
+                    <include name="singleRfdAcctPay"/>
+                </methods>
+            </class>
+            <class name="com.bill99.fi.test.MsGatewayAdvanceRefund">
+                <methods>
+                    <include name="msGatewayAdvanceRefund"/>
+                </methods>
+            </class>
+            <class name="com.bill99.fi.test.GatewayBankPay">
+                <methods>
+                    <include name="gatewayBankPay"/>
+                </methods>
+            </class>
+            <class name="com.bill99.fi.test.MsgatewayPayTolerance">
+                <methods>
+                    <include name="msgatewayPayTolerance"/>
+                </methods>
+            </class>
+            <class name="com.bill99.fi.test.CreditCardInstallmentPay">
+                <methods>
+                    <include name="creditCardInstallmentPay"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

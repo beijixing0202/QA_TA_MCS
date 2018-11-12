@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+    "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="TestInfoDb">
+
+<!-- 	<select id="getMobileValidateCode" parameterClass="java.util.HashMap" resultClass="String"> -->
+<!-- 		select * from (select substr(content,5,6) from sms.SMSNOTIFICATIONLOG where APPID=#orderId#) where rownum=1 -->
+<!-- 	</select> -->
+
+	<select id="getMobileValidateCode" parameterClass="java.util.HashMap" resultClass="String">
+		select substr(a.co,5,6)  from 
+			(select b.content co,rownum ro from 
+				(select * from sms.SMSNOTIFICATIONLOG where mobile=#tel# and templateid in ('2000064','19714536') and requesttime>sysdate-1/1440 order by requesttime desc) b) a
+		where a.ro=1	
+	</select>
+</sqlMap>

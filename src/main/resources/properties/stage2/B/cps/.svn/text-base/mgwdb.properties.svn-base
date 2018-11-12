@@ -1,0 +1,32 @@
+#数据库配置
+#cps数据库database
+db.cps.connect=(DESCRIPTION =(ADDRESS_LIST =(ADDRESS = (PROTOCOL = TCP)(HOST = 192.168.6.44)(PORT = 1530))(ADDRESS = (PROTOCOL = TCP)(HOST = 192.168.6.43)(PORT = 1530)))(CONNECT_DATA =(SERVER = DEDICATED)(SERVICE_NAME = vposdbtaf.99bill.com)))
+#cps数据库数据库用户名
+db.cps.username=QAMODIFY
+#cps数据库密码
+db.cps.password=6bh3x0wg
+
+#seahell数据库database
+db.seashell.connect=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=192.168.6.138)(PORT=1530)))(CONNECT_DATA=(SID=billdb)))
+#seahell数据库数据库用户名
+db.seashell.username=QAMODIFY
+#seahell数据库密码
+db.seashell.password=p31v4r7s
+
+
+#cps stage02数据库database
+db.cps02.connect= (DESCRIPTION =(ADDRESS_LIST =  (ADDRESS = (PROTOCOL = TCP)(HOST = 192.168.6.44)(PORT = 1530))  (ADDRESS = (PROTOCOL = TCP)(HOST = 192.168.6.43)(PORT = 1530)))(CONNECT_DATA =(SERVER = DEDICATED)(SERVICE_NAME = vposdbtaf.99bill.com)))
+#cps stage02数据库用户名
+db.cps02.username=QAMODIFY
+#cps stage02数据库密码
+db.cps02.password=6bh3x0wg
+
+#ccs stage02数据库database
+db.ccs02.connect= (DESCRIPTION =(ADDRESS_LIST =  (ADDRESS = (PROTOCOL = TCP)(HOST = 192.168.6.43)(PORT = 1530))  (ADDRESS = (PROTOCOL = TCP)(HOST = 192.168.6.44)(PORT = 1530)))(CONNECT_DATA =(SERVER = DEDICATED)(SERVICE_NAME = vposdbtaf.99bill.com)))
+#ccs stage02数据库用户名
+#schema是nbizccs
+db.ccs02.username=QAMODIFY
+#ccs stage02数据库密码
+db.ccs02.password=6bh3x0wg
+	
+	

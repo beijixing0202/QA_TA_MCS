@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/opt/99billdoc/!svn/ver/465259/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/ifs/test/interfaces
+END
+ConsumeTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/opt/99billdoc/!svn/ver/465259/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/ifs/test/interfaces/ConsumeTest.java
+END
+RefundTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/opt/99billdoc/!svn/ver/465259/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/ifs/test/interfaces/RefundTest.java
+END
+RevokeTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/opt/99billdoc/!svn/ver/465259/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/ifs/test/interfaces/RevokeTest.java
+END
+RepayTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/opt/99billdoc/!svn/ver/465259/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/ifs/test/interfaces/RepayTest.java
+END

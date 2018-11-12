@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+    "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="RefundApply">
+	<resultMap id="BaseResultMap" class="com.bill99.ate.orm.dto.RefundApplyDto">
+		<result column="REFUND_APPLY_ID" jdbcType="DECIMAL" property="refundApplyId" />
+		<result column="MASTER_ID" jdbcType="DECIMAL" property="masterId" />
+		<result column="OUT_TRADE_NO" jdbcType="VARCHAR" property="outTradeNo" />
+		<result column="MERCHANT_CODE" jdbcType="VARCHAR" property="merchantCode" />
+		<result column="APP_ID" jdbcType="VARCHAR" property="appId" />
+		<result column="CHANNEL_TYPE" jdbcType="DECIMAL" property="channelType" />
+		<result column="FUNCTION_CODE" jdbcType="DECIMAL" property="functionCode" />
+		<result column="OUT_REFUND_NO" jdbcType="VARCHAR" property="outRefundNo" />
+		<result column="REFUND_CHANNEL" jdbcType="VARCHAR" property="refundChannel" />
+		<result column="OPERATOR" jdbcType="VARCHAR" property="operator" />
+		<result column="REFUND_STATUS" jdbcType="DECIMAL" property="refundStatus" />
+		<result column="REFUND_TIME" jdbcType="TIMESTAMP" property="refundTime" />
+		<result column="APPLY_TIME" jdbcType="TIMESTAMP" property="applyTime" />
+		<result column="REFUND_AMOUNT" jdbcType="DECIMAL" property="refundAmount" />
+		<result column="REFUND_SERIAL_ID" jdbcType="VARCHAR" property="refundSerialId" />
+		<result column="SUB_TERMINAL_ID" jdbcType="VARCHAR" property="subTerminalId" />
+		<result column="DEVICE_INFO" jdbcType="VARCHAR" property="deviceInfo" />
+		<result column="MEMBER_CODE" jdbcType="VARCHAR" property="memberCode" />
+		<result column="ERROR_CODE" jdbcType="VARCHAR" property="errorCode" />
+		<result column="ERROR_INFO" jdbcType="VARCHAR" property="errorInfo" />
+		<result column="MEMO" jdbcType="VARCHAR" property="memo" />
+		<result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+		<result column="UPDATE_TIME" jdbcType="TIMESTAMP" property="updateTime" />
+		<result column="BILL_ORDER_ID" jdbcType="VARCHAR" property="billOrderId" />
+	</resultMap>
+
+	<sql id="Base_Column_List">
+		REFUND_APPLY_ID, MASTER_ID, OUT_TRADE_NO, MERCHANT_CODE,
+		APP_ID, CHANNEL_TYPE,
+		FUNCTION_CODE,
+		OUT_REFUND_NO, REFUND_CHANNEL,
+		OPERATOR, REFUND_STATUS, REFUND_TIME, APPLY_TIME,
+		REFUND_AMOUNT,
+		REFUND_SERIAL_ID, SUB_TERMINAL_ID, DEVICE_INFO,
+		MEMBER_CODE,
+		ERROR_CODE,
+		ERROR_INFO, MEMO, CREATE_TIME, UPDATE_TIME, BILL_ORDER_ID
+	</sql>
+
+	<select id="selectRefundApplyDtoByRefundApplyDto"
+		parameterClass="com.bill99.ate.orm.dto.RefundApplyDto"
+		resultMap="BaseResultMap">
+		select
+		<include refid="Base_Column_List" />
+		from ACCTPAY.T_ACC_REFUND_APPLY
+
+		<dynamic prepend="where">
+			<isNotEmpty prepend="and" property="merchantCode">
+				merchant_Code
+				=#merchantCode#
+			</isNotEmpty>
+			<isNotEmpty prepend="and" property="outRefundNo">
+				out_refund_no
+				=#outRefundNo#
+			</isNotEmpty>
+			<isNotEmpty prepend="and" property="refundApplyId">
+				refund_apply_id
+				=#refundApplyId#
+			</isNotEmpty>
+		</dynamic>
+
+	</select>
+
+</sqlMap>

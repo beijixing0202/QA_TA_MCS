@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="com.99bill"
+		module="qa-ta-app-ifs-credit]"
+		revision="working@template-win2k8"
+		conf="default"
+		confs="default, compile, zip, test"
+		date="20170505204418"/>
+	<dependencies>
+		<module organisation="com.99bill" name="qa_ta_common_tools">
+			<revision name="1.0.0.5" status="release" pubdate="20170505204419" resolver="bill99_repository.tp.public" artresolver="bill99_repository.tp.public" downloaded="false" searched="true" default="true" conf="default, *" position="2">
+				<metadata-artifact status="no" details="" size="0" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\qa_ta_common_tools\ivy-1.0.0.5.xml" searched="true"/>
+				<caller organisation="com.99bill" name="qa-ta-app-ifs-credit]" conf="default" rev="latest.integration" rev-constraint-default="latest.integration" rev-constraint-dynamic="latest.integration" callerrev="working@template-win2k8"/>
+				<artifacts>
+					<artifact name="qa_ta_common_tools" type="jar" ext="jar" status="no" details="" size="25444" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\qa_ta_common_tools\jars\qa_ta_common_tools-1.0.0.5.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="qa_ta_ma_cps_db">
+			<revision name="1.0.0.3" status="release" pubdate="20170505204419" resolver="bill99_repository.tp.public" artresolver="bill99_repository.tp.public" downloaded="false" searched="true" default="true" conf="default, *" position="1">
+				<metadata-artifact status="no" details="" size="0" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\qa_ta_ma_cps_db\ivy-1.0.0.3.xml" searched="true"/>
+				<caller organisation="com.99bill" name="qa-ta-app-ifs-credit]" conf="default" rev="latest.integration" rev-constraint-default="latest.integration" rev-constraint-dynamic="latest.integration" callerrev="working@template-win2k8"/>
+				<artifacts>
+					<artifact name="qa_ta_ma_cps_db" type="jar" ext="jar" status="no" details="" size="35962" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\qa_ta_ma_cps_db\jars\qa_ta_ma_cps_db-1.0.0.3.jar">
+						<origin-location is-local="false" location="http://192.168.15.15/repository/com.99bill/qa_ta_ma_cps_db/jars/qa_ta_ma_cps_db-1.0.0.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="qa-ta-monitor">
+			<revision name="1.0.0.3" status="release" pubdate="20170505204418" resolver="bill99_repository.tp.public" artresolver="bill99_repository.tp.public" downloaded="false" searched="true" default="true" conf="default, *" position="0">
+				<metadata-artifact status="no" details="" size="0" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\qa-ta-monitor\ivy-1.0.0.3.xml" searched="true"/>
+				<caller organisation="com.99bill" name="qa-ta-app-ifs-credit]" conf="default" rev="latest.integration" rev-constraint-default="latest.integration" rev-constraint-dynamic="latest.integration" callerrev="working@template-win2k8"/>
+				<artifacts>
+					<artifact name="qa-ta-monitor" type="jar" ext="jar" status="no" details="" size="10305" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\qa-ta-monitor\jars\qa-ta-monitor-1.0.0.3.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+        <!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+                "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="TAcctTxn">
+    <resultMap class="com.bill99.mcs.common.dto.TAcctTxn" id="BaseResultMap">
+        <result column="ACCT_TXN_ID" jdbcType="DECIMAL" property="acctTxnId" />
+        <result column="APP_SRC" jdbcType="VARCHAR" property="appSrc" />
+        <result column="APP_TYPE" jdbcType="VARCHAR" property="appType" />
+        <result column="SRC_REF" jdbcType="DECIMAL" property="srcRef" />
+        <result column="ORIG_SRC_REF" jdbcType="DECIMAL" property="origSrcRef" />
+        <result column="BIZ_TYPE" jdbcType="VARCHAR" property="bizType" />
+        <result column="REF_CTRL_ID" jdbcType="DECIMAL" property="refCtrlId" />
+        <result column="TXN_TYPE" jdbcType="VARCHAR" property="txnType" />
+        <result column="TXN_STATUS" jdbcType="VARCHAR" property="txnStatus" />
+        <result column="TXN_TIME" jdbcType="DATE" property="txnTime" />
+        <result column="AMT" jdbcType="DECIMAL" property="amt" />
+        <result column="FEE" jdbcType="DECIMAL" property="fee" />
+        <result column="CUR" jdbcType="VARCHAR" property="cur" />
+        <result column="MEMBER_CODE" jdbcType="VARCHAR" property="memberCode" />
+        <result column="STL_MEMBER_CODE" jdbcType="VARCHAR" property="stlMemberCode" />
+        <result column="AUTH_NET_ID" jdbcType="VARCHAR" property="authNetId" />
+        <result column="POSTING_FLG" jdbcType="VARCHAR" property="postingFlg" />
+        <result column="STL_FLG" jdbcType="VARCHAR" property="stlFlg" />
+        <result column="TRACE_NO" jdbcType="VARCHAR" property="traceNo" />
+        <result column="ORDER_SEQ_ID" jdbcType="VARCHAR" property="orderSeqId" />
+        <result column="MEMO" jdbcType="VARCHAR" property="memo" />
+        <result column="CRT_TIME" jdbcType="DATE" property="crtTime" />
+        <result column="UPD_TIME" jdbcType="DATE" property="updTime" />
+        <result column="BILLING_AMT" jdbcType="DECIMAL" property="billingAmt" />
+        <result column="TUNNEL_DATA" jdbcType="VARCHAR" property="tunnelData" />
+    </resultMap>
+    <sql id="BaseColumnList">
+       ACCT_TXN_ID,APP_SRC,APP_TYPE,SRC_REF,ORIG_SRC_REF,BIZ_TYPE,REF_CTRL_ID,TXN_TYPE,TXN_STATUS,
+       TXN_TIME,AMT,FEE,CUR,MEMBER_CODE,STL_MEMBER_CODE,AUTH_NET_ID,POSTING_FLG,STL_FLG,TRACE_NO,
+       ORDER_SEQ_ID,MEMO,CRT_TIME,UPD_TIME,BILLING_AMT,TUNNEL_DATA
+    </sql>
+    <select id="getTAcctTxn" parameterClass="com.bill99.mcs.common.dto.TAcctTxn" resultMap="BaseResultMap">
+        select
+        <include refid="BaseColumnList"/>
+        from acctpay.t_acct_txn
+        <dynamic prepend="where">
+            <isNotEmpty prepend="and" property="srcRef">
+                SRC_REF=#srcRef#
+            </isNotEmpty>
+        </dynamic>
+    </select>
+</sqlMap>

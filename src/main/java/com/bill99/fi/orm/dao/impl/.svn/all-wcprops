@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fi/orm/dao/impl
+END
+IbatisCheckDealStateImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fi/orm/dao/impl/IbatisCheckDealStateImpl.java
+END
+IbatisMasposCheckDealStateImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fi/orm/dao/impl/IbatisMasposCheckDealStateImpl.java
+END
+LogDbCheckImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fi/orm/dao/impl/LogDbCheckImpl.java
+END

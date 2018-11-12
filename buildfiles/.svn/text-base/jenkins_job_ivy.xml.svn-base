@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project name="qa_ta_cps_e2e" default="runtest" basedir="../">
+	<description>Builds, tests, and runs the project qa_ta_springdemo.</description>
+	<property name="compile.encoding" value="utf-8" />
+	<property file="D:/TA/Repository/ivy/ccbuild-http.properties" />
+ 	<property name="source.path" value="${basedir}/src/main/java" />
+ 	<property name="resources.path" value="${basedir}/src/main/resources" />
+	<import file="./common-test-targets.xml" />
+</project>

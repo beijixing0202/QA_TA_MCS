@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/mcs/page
+END
+IdsManualCutOffPageHttp.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/mcs/page/IdsManualCutOffPageHttp.java
+END
+McsWebSettlementOrderQueryPageHttp.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/mcs/page/McsWebSettlementOrderQueryPageHttp.java
+END
+IdsLoginPageHttp.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/mcs/page/IdsLoginPageHttp.java
+END
+McsWebLoginPageHttp.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/mcs/page/McsWebLoginPageHttp.java
+END
+McsWebMerchantItemsIntoAccountPageHttp.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/mcs/page/McsWebMerchantItemsIntoAccountPageHttp.java
+END

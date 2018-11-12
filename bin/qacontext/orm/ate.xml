@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+		http://www.springframework.org/schema/aop
+		http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+		http://www.springframework.org/schema/context
+		http://www.springframework.org/schema/context/spring-context-2.5.xsd">
+
+
+	<bean id="ateDb" class="com.bill99.ate.orm.AteDb">
+		<property name="taMAMDbHandller" ref="taMAMDbHandller"></property>
+		<property name="userName" value="devquery"></property>
+		<property name="passWord" value="x4q3v5aqxnnosgty"></property>
+		<property name="dbMap">
+			<map>
+				<entry key="1" value="192.168.6.80:3310/ate"></entry>
+				<entry key="2" value="192.168.6.80:3320/ate"></entry>
+				<entry key="3" value="192.168.6.82:3310/ate"></entry>
+				<entry key="4" value="192.168.6.82:3320/ate"></entry>
+				<entry key="5" value="192.168.6.84:3310/ate"></entry>
+				<entry key="6" value="192.168.6.84:3320/ate"></entry>
+			</map>
+		</property>
+	</bean>
+
+
+</beans>

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/buildfiles
+END
+jenkins_job_ivy.xml
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/buildfiles/jenkins_job_ivy.xml
+END
+common-test.xml
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/buildfiles/common-test.xml
+END
+common-test-targets.xml
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/buildfiles/common-test-targets.xml
+END

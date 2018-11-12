@@ -1,0 +1,968 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="com.99bill"
+		module="QA_TA_BDCA"
+		revision="working@NJ30101057-PC"
+		conf="zip"
+		confs="default, compile, zip, test"
+		date="20181017102330"/>
+	<dependencies>
+		<module organisation="org.springframework" name="spring-tx">
+			<revision name="3.2.2" status="release" pubdate="20171221144712" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="86">
+				<metadata-artifact status="no" details="" size="431" time="0" location="D:\Local_Repository\ivy-cache\org.springframework\spring-tx\ivy-3.2.2.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\org.springframework\spring-tx\ivys\ivy-3.2.2.xml" origin-is-local="false" origin-location="UNKNOWN"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="3.2.2" rev-constraint-default="3.2.2" rev-constraint-dynamic="3.2.2" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="spring-tx" type="jar" ext="jar" status="no" details="" size="242174" time="0" location="D:\Local_Repository\ivy-cache\org.springframework\spring-tx\jars\spring-tx-3.2.2.jar">
+						<origin-location is-local="false" location="http://192.168.138.15/org.springframework/spring-tx/jars/spring-tx-3.2.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.springframework" name="spring-orm">
+			<revision name="3.2.2" status="release" pubdate="20171221144712" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="85">
+				<metadata-artifact status="no" details="" size="433" time="0" location="D:\Local_Repository\ivy-cache\org.springframework\spring-orm\ivy-3.2.2.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\org.springframework\spring-orm\ivys\ivy-3.2.2.xml" origin-is-local="false" origin-location="UNKNOWN"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="3.2.2" rev-constraint-default="3.2.2" rev-constraint-dynamic="3.2.2" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="spring-orm" type="jar" ext="jar" status="no" details="" size="387126" time="0" location="D:\Local_Repository\ivy-cache\org.springframework\spring-orm\jars\spring-orm-3.2.2.jar">
+						<origin-location is-local="false" location="http://192.168.138.15/org.springframework/spring-orm/jars/spring-orm-3.2.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.springframework" name="spring-expression">
+			<revision name="3.2.2" status="release" pubdate="20171221144712" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="84">
+				<metadata-artifact status="no" details="" size="447" time="0" location="D:\Local_Repository\ivy-cache\org.springframework\spring-expression\ivy-3.2.2.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\org.springframework\spring-expression\ivys\ivy-3.2.2.xml" origin-is-local="false" origin-location="UNKNOWN"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="3.2.2" rev-constraint-default="3.2.2" rev-constraint-dynamic="3.2.2" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="spring-expression" type="jar" ext="jar" status="no" details="" size="195456" time="0" location="D:\Local_Repository\ivy-cache\org.springframework\spring-expression\jars\spring-expression-3.2.2.jar">
+						<origin-location is-local="false" location="http://192.168.138.15/org.springframework/spring-expression/jars/spring-expression-3.2.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.springframework" name="spring-test">
+			<revision name="3.2.2" status="release" pubdate="20171221144712" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="83">
+				<metadata-artifact status="no" details="" size="435" time="0" location="D:\Local_Repository\ivy-cache\org.springframework\spring-test\ivy-3.2.2.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\org.springframework\spring-test\ivys\ivy-3.2.2.xml" origin-is-local="false" origin-location="UNKNOWN"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="3.2.2" rev-constraint-default="3.2.2" rev-constraint-dynamic="3.2.2" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="spring-test" type="jar" ext="jar" status="no" details="" size="456143" time="0" location="D:\Local_Repository\ivy-cache\org.springframework\spring-test\jars\spring-test-3.2.2.jar">
+						<origin-location is-local="false" location="http://192.168.138.15/org.springframework/spring-test/jars/spring-test-3.2.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.springframework" name="spring-jdbc">
+			<revision name="3.2.2" status="release" pubdate="20171221144711" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="82">
+				<metadata-artifact status="no" details="" size="435" time="0" location="D:\Local_Repository\ivy-cache\org.springframework\spring-jdbc\ivy-3.2.2.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\org.springframework\spring-jdbc\ivys\ivy-3.2.2.xml" origin-is-local="false" origin-location="UNKNOWN"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="3.2.2" rev-constraint-default="3.2.2" rev-constraint-dynamic="3.2.2" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="spring-jdbc" type="jar" ext="jar" status="no" details="" size="405074" time="0" location="D:\Local_Repository\ivy-cache\org.springframework\spring-jdbc\jars\spring-jdbc-3.2.2.jar">
+						<origin-location is-local="false" location="http://192.168.138.15/org.springframework/spring-jdbc/jars/spring-jdbc-3.2.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.springframework" name="spring-core">
+			<revision name="3.2.2" status="release" pubdate="20171221144711" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="81">
+				<metadata-artifact status="no" details="" size="435" time="0" location="D:\Local_Repository\ivy-cache\org.springframework\spring-core\ivy-3.2.2.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\org.springframework\spring-core\ivys\ivy-3.2.2.xml" origin-is-local="false" origin-location="UNKNOWN"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="3.2.2" rev-constraint-default="3.2.2" rev-constraint-dynamic="3.2.2" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="spring-core" type="jar" ext="jar" status="no" details="" size="866788" time="0" location="D:\Local_Repository\ivy-cache\org.springframework\spring-core\jars\spring-core-3.2.2.jar">
+						<origin-location is-local="false" location="http://192.168.138.15/org.springframework/spring-core/jars/spring-core-3.2.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.springframework" name="spring-context-support">
+			<revision name="3.2.2" status="release" pubdate="20171221144711" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="80">
+				<metadata-artifact status="no" details="" size="457" time="0" location="D:\Local_Repository\ivy-cache\org.springframework\spring-context-support\ivy-3.2.2.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\org.springframework\spring-context-support\ivys\ivy-3.2.2.xml" origin-is-local="false" origin-location="UNKNOWN"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="3.2.2" rev-constraint-default="3.2.2" rev-constraint-dynamic="3.2.2" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="spring-context-support" type="jar" ext="jar" status="no" details="" size="127653" time="0" location="D:\Local_Repository\ivy-cache\org.springframework\spring-context-support\jars\spring-context-support-3.2.2.jar">
+						<origin-location is-local="false" location="http://192.168.138.15/org.springframework/spring-context-support/jars/spring-context-support-3.2.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.springframework" name="spring-context">
+			<revision name="3.2.2" status="release" pubdate="20171221144710" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="79">
+				<metadata-artifact status="no" details="" size="441" time="0" location="D:\Local_Repository\ivy-cache\org.springframework\spring-context\ivy-3.2.2.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\org.springframework\spring-context\ivys\ivy-3.2.2.xml" origin-is-local="false" origin-location="UNKNOWN"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="3.2.2" rev-constraint-default="3.2.2" rev-constraint-dynamic="3.2.2" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="spring-context" type="jar" ext="jar" status="no" details="" size="861905" time="0" location="D:\Local_Repository\ivy-cache\org.springframework\spring-context\jars\spring-context-3.2.2.jar">
+						<origin-location is-local="false" location="http://192.168.138.15/org.springframework/spring-context/jars/spring-context-3.2.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.springframework" name="spring-beans">
+			<revision name="3.2.2" status="release" pubdate="20171221144710" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="78">
+				<metadata-artifact status="no" details="" size="437" time="0" location="D:\Local_Repository\ivy-cache\org.springframework\spring-beans\ivy-3.2.2.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\org.springframework\spring-beans\ivys\ivy-3.2.2.xml" origin-is-local="false" origin-location="UNKNOWN"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="3.2.2" rev-constraint-default="3.2.2" rev-constraint-dynamic="3.2.2" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="spring-beans" type="jar" ext="jar" status="no" details="" size="607448" time="0" location="D:\Local_Repository\ivy-cache\org.springframework\spring-beans\jars\spring-beans-3.2.2.jar">
+						<origin-location is-local="false" location="http://192.168.138.15/org.springframework/spring-beans/jars/spring-beans-3.2.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.springframework" name="spring-aop">
+			<revision name="3.2.2" status="release" pubdate="20171221144710" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="77">
+				<metadata-artifact status="no" details="" size="433" time="0" location="D:\Local_Repository\ivy-cache\org.springframework\spring-aop\ivy-3.2.2.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\org.springframework\spring-aop\ivys\ivy-3.2.2.xml" origin-is-local="false" origin-location="UNKNOWN"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="3.2.2" rev-constraint-default="3.2.2" rev-constraint-dynamic="3.2.2" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="spring-aop" type="jar" ext="jar" status="no" details="" size="335362" time="0" location="D:\Local_Repository\ivy-cache\org.springframework\spring-aop\jars\spring-aop-3.2.2.jar">
+						<origin-location is-local="false" location="http://192.168.138.15/org.springframework/spring-aop/jars/spring-aop-3.2.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="if-redis-ext">
+			<revision name="2.0.3.1" status="integration" pubdate="20160304104650" resolver="bill99_repository_buildbuffer" artresolver="bill99_repository_buildbuffer" downloaded="false" searched="false" default="false" conf="default" position="76">
+				<metadata-artifact status="no" details="" size="3358" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\if-redis-ext\ivy-2.0.3.1.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.99bill\if-redis-ext\ivy-2.0.3.1.xml.original" origin-is-local="false" origin-location="http://192.168.138.16/com.99bill/if-redis-ext/ivys/ivy-2.0.3.1.xml"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="2.0.3.1" rev-constraint-default="2.0.3.1" rev-constraint-dynamic="2.0.3.1" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="if-redis-ext" type="jar" ext="jar" status="no" details="" size="44561" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\if-redis-ext\jars\if-redis-ext-2.0.3.1.jar">
+						<origin-location is-local="false" location="http://192.168.138.16/com.99bill/if-redis-ext/jars/if-redis-ext-2.0.3.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache" name="commons-pool2">
+			<revision name="2.2" status="release" pubdate="20171221144709" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="75">
+				<metadata-artifact status="no" details="" size="428" time="0" location="D:\Local_Repository\ivy-cache\org.apache\commons-pool2\ivy-2.2.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\org.apache\commons-pool2\ivys\ivy-2.2.xml" origin-is-local="false" origin-location="UNKNOWN"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="2.2" rev-constraint-default="2.2" rev-constraint-dynamic="2.2" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="commons-pool2" type="jar" ext="jar" status="no" details="" size="108036" time="0" location="D:\Local_Repository\ivy-cache\org.apache\commons-pool2\jars\commons-pool2-2.2.jar">
+						<origin-location is-local="false" location="http://192.168.138.15/org.apache/commons-pool2/jars/commons-pool2-2.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="redis.clients" name="jedis">
+			<revision name="2.6.2" status="release" pubdate="20171221144709" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="74">
+				<metadata-artifact status="no" details="" size="417" time="0" location="D:\Local_Repository\ivy-cache\redis.clients\jedis\ivy-2.6.2.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\redis.clients\jedis\ivys\ivy-2.6.2.xml" origin-is-local="false" origin-location="UNKNOWN"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="2.6.2" rev-constraint-default="2.6.2" rev-constraint-dynamic="2.6.2" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="jedis" type="jar" ext="jar" status="no" details="" size="330461" time="0" location="D:\Local_Repository\ivy-cache\redis.clients\jedis\jars\jedis-2.6.2.jar">
+						<origin-location is-local="false" location="http://192.168.138.15/redis.clients/jedis/jars/jedis-2.6.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.springframework" name="spring-data-redis">
+			<revision name="1.4.2" status="release" pubdate="20171221144709" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="73">
+				<metadata-artifact status="no" details="" size="447" time="0" location="D:\Local_Repository\ivy-cache\org.springframework\spring-data-redis\ivy-1.4.2.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\org.springframework\spring-data-redis\ivys\ivy-1.4.2.xml" origin-is-local="false" origin-location="UNKNOWN"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="1.4.2" rev-constraint-default="1.4.2" rev-constraint-dynamic="1.4.2" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="spring-data-redis" type="jar" ext="jar" status="no" details="" size="652646" time="0" location="D:\Local_Repository\ivy-cache\org.springframework\spring-data-redis\jars\spring-data-redis-1.4.2.jar">
+						<origin-location is-local="false" location="http://192.168.138.15/org.springframework/spring-data-redis/jars/spring-data-redis-1.4.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="qa_ta_common_tools">
+			<revision name="1.0.0.5" status="release" pubdate="20181017102332" resolver="bill99_repository.tp.public" artresolver="bill99_repository.tp.public" downloaded="false" searched="true" default="true" conf="default" position="72">
+				<metadata-artifact status="no" details="" size="0" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\qa_ta_common_tools\ivy-1.0.0.5.xml" searched="true"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="latest.integration" rev-constraint-default="latest.integration" rev-constraint-dynamic="latest.integration" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="qa_ta_common_tools" type="jar" ext="jar" status="no" details="" size="25444" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\qa_ta_common_tools\jars\qa_ta_common_tools-1.0.0.5.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="qa_ta_ma_cps_db">
+			<revision name="1.0.0.3" status="release" pubdate="20181017102331" resolver="bill99_repository.tp.public" artresolver="bill99_repository.tp.public" downloaded="false" searched="true" default="true" conf="default" position="71">
+				<metadata-artifact status="no" details="" size="0" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\qa_ta_ma_cps_db\ivy-1.0.0.3.xml" searched="true"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="latest.integration" rev-constraint-default="latest.integration" rev-constraint-dynamic="latest.integration" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="qa_ta_ma_cps_db" type="jar" ext="jar" status="no" details="" size="35962" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\qa_ta_ma_cps_db\jars\qa_ta_ma_cps_db-1.0.0.3.jar">
+						<origin-location is-local="false" location="http://192.168.15.15/repository/com.99bill/qa_ta_ma_cps_db/jars/qa_ta_ma_cps_db-1.0.0.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="qa-ta-monitor">
+			<revision name="1.0.0.3" status="release" pubdate="20181017102331" resolver="bill99_repository.tp.public" artresolver="bill99_repository.tp.public" downloaded="false" searched="true" default="true" conf="default" position="70">
+				<metadata-artifact status="no" details="" size="0" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\qa-ta-monitor\ivy-1.0.0.3.xml" searched="true"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="latest.integration" rev-constraint-default="latest.integration" rev-constraint-dynamic="latest.integration" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="qa-ta-monitor" type="jar" ext="jar" status="no" details="" size="10305" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\qa-ta-monitor\jars\qa-ta-monitor-1.0.0.3.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="net.sf" name="cglib-nodep">
+			<revision name="2.1_3" status="release" pubdate="20121121152423" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="69">
+				<metadata-artifact status="no" details="" size="396" time="0" location="D:\Local_Repository\ivy-cache\net.sf\cglib-nodep\ivy-2.1_3.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\net.sf\cglib-nodep\ivys\ivy-2.1_3.xml" origin-is-local="false" origin-location="UNKNOWN"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="2.1_3" rev-constraint-default="2.1_3" rev-constraint-dynamic="2.1_3" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="cglib-nodep" type="jar" ext="jar" status="no" details="" size="324238" time="0" location="D:\Local_Repository\ivy-cache\net.sf\cglib-nodep\jars\cglib-nodep-2.1_3.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache" name="httpmime">
+			<revision name="4.3.5" status="release" pubdate="20151117135019" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="68">
+				<metadata-artifact status="no" details="" size="420" time="0" location="D:\Local_Repository\ivy-cache\org.apache\httpmime\ivy-4.3.5.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\org.apache\httpmime\ivys\ivy-4.3.5.xml" origin-is-local="false" origin-location="UNKNOWN"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="4.3.5" rev-constraint-default="4.3.5" rev-constraint-dynamic="4.3.5" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="httpmime" type="jar" ext="jar" status="no" details="" size="37277" time="0" location="D:\Local_Repository\ivy-cache\org.apache\httpmime\jars\httpmime-4.3.5.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/org.apache/httpmime/jars/httpmime-4.3.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache" name="httpcore">
+			<revision name="4.3.3" status="release" pubdate="20151117135019" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="67">
+				<metadata-artifact status="no" details="" size="420" time="0" location="D:\Local_Repository\ivy-cache\org.apache\httpcore\ivy-4.3.3.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\org.apache\httpcore\ivys\ivy-4.3.3.xml" origin-is-local="false" origin-location="UNKNOWN"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="4.3.3" rev-constraint-default="4.3.3" rev-constraint-dynamic="4.3.3" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="httpcore" type="jar" ext="jar" status="no" details="" size="282793" time="0" location="D:\Local_Repository\ivy-cache\org.apache\httpcore\jars\httpcore-4.3.3.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/org.apache/httpcore/jars/httpcore-4.3.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache" name="httpclient">
+			<revision name="4.3.5" status="release" pubdate="20151117135019" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="66">
+				<metadata-artifact status="no" details="" size="424" time="0" location="D:\Local_Repository\ivy-cache\org.apache\httpclient\ivy-4.3.5.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\org.apache\httpclient\ivys\ivy-4.3.5.xml" origin-is-local="false" origin-location="UNKNOWN"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="4.3.5" rev-constraint-default="4.3.5" rev-constraint-dynamic="4.3.5" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="httpclient" type="jar" ext="jar" status="no" details="" size="590533" time="0" location="D:\Local_Repository\ivy-cache\org.apache\httpclient\jars\httpclient-4.3.5.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/org.apache/httpclient/jars/httpclient-4.3.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.codehaus" name="jackson-all">
+			<revision name="1.9.2" status="release" pubdate="20121121152652" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="65">
+				<metadata-artifact status="no" details="" size="402" time="0" location="D:\Local_Repository\ivy-cache\org.codehaus\jackson-all\ivy-1.9.2.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\org.codehaus\jackson-all\ivys\ivy-1.9.2.xml" origin-is-local="false" origin-location="http://192.168.52.211/org.codehaus/jackson-all/ivys/ivy-1.9.2.xml"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="1.9.2" rev-constraint-default="1.9.2" rev-constraint-dynamic="1.9.2" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="jackson-all" type="jar" ext="jar" status="no" details="" size="1107440" time="0" location="D:\Local_Repository\ivy-cache\org.codehaus\jackson-all\jars\jackson-all-1.9.2.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/org.codehaus/jackson-all/jars/jackson-all-1.9.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google" name="xmemcached">
+			<revision name="1.2.6.2" status="release" pubdate="20121121152530" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="64">
+				<metadata-artifact status="no" details="" size="400" time="0" location="D:\Local_Repository\ivy-cache\com.google\xmemcached\ivy-1.2.6.2.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.google\xmemcached\ivys\ivy-1.2.6.2.xml" origin-is-local="false" origin-location="http://192.168.52.211/com.google/xmemcached/ivys/ivy-1.2.6.2.xml"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="1.2.6.2" rev-constraint-default="1.2.6.2" rev-constraint-dynamic="1.2.6.2" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="xmemcached" type="jar" ext="jar" status="no" details="" size="384308" time="0" location="D:\Local_Repository\ivy-cache\com.google\xmemcached\jars\xmemcached-1.2.6.2.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/com.google/xmemcached/jars/xmemcached-1.2.6.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.caucho" name="hessian">
+			<revision name="3.1.5" status="release" pubdate="20130712214157" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="63">
+				<metadata-artifact status="no" details="" size="392" time="0" location="D:\Local_Repository\ivy-cache\com.caucho\hessian\ivy-3.1.5.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.caucho\hessian\ivys\ivy-3.1.5.xml" origin-is-local="false" origin-location="http://192.168.15.220/com.caucho/hessian/ivys/ivy-3.1.5.xml"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="3.1.5" rev-constraint-default="3.1.5" rev-constraint-dynamic="3.1.5" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="hessian" type="jar" ext="jar" status="no" details="" size="273336" time="0" location="D:\Local_Repository\ivy-cache\com.caucho\hessian\jars\hessian-3.1.5.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/com.caucho/hessian/jars/hessian-3.1.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="pe-tas-api">
+			<revision name="1.0.0.1" status="release" pubdate="20151117133426" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="62">
+				<metadata-artifact status="no" details="" size="426" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\pe-tas-api\ivy-1.0.0.1.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.99bill\pe-tas-api\ivys\ivy-1.0.0.1.xml" origin-is-local="false" origin-location="UNKNOWN"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="1.0.0.1" rev-constraint-default="1.0.0.1" rev-constraint-dynamic="1.0.0.1" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="pe-tas-api" type="jar" ext="jar" status="no" details="" size="8212" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\pe-tas-api\jars\pe-tas-api-1.0.0.1.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/com.99bill/pe-tas-api/jars/pe-tas-api-1.0.0.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="pe-statistics">
+			<revision name="1.0.0.13" status="release" pubdate="20151117133426" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="61">
+				<metadata-artifact status="no" details="" size="433" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\pe-statistics\ivy-1.0.0.13.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.99bill\pe-statistics\ivys\ivy-1.0.0.13.xml" origin-is-local="false" origin-location="UNKNOWN"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="1.0.0.13" rev-constraint-default="1.0.0.13" rev-constraint-dynamic="1.0.0.13" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="pe-statistics" type="jar" ext="jar" status="no" details="" size="18937" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\pe-statistics\jars\pe-statistics-1.0.0.13.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/com.99bill/pe-statistics/jars/pe-statistics-1.0.0.13.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="pe-pricestrategy">
+			<revision name="4.3.35" status="release" pubdate="20121121154929" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="60">
+				<metadata-artifact status="no" details="" size="411" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\pe-pricestrategy\ivy-4.3.35.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.99bill\pe-pricestrategy\ivys\ivy-4.3.35.xml" origin-is-local="false" origin-location="http://192.168.52.211/com.99bill/pe-pricestrategy/ivys/ivy-4.3.35.xml"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="4.3.35" rev-constraint-default="4.3.35" rev-constraint-dynamic="4.3.35" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="pe-pricestrategy" type="jar" ext="jar" status="no" details="" size="84335" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\pe-pricestrategy\jars\pe-pricestrategy-4.3.35.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/com.99bill/pe-pricestrategy/jars/pe-pricestrategy-4.3.35.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="pe-postingrule">
+			<revision name="4.3.53.2" status="release" pubdate="20151117133426" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="59">
+				<metadata-artifact status="no" details="" size="435" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\pe-postingrule\ivy-4.3.53.2.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.99bill\pe-postingrule\ivys\ivy-4.3.53.2.xml" origin-is-local="false" origin-location="UNKNOWN"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="4.3.53.2" rev-constraint-default="4.3.53.2" rev-constraint-dynamic="4.3.53.2" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="pe-postingrule" type="jar" ext="jar" status="no" details="" size="68985" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\pe-postingrule\jars\pe-postingrule-4.3.53.2.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/com.99bill/pe-postingrule/jars/pe-postingrule-4.3.53.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="pe-mdp-api-client">
+			<revision name="4.3.21" status="release" pubdate="20121121154928" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="58">
+				<metadata-artifact status="no" details="" size="413" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\pe-mdp-api-client\ivy-4.3.21.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.99bill\pe-mdp-api-client\ivys\ivy-4.3.21.xml" origin-is-local="false" origin-location="http://192.168.52.211/com.99bill/pe-mdp-api-client/ivys/ivy-4.3.21.xml"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="4.3.21" rev-constraint-default="4.3.21" rev-constraint-dynamic="4.3.21" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="pe-mdp-api-client" type="jar" ext="jar" status="no" details="" size="2587" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\pe-mdp-api-client\jars\pe-mdp-api-client-4.3.21.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/com.99bill/pe-mdp-api-client/jars/pe-mdp-api-client-4.3.21.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="pe-mdp-api">
+			<revision name="4.3.39" status="release" pubdate="20121121154928" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="57">
+				<metadata-artifact status="no" details="" size="399" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\pe-mdp-api\ivy-4.3.39.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.99bill\pe-mdp-api\ivys\ivy-4.3.39.xml" origin-is-local="false" origin-location="http://192.168.52.211/com.99bill/pe-mdp-api/ivys/ivy-4.3.39.xml"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="4.3.39" rev-constraint-default="4.3.39" rev-constraint-dynamic="4.3.39" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="pe-mdp-api" type="jar" ext="jar" status="no" details="" size="3341" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\pe-mdp-api\jars\pe-mdp-api-4.3.39.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/com.99bill/pe-mdp-api/jars/pe-mdp-api-4.3.39.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="pe-log">
+			<revision name="4.3.55.3" status="release" pubdate="20151117133426" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="56">
+				<metadata-artifact status="no" details="" size="419" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\pe-log\ivy-4.3.55.3.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.99bill\pe-log\ivys\ivy-4.3.55.3.xml" origin-is-local="false" origin-location="UNKNOWN"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="4.3.55.3" rev-constraint-default="4.3.55.3" rev-constraint-dynamic="4.3.55.3" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="pe-log" type="jar" ext="jar" status="no" details="" size="4642" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\pe-log\jars\pe-log-4.3.55.3.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/com.99bill/pe-log/jars/pe-log-4.3.55.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="pe-hessian-api-impl">
+			<revision name="4.3.61.11" status="release" pubdate="20151117133425" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="55">
+				<metadata-artifact status="no" details="" size="446" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\pe-hessian-api-impl\ivy-4.3.61.11.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.99bill\pe-hessian-api-impl\ivys\ivy-4.3.61.11.xml" origin-is-local="false" origin-location="UNKNOWN"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="4.3.61.11" rev-constraint-default="4.3.61.11" rev-constraint-dynamic="4.3.61.11" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="pe-hessian-api-impl" type="jar" ext="jar" status="no" details="" size="52062" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\pe-hessian-api-impl\jars\pe-hessian-api-impl-4.3.61.11.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/com.99bill/pe-hessian-api-impl/jars/pe-hessian-api-impl-4.3.61.11.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="pe-hessian-api">
+			<revision name="4.3.46.3" status="release" pubdate="20151117133425" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="54">
+				<metadata-artifact status="no" details="" size="435" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\pe-hessian-api\ivy-4.3.46.3.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.99bill\pe-hessian-api\ivys\ivy-4.3.46.3.xml" origin-is-local="false" origin-location="UNKNOWN"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="4.3.46.3" rev-constraint-default="4.3.46.3" rev-constraint-dynamic="4.3.46.3" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="pe-hessian-api" type="jar" ext="jar" status="no" details="" size="20852" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\pe-hessian-api\jars\pe-hessian-api-4.3.46.3.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/com.99bill/pe-hessian-api/jars/pe-hessian-api-4.3.46.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="pe-dupecheck">
+			<revision name="1.0.2.1" status="release" pubdate="20151117133425" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="53">
+				<metadata-artifact status="no" details="" size="430" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\pe-dupecheck\ivy-1.0.2.1.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.99bill\pe-dupecheck\ivys\ivy-1.0.2.1.xml" origin-is-local="false" origin-location="UNKNOWN"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="1.0.2.1" rev-constraint-default="1.0.2.1" rev-constraint-dynamic="1.0.2.1" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="pe-dupecheck" type="jar" ext="jar" status="no" details="" size="15621" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\pe-dupecheck\jars\pe-dupecheck-1.0.2.1.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/com.99bill/pe-dupecheck/jars/pe-dupecheck-1.0.2.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="pe-common">
+			<revision name="4.3.60.1" status="release" pubdate="20151117133425" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="52">
+				<metadata-artifact status="no" details="" size="425" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\pe-common\ivy-4.3.60.1.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.99bill\pe-common\ivys\ivy-4.3.60.1.xml" origin-is-local="false" origin-location="UNKNOWN"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="4.3.60.1" rev-constraint-default="4.3.60.1" rev-constraint-dynamic="4.3.60.1" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="pe-common" type="jar" ext="jar" status="no" details="" size="18989" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\pe-common\jars\pe-common-4.3.60.1.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/com.99bill/pe-common/jars/pe-common-4.3.60.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="pe-closing-orphan">
+			<revision name="4.3.26" status="release" pubdate="20121121154924" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="51">
+				<metadata-artifact status="no" details="" size="413" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\pe-closing-orphan\ivy-4.3.26.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.99bill\pe-closing-orphan\ivys\ivy-4.3.26.xml" origin-is-local="false" origin-location="http://192.168.52.211/com.99bill/pe-closing-orphan/ivys/ivy-4.3.26.xml"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="4.3.26" rev-constraint-default="4.3.26" rev-constraint-dynamic="4.3.26" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="pe-closing-orphan" type="jar" ext="jar" status="no" details="" size="7301" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\pe-closing-orphan\jars\pe-closing-orphan-4.3.26.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/com.99bill/pe-closing-orphan/jars/pe-closing-orphan-4.3.26.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="pe-channel-service">
+			<revision name="4.3.3" status="release" pubdate="20121121154922" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="50">
+				<metadata-artifact status="no" details="" size="414" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\pe-channel-service\ivy-4.3.3.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.99bill\pe-channel-service\ivys\ivy-4.3.3.xml" origin-is-local="false" origin-location="http://192.168.52.211/com.99bill/pe-channel-service/ivys/ivy-4.3.3.xml"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="4.3.3" rev-constraint-default="4.3.3" rev-constraint-dynamic="4.3.3" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="pe-channel-service" type="jar" ext="jar" status="no" details="" size="11060" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\pe-channel-service\jars\pe-channel-service-4.3.3.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/com.99bill/pe-channel-service/jars/pe-channel-service-4.3.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="pe-bps-mdp-api">
+			<revision name="4.3.51.2" status="release" pubdate="20151117133425" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="49">
+				<metadata-artifact status="no" details="" size="435" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\pe-bps-mdp-api\ivy-4.3.51.2.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.99bill\pe-bps-mdp-api\ivys\ivy-4.3.51.2.xml" origin-is-local="false" origin-location="UNKNOWN"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="4.3.51.2" rev-constraint-default="4.3.51.2" rev-constraint-dynamic="4.3.51.2" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="pe-bps-mdp-api" type="jar" ext="jar" status="no" details="" size="10086" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\pe-bps-mdp-api\jars\pe-bps-mdp-api-4.3.51.2.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/com.99bill/pe-bps-mdp-api/jars/pe-bps-mdp-api-4.3.51.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="pe-bps">
+			<revision name="4.3.70.1" status="release" pubdate="20151117133425" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="48">
+				<metadata-artifact status="no" details="" size="419" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\pe-bps\ivy-4.3.70.1.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.99bill\pe-bps\ivys\ivy-4.3.70.1.xml" origin-is-local="false" origin-location="UNKNOWN"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="4.3.70.1" rev-constraint-default="4.3.70.1" rev-constraint-dynamic="4.3.70.1" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="pe-bps" type="jar" ext="jar" status="no" details="" size="424217" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\pe-bps\jars\pe-bps-4.3.70.1.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/com.99bill/pe-bps/jars/pe-bps-4.3.70.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="pe-asynfilter-impl">
+			<revision name="4.3.53.3" status="release" pubdate="20151117133425" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="47">
+				<metadata-artifact status="no" details="" size="443" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\pe-asynfilter-impl\ivy-4.3.53.3.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.99bill\pe-asynfilter-impl\ivys\ivy-4.3.53.3.xml" origin-is-local="false" origin-location="UNKNOWN"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="4.3.53.3" rev-constraint-default="4.3.53.3" rev-constraint-dynamic="4.3.53.3" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="pe-asynfilter-impl" type="jar" ext="jar" status="no" details="" size="20288" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\pe-asynfilter-impl\jars\pe-asynfilter-impl-4.3.53.3.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/com.99bill/pe-asynfilter-impl/jars/pe-asynfilter-impl-4.3.53.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="pe-asynfilter">
+			<revision name="4.3.14" status="release" pubdate="20121121154917" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="46">
+				<metadata-artifact status="no" details="" size="405" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\pe-asynfilter\ivy-4.3.14.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.99bill\pe-asynfilter\ivys\ivy-4.3.14.xml" origin-is-local="false" origin-location="http://192.168.52.211/com.99bill/pe-asynfilter/ivys/ivy-4.3.14.xml"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="4.3.14" rev-constraint-default="4.3.14" rev-constraint-dynamic="4.3.14" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="pe-asynfilter" type="jar" ext="jar" status="no" details="" size="14024" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\pe-asynfilter\jars\pe-asynfilter-4.3.14.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/com.99bill/pe-asynfilter/jars/pe-asynfilter-4.3.14.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="pe-api-impl">
+			<revision name="4.3.67.3" status="release" pubdate="20151117133425" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="45">
+				<metadata-artifact status="no" details="" size="429" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\pe-api-impl\ivy-4.3.67.3.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.99bill\pe-api-impl\ivys\ivy-4.3.67.3.xml" origin-is-local="false" origin-location="UNKNOWN"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="4.3.67.3" rev-constraint-default="4.3.67.3" rev-constraint-dynamic="4.3.67.3" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="pe-api-impl" type="jar" ext="jar" status="no" details="" size="304904" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\pe-api-impl\jars\pe-api-impl-4.3.67.3.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/com.99bill/pe-api-impl/jars/pe-api-impl-4.3.67.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="pe-api">
+			<revision name="4.3.38.3" status="release" pubdate="20151117133424" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="44">
+				<metadata-artifact status="no" details="" size="419" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\pe-api\ivy-4.3.38.3.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.99bill\pe-api\ivys\ivy-4.3.38.3.xml" origin-is-local="false" origin-location="UNKNOWN"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="4.3.38.3" rev-constraint-default="4.3.38.3" rev-constraint-dynamic="4.3.38.3" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="pe-api" type="jar" ext="jar" status="no" details="" size="39760" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\pe-api\jars\pe-api-4.3.38.3.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/com.99bill/pe-api/jars/pe-api-4.3.38.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="pe-acct-api-impl">
+			<revision name="4.3.35" status="release" pubdate="20121121154851" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="43">
+				<metadata-artifact status="no" details="" size="411" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\pe-acct-api-impl\ivy-4.3.35.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.99bill\pe-acct-api-impl\ivys\ivy-4.3.35.xml" origin-is-local="false" origin-location="http://192.168.52.211/com.99bill/pe-acct-api-impl/ivys/ivy-4.3.35.xml"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="4.3.35" rev-constraint-default="4.3.35" rev-constraint-dynamic="4.3.35" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="pe-acct-api-impl" type="jar" ext="jar" status="no" details="" size="34525" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\pe-acct-api-impl\jars\pe-acct-api-impl-4.3.35.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/com.99bill/pe-acct-api-impl/jars/pe-acct-api-impl-4.3.35.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="pe-acct-api">
+			<revision name="4.3.35" status="release" pubdate="20121121154850" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="42">
+				<metadata-artifact status="no" details="" size="401" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\pe-acct-api\ivy-4.3.35.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.99bill\pe-acct-api\ivys\ivy-4.3.35.xml" origin-is-local="false" origin-location="http://192.168.52.211/com.99bill/pe-acct-api/ivys/ivy-4.3.35.xml"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="4.3.35" rev-constraint-default="4.3.35" rev-constraint-dynamic="4.3.35" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="pe-acct-api" type="jar" ext="jar" status="no" details="" size="16678" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\pe-acct-api\jars\pe-acct-api-4.3.35.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/com.99bill/pe-acct-api/jars/pe-acct-api-4.3.35.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="pe-accounting-impl">
+			<revision name="4.3.58" status="release" pubdate="20121121154849" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="41">
+				<metadata-artifact status="no" details="" size="415" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\pe-accounting-impl\ivy-4.3.58.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.99bill\pe-accounting-impl\ivys\ivy-4.3.58.xml" origin-is-local="false" origin-location="http://192.168.52.211/com.99bill/pe-accounting-impl/ivys/ivy-4.3.58.xml"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="4.3.58" rev-constraint-default="4.3.58" rev-constraint-dynamic="4.3.58" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="pe-accounting-impl" type="jar" ext="jar" status="no" details="" size="75326" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\pe-accounting-impl\jars\pe-accounting-impl-4.3.58.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/com.99bill/pe-accounting-impl/jars/pe-accounting-impl-4.3.58.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="pe-accounting">
+			<revision name="4.3.58" status="release" pubdate="20121121154848" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="40">
+				<metadata-artifact status="no" details="" size="405" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\pe-accounting\ivy-4.3.58.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.99bill\pe-accounting\ivys\ivy-4.3.58.xml" origin-is-local="false" origin-location="http://192.168.52.211/com.99bill/pe-accounting/ivys/ivy-4.3.58.xml"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="4.3.58" rev-constraint-default="4.3.58" rev-constraint-dynamic="4.3.58" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="pe-accounting" type="jar" ext="jar" status="no" details="" size="15836" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\pe-accounting\jars\pe-accounting-4.3.58.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/com.99bill/pe-accounting/jars/pe-accounting-4.3.58.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.jsoup" name="jsoup">
+			<revision name="1.6.1" status="release" pubdate="20121121152710" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="39">
+				<metadata-artifact status="no" details="" size="387" time="0" location="D:\Local_Repository\ivy-cache\org.jsoup\jsoup\ivy-1.6.1.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\org.jsoup\jsoup\ivys\ivy-1.6.1.xml" origin-is-local="false" origin-location="http://192.168.52.211/org.jsoup/jsoup/ivys/ivy-1.6.1.xml"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="1.6.1" rev-constraint-default="1.6.1" rev-constraint-dynamic="1.6.1" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="jsoup" type="jar" ext="jar" status="no" details="" size="281579" time="0" location="D:\Local_Repository\ivy-cache\org.jsoup\jsoup\jars\jsoup-1.6.1.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/org.jsoup/jsoup/jars/jsoup-1.6.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.alibaba" name="fastjson">
+			<revision name="1.1.36" status="release" pubdate="20151117133423" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="38">
+				<metadata-artifact status="no" details="" size="422" time="0" location="D:\Local_Repository\ivy-cache\com.alibaba\fastjson\ivy-1.1.36.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.alibaba\fastjson\ivys\ivy-1.1.36.xml" origin-is-local="false" origin-location="UNKNOWN"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="1.1.36" rev-constraint-default="1.1.36" rev-constraint-dynamic="1.1.36" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="fastjson" type="jar" ext="jar" status="no" details="" size="380758" time="0" location="D:\Local_Repository\ivy-cache\com.alibaba\fastjson\jars\fastjson-1.1.36.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/com.alibaba/fastjson/jars/fastjson-1.1.36.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="ifs-fcs-api">
+			<revision name="1.0.72.11" status="integration" pubdate="20181012104357" resolver="bill99_repository_buildbuffer" artresolver="bill99_repository_buildbuffer" downloaded="false" searched="true" default="false" conf="default" position="37">
+				<metadata-artifact status="no" details="" size="311" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\ifs-fcs-api\ivy-1.0.72.11.xml" searched="true" original-local-location="D:\Local_Repository\ivy-cache\com.99bill\ifs-fcs-api\ivy-1.0.72.11.xml.original" origin-is-local="false" origin-location="http://192.168.138.16/com.99bill/ifs-fcs-api/ivys/ivy-1.0.72.11.xml"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="latest.integration" rev-constraint-default="latest.integration" rev-constraint-dynamic="latest.integration" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="ifs-fcs-api" type="jar" ext="jar" status="no" details="" size="334243" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\ifs-fcs-api\jars\ifs-fcs-api-1.0.72.11.jar">
+						<origin-location is-local="false" location="http://192.168.138.16/com.99bill/ifs-fcs-api/jars/ifs-fcs-api-1.0.72.11.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="ma-dpm-api">
+			<revision name="1.0.14.7" status="release" pubdate="20151117133423" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="36">
+				<metadata-artifact status="no" details="" size="427" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\ma-dpm-api\ivy-1.0.14.7.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.99bill\ma-dpm-api\ivys\ivy-1.0.14.7.xml" origin-is-local="false" origin-location="UNKNOWN"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="1.0.14.7" rev-constraint-default="1.0.14.7" rev-constraint-dynamic="1.0.14.7" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="ma-dpm-api" type="jar" ext="jar" status="no" details="" size="204182" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\ma-dpm-api\jars\ma-dpm-api-1.0.14.7.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/com.99bill/ma-dpm-api/jars/ma-dpm-api-1.0.14.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="ma-common-service-api">
+			<revision name="1.0.2.1" status="release" pubdate="20151117133423" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="35">
+				<metadata-artifact status="no" details="" size="448" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\ma-common-service-api\ivy-1.0.2.1.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.99bill\ma-common-service-api\ivys\ivy-1.0.2.1.xml" origin-is-local="false" origin-location="UNKNOWN"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="1.0.2.1" rev-constraint-default="1.0.2.1" rev-constraint-dynamic="1.0.2.1" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="ma-common-service-api" type="jar" ext="jar" status="no" details="" size="4179" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\ma-common-service-api\jars\ma-common-service-api-1.0.2.1.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/com.99bill/ma-common-service-api/jars/ma-common-service-api-1.0.2.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="if-util">
+			<revision name="4.3.48" status="release" pubdate="20130228101551" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="34">
+				<metadata-artifact status="no" details="" size="393" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\if-util\ivy-4.3.48.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.99bill\if-util\ivys\ivy-4.3.48.xml" origin-is-local="false" origin-location="http://192.168.52.211/com.99bill/if-util/ivys/ivy-4.3.48.xml"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="4.3.48" rev-constraint-default="4.3.48" rev-constraint-dynamic="4.3.48" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="if-util" type="jar" ext="jar" status="no" details="" size="252431" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\if-util\jars\if-util-4.3.48.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/com.99bill/if-util/jars/if-util-4.3.48.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="4.3.7" status="release" pubdate="20121121154502" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="22">
+				<metadata-artifact status="no" details="" size="392" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\if-util\ivy-4.3.7.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.99bill\if-util\ivys\ivy-4.3.7.xml" origin-is-local="false" origin-location="http://192.168.52.211/com.99bill/if-util/ivys/ivy-4.3.7.xml"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="4.3.7" rev-constraint-default="4.3.7" rev-constraint-dynamic="4.3.7" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="if-util" type="jar" ext="jar" status="no" details="" size="251312" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\if-util\jars\if-util-4.3.7.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/com.99bill/if-util/jars/if-util-4.3.7.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="ma-mdp-pse-api">
+			<revision name="4.3.30.5" status="release" pubdate="20151117133423" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="33">
+				<metadata-artifact status="no" details="" size="435" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\ma-mdp-pse-api\ivy-4.3.30.5.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.99bill\ma-mdp-pse-api\ivys\ivy-4.3.30.5.xml" origin-is-local="false" origin-location="UNKNOWN"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="4.3.30.5" rev-constraint-default="4.3.30.5" rev-constraint-dynamic="4.3.30.5" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="ma-mdp-pse-api" type="jar" ext="jar" status="no" details="" size="9887" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\ma-mdp-pse-api\jars\ma-mdp-pse-api-4.3.30.5.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/com.99bill/ma-mdp-pse-api/jars/ma-mdp-pse-api-4.3.30.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="ma-pse-eventlog">
+			<revision name="4.3.20" status="release" pubdate="20121121154759" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="32">
+				<metadata-artifact status="no" details="" size="409" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\ma-pse-eventlog\ivy-4.3.20.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.99bill\ma-pse-eventlog\ivys\ivy-4.3.20.xml" origin-is-local="false" origin-location="http://192.168.52.211/com.99bill/ma-pse-eventlog/ivys/ivy-4.3.20.xml"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="4.3.20" rev-constraint-default="4.3.20" rev-constraint-dynamic="4.3.20" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="ma-pse-eventlog" type="jar" ext="jar" status="no" details="" size="15558" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\ma-pse-eventlog\jars\ma-pse-eventlog-4.3.20.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/com.99bill/ma-pse-eventlog/jars/ma-pse-eventlog-4.3.20.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="ma-pse-common">
+			<revision name="4.2.1" status="release" pubdate="20121121154759" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="31">
+				<metadata-artifact status="no" details="" size="404" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\ma-pse-common\ivy-4.2.1.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.99bill\ma-pse-common\ivys\ivy-4.2.1.xml" origin-is-local="false" origin-location="http://192.168.52.211/com.99bill/ma-pse-common/ivys/ivy-4.2.1.xml"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="4.2.1" rev-constraint-default="4.2.1" rev-constraint-dynamic="4.2.1" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="ma-pse-common" type="jar" ext="jar" status="no" details="" size="12079" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\ma-pse-common\jars\ma-pse-common-4.2.1.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/com.99bill/ma-pse-common/jars/ma-pse-common-4.2.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="ma-pse-changeevent">
+			<revision name="4.3.20" status="release" pubdate="20121121154758" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="30">
+				<metadata-artifact status="no" details="" size="415" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\ma-pse-changeevent\ivy-4.3.20.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.99bill\ma-pse-changeevent\ivys\ivy-4.3.20.xml" origin-is-local="false" origin-location="http://192.168.52.211/com.99bill/ma-pse-changeevent/ivys/ivy-4.3.20.xml"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="4.3.20" rev-constraint-default="4.3.20" rev-constraint-dynamic="4.3.20" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="ma-pse-changeevent" type="jar" ext="jar" status="no" details="" size="15390" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\ma-pse-changeevent\jars\ma-pse-changeevent-4.3.20.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/com.99bill/ma-pse-changeevent/jars/ma-pse-changeevent-4.3.20.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="ma-msl-upgrade">
+			<revision name="4.3.20" status="release" pubdate="20121121154741" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="29">
+				<metadata-artifact status="no" details="" size="407" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\ma-msl-upgrade\ivy-4.3.20.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.99bill\ma-msl-upgrade\ivys\ivy-4.3.20.xml" origin-is-local="false" origin-location="http://192.168.52.211/com.99bill/ma-msl-upgrade/ivys/ivy-4.3.20.xml"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="4.3.20" rev-constraint-default="4.3.20" rev-constraint-dynamic="4.3.20" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="ma-msl-upgrade" type="jar" ext="jar" status="no" details="" size="36336" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\ma-msl-upgrade\jars\ma-msl-upgrade-4.3.20.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/com.99bill/ma-msl-upgrade/jars/ma-msl-upgrade-4.3.20.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="ma-memberinfo">
+			<revision name="4.3.31" status="release" pubdate="20121121154724" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="28">
+				<metadata-artifact status="no" details="" size="405" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\ma-memberinfo\ivy-4.3.31.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.99bill\ma-memberinfo\ivys\ivy-4.3.31.xml" origin-is-local="false" origin-location="http://192.168.52.211/com.99bill/ma-memberinfo/ivys/ivy-4.3.31.xml"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="4.3.31" rev-constraint-default="4.3.31" rev-constraint-dynamic="4.3.31" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="ma-memberinfo" type="jar" ext="jar" status="no" details="" size="214489" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\ma-memberinfo\jars\ma-memberinfo-4.3.31.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/com.99bill/ma-memberinfo/jars/ma-memberinfo-4.3.31.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="ma-memberacct">
+			<revision name="4.3.31" status="release" pubdate="20121121154719" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="27">
+				<metadata-artifact status="no" details="" size="405" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\ma-memberacct\ivy-4.3.31.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.99bill\ma-memberacct\ivys\ivy-4.3.31.xml" origin-is-local="false" origin-location="http://192.168.52.211/com.99bill/ma-memberacct/ivys/ivy-4.3.31.xml"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="4.3.31" rev-constraint-default="4.3.31" rev-constraint-dynamic="4.3.31" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="ma-memberacct" type="jar" ext="jar" status="no" details="" size="99277" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\ma-memberacct\jars\ma-memberacct-4.3.31.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/com.99bill/ma-memberacct/jars/ma-memberacct-4.3.31.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="ma-localqueue">
+			<revision name="1.0.1.4" status="release" pubdate="20151117133422" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="26">
+				<metadata-artifact status="no" details="" size="432" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\ma-localqueue\ivy-1.0.1.4.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.99bill\ma-localqueue\ivys\ivy-1.0.1.4.xml" origin-is-local="false" origin-location="UNKNOWN"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="1.0.1.4" rev-constraint-default="1.0.1.4" rev-constraint-dynamic="1.0.1.4" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="ma-localqueue" type="jar" ext="jar" status="no" details="" size="24540" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\ma-localqueue\jars\ma-localqueue-1.0.1.4.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/com.99bill/ma-localqueue/jars/ma-localqueue-1.0.1.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="ma-common-utils">
+			<revision name="4.3.70.3" status="release" pubdate="20151117133422" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="25">
+				<metadata-artifact status="no" details="" size="437" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\ma-common-utils\ivy-4.3.70.3.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.99bill\ma-common-utils\ivys\ivy-4.3.70.3.xml" origin-is-local="false" origin-location="UNKNOWN"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="4.3.70.3" rev-constraint-default="4.3.70.3" rev-constraint-dynamic="4.3.70.3" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="ma-common-utils" type="jar" ext="jar" status="no" details="" size="59421" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\ma-common-utils\jars\ma-common-utils-4.3.70.3.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/com.99bill/ma-common-utils/jars/ma-common-utils-4.3.70.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="ma-common">
+			<revision name="4.3.58.3" status="release" pubdate="20151117133422" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="24">
+				<metadata-artifact status="no" details="" size="425" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\ma-common\ivy-4.3.58.3.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.99bill\ma-common\ivys\ivy-4.3.58.3.xml" origin-is-local="false" origin-location="UNKNOWN"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="4.3.58.3" rev-constraint-default="4.3.58.3" rev-constraint-dynamic="4.3.58.3" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="ma-common" type="jar" ext="jar" status="no" details="" size="80242" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\ma-common\jars\ma-common-4.3.58.3.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/com.99bill/ma-common/jars/ma-common-4.3.58.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="internal">
+			<revision name="4.4.2" status="release" pubdate="20131120144947" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="23">
+				<metadata-artifact status="no" details="" size="394" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\internal\ivy-4.4.2.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.99bill\internal\ivys\ivy-4.4.2.xml" origin-is-local="false" origin-location="http://192.168.52.211/com.99bill/internal/ivys/ivy-4.4.2.xml"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="4.4.2" rev-constraint-default="4.4.2" rev-constraint-dynamic="4.4.2" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="internal" type="jar" ext="jar" status="no" details="" size="644752" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\internal\jars\internal-4.4.2.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/com.99bill/internal/jars/internal-4.4.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="if-statusmachine">
+			<revision name="4.3.17" status="release" pubdate="20130228101551" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="21">
+				<metadata-artifact status="no" details="" size="411" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\if-statusmachine\ivy-4.3.17.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.99bill\if-statusmachine\ivys\ivy-4.3.17.xml" origin-is-local="false" origin-location="http://192.168.52.211/com.99bill/if-statusmachine/ivys/ivy-4.3.17.xml"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="4.3.17" rev-constraint-default="4.3.17" rev-constraint-dynamic="4.3.17" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="if-statusmachine" type="jar" ext="jar" status="no" details="" size="26739" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\if-statusmachine\jars\if-statusmachine-4.3.17.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/com.99bill/if-statusmachine/jars/if-statusmachine-4.3.17.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="if-ormbase">
+			<revision name="4.3.27" status="release" pubdate="20121121154454" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="20">
+				<metadata-artifact status="no" details="" size="399" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\if-ormbase\ivy-4.3.27.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.99bill\if-ormbase\ivys\ivy-4.3.27.xml" origin-is-local="false" origin-location="http://192.168.52.211/com.99bill/if-ormbase/ivys/ivy-4.3.27.xml"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="4.3.27" rev-constraint-default="4.3.27" rev-constraint-dynamic="4.3.27" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="if-ormbase" type="jar" ext="jar" status="no" details="" size="53918" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\if-ormbase\jars\if-ormbase-4.3.27.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/com.99bill/if-ormbase/jars/if-ormbase-4.3.27.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="if-organization">
+			<revision name="4.3.25" status="release" pubdate="20121121154453" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="19">
+				<metadata-artifact status="no" details="" size="409" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\if-organization\ivy-4.3.25.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.99bill\if-organization\ivys\ivy-4.3.25.xml" origin-is-local="false" origin-location="http://192.168.52.211/com.99bill/if-organization/ivys/ivy-4.3.25.xml"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="4.3.25" rev-constraint-default="4.3.25" rev-constraint-dynamic="4.3.25" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="if-organization" type="jar" ext="jar" status="no" details="" size="88660" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\if-organization\jars\if-organization-4.3.25.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/com.99bill/if-organization/jars/if-organization-4.3.25.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="if-notifycustomize">
+			<revision name="4.3.9" status="release" pubdate="20121121154452" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="18">
+				<metadata-artifact status="no" details="" size="414" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\if-notifycustomize\ivy-4.3.9.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.99bill\if-notifycustomize\ivys\ivy-4.3.9.xml" origin-is-local="false" origin-location="http://192.168.52.211/com.99bill/if-notifycustomize/ivys/ivy-4.3.9.xml"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="4.3.9" rev-constraint-default="4.3.9" rev-constraint-dynamic="4.3.9" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="if-notifycustomize" type="jar" ext="jar" status="no" details="" size="23245" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\if-notifycustomize\jars\if-notifycustomize-4.3.9.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/com.99bill/if-notifycustomize/jars/if-notifycustomize-4.3.9.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="if-notification">
+			<revision name="4.3.15" status="release" pubdate="20121121154441" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="17">
+				<metadata-artifact status="no" details="" size="409" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\if-notification\ivy-4.3.15.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.99bill\if-notification\ivys\ivy-4.3.15.xml" origin-is-local="false" origin-location="http://192.168.52.211/com.99bill/if-notification/ivys/ivy-4.3.15.xml"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="4.3.15" rev-constraint-default="4.3.15" rev-constraint-dynamic="4.3.15" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="if-notification" type="jar" ext="jar" status="no" details="" size="230594" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\if-notification\jars\if-notification-4.3.15.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/com.99bill/if-notification/jars/if-notification-4.3.15.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="if-menuservice">
+			<revision name="4.3.15" status="release" pubdate="20121121154437" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="16">
+				<metadata-artifact status="no" details="" size="407" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\if-menuservice\ivy-4.3.15.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.99bill\if-menuservice\ivys\ivy-4.3.15.xml" origin-is-local="false" origin-location="http://192.168.52.211/com.99bill/if-menuservice/ivys/ivy-4.3.15.xml"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="4.3.15" rev-constraint-default="4.3.15" rev-constraint-dynamic="4.3.15" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="if-menuservice" type="jar" ext="jar" status="no" details="" size="38005" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\if-menuservice\jars\if-menuservice-4.3.15.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/com.99bill/if-menuservice/jars/if-menuservice-4.3.15.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="if-menufeature-service">
+			<revision name="4.3.33" status="release" pubdate="20121121154436" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="15">
+				<metadata-artifact status="no" details="" size="423" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\if-menufeature-service\ivy-4.3.33.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.99bill\if-menufeature-service\ivys\ivy-4.3.33.xml" origin-is-local="false" origin-location="http://192.168.52.211/com.99bill/if-menufeature-service/ivys/ivy-4.3.33.xml"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="4.3.33" rev-constraint-default="4.3.33" rev-constraint-dynamic="4.3.33" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="if-menufeature-service" type="jar" ext="jar" status="no" details="" size="59400" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\if-menufeature-service\jars\if-menufeature-service-4.3.33.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/com.99bill/if-menufeature-service/jars/if-menufeature-service-4.3.33.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="if-memcached">
+			<revision name="4.3.42" status="release" pubdate="20121121154434" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="14">
+				<metadata-artifact status="no" details="" size="403" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\if-memcached\ivy-4.3.42.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.99bill\if-memcached\ivys\ivy-4.3.42.xml" origin-is-local="false" origin-location="http://192.168.52.211/com.99bill/if-memcached/ivys/ivy-4.3.42.xml"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="4.3.42" rev-constraint-default="4.3.42" rev-constraint-dynamic="4.3.42" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="if-memcached" type="jar" ext="jar" status="no" details="" size="21725" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\if-memcached\jars\if-memcached-4.3.42.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/com.99bill/if-memcached/jars/if-memcached-4.3.42.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="if-jibx-schema-commons">
+			<revision name="1.0" status="release" pubdate="20121121154432" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="12">
+				<metadata-artifact status="no" details="" size="420" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\if-jibx-schema-commons\ivy-1.0.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.99bill\if-jibx-schema-commons\ivys\ivy-1.0.xml" origin-is-local="false" origin-location="http://192.168.52.211/com.99bill/if-jibx-schema-commons/ivys/ivy-1.0.xml"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="if-jibx-schema-commons" type="jar" ext="jar" status="no" details="" size="3745" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\if-jibx-schema-commons\jars\if-jibx-schema-commons-1.0.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/com.99bill/if-jibx-schema-commons/jars/if-jibx-schema-commons-1.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="if-jibx-pki-security">
+			<revision name="1.0.1" status="release" pubdate="20121121154432" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="11">
+				<metadata-artifact status="no" details="" size="418" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\if-jibx-pki-security\ivy-1.0.1.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.99bill\if-jibx-pki-security\ivys\ivy-1.0.1.xml" origin-is-local="false" origin-location="http://192.168.52.211/com.99bill/if-jibx-pki-security/ivys/ivy-1.0.1.xml"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="1.0.1" rev-constraint-default="1.0.1" rev-constraint-dynamic="1.0.1" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="if-jibx-pki-security" type="jar" ext="jar" status="no" details="" size="20584" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\if-jibx-pki-security\jars\if-jibx-pki-security-1.0.1.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/com.99bill/if-jibx-pki-security/jars/if-jibx-pki-security-1.0.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="if-framework">
+			<revision name="4.3.39.3" status="release" pubdate="20151117133420" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="10">
+				<metadata-artifact status="no" details="" size="431" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\if-framework\ivy-4.3.39.3.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.99bill\if-framework\ivys\ivy-4.3.39.3.xml" origin-is-local="false" origin-location="UNKNOWN"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="4.3.39.3" rev-constraint-default="4.3.39.3" rev-constraint-dynamic="4.3.39.3" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="if-framework" type="jar" ext="jar" status="no" details="" size="165163" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\if-framework\jars\if-framework-4.3.39.3.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/com.99bill/if-framework/jars/if-framework-4.3.39.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="if-enumhelper">
+			<revision name="4.3.39" status="release" pubdate="20121121154418" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="9">
+				<metadata-artifact status="no" details="" size="405" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\if-enumhelper\ivy-4.3.39.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.99bill\if-enumhelper\ivys\ivy-4.3.39.xml" origin-is-local="false" origin-location="http://192.168.52.211/com.99bill/if-enumhelper/ivys/ivy-4.3.39.xml"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="4.3.39" rev-constraint-default="4.3.39" rev-constraint-dynamic="4.3.39" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="if-enumhelper" type="jar" ext="jar" status="no" details="" size="238224" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\if-enumhelper\jars\if-enumhelper-4.3.39.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/com.99bill/if-enumhelper/jars/if-enumhelper-4.3.39.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="if-core-mdp-annotation">
+			<revision name="4.3.21" status="release" pubdate="20121121154402" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="8">
+				<metadata-artifact status="no" details="" size="423" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\if-core-mdp-annotation\ivy-4.3.21.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.99bill\if-core-mdp-annotation\ivys\ivy-4.3.21.xml" origin-is-local="false" origin-location="http://192.168.52.211/com.99bill/if-core-mdp-annotation/ivys/ivy-4.3.21.xml"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="4.3.21" rev-constraint-default="4.3.21" rev-constraint-dynamic="4.3.21" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="if-core-mdp-annotation" type="jar" ext="jar" status="no" details="" size="5118" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\if-core-mdp-annotation\jars\if-core-mdp-annotation-4.3.21.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/com.99bill/if-core-mdp-annotation/jars/if-core-mdp-annotation-4.3.21.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="if-core-mdp">
+			<revision name="4.3.49.1" status="release" pubdate="20121121154502" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="7">
+				<metadata-artifact status="no" details="" size="403" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\if-core-mdp\ivy-4.3.49.1.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.99bill\if-core-mdp\ivys\ivy-4.3.49.1.xml" origin-is-local="false" origin-location="http://192.168.52.211/com.99bill/if-core-mdp/ivys/ivy-4.3.49.1.xml"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="4.3.49.1" rev-constraint-default="4.3.49.1" rev-constraint-dynamic="4.3.49.1" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="if-core-mdp" type="jar" ext="jar" status="no" details="" size="81903" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\if-core-mdp\jars\if-core-mdp-4.3.49.1.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/com.99bill/if-core-mdp/jars/if-core-mdp-4.3.49.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="if-commonquery">
+			<revision name="4.3.14" status="release" pubdate="20121121154401" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="6">
+				<metadata-artifact status="no" details="" size="407" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\if-commonquery\ivy-4.3.14.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.99bill\if-commonquery\ivys\ivy-4.3.14.xml" origin-is-local="false" origin-location="http://192.168.52.211/com.99bill/if-commonquery/ivys/ivy-4.3.14.xml"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="4.3.14" rev-constraint-default="4.3.14" rev-constraint-dynamic="4.3.14" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="if-commonquery" type="jar" ext="jar" status="no" details="" size="32591" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\if-commonquery\jars\if-commonquery-4.3.14.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/com.99bill/if-commonquery/jars/if-commonquery-4.3.14.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="if-acms-client">
+			<revision name="4.3.53" status="release" pubdate="20121121154400" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="5">
+				<metadata-artifact status="no" details="" size="407" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\if-acms-client\ivy-4.3.53.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.99bill\if-acms-client\ivys\ivy-4.3.53.xml" origin-is-local="false" origin-location="http://192.168.52.211/com.99bill/if-acms-client/ivys/ivy-4.3.53.xml"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="4.3.53" rev-constraint-default="4.3.53" rev-constraint-dynamic="4.3.53" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="if-acms-client" type="jar" ext="jar" status="no" details="" size="41287" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\if-acms-client\jars\if-acms-client-4.3.53.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/com.99bill/if-acms-client/jars/if-acms-client-4.3.53.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="if-bugatti">
+			<revision name="1.0.2.6" status="integration" pubdate="20170519100100" resolver="bill99_repository_buildbuffer" artresolver="bill99_repository_buildbuffer" downloaded="false" searched="false" default="false" conf="default" position="4">
+				<metadata-artifact status="no" details="" size="3669" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\if-bugatti\ivy-1.0.2.6.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.99bill\if-bugatti\ivy-1.0.2.6.xml.original" origin-is-local="false" origin-location="http://192.168.138.16/com.99bill/if-bugatti/ivys/ivy-1.0.2.6.xml"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="1.0.2.6" rev-constraint-default="1.0.2.6" rev-constraint-dynamic="1.0.2.6" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="if-bugatti" type="jar" ext="jar" status="no" details="" size="593478" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\if-bugatti\jars\if-bugatti-1.0.2.6.jar">
+						<origin-location is-local="false" location="http://192.168.138.16/com.99bill/if-bugatti/jars/if-bugatti-1.0.2.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.alibaba" name="druid">
+			<revision name="1.0.26" status="release" pubdate="20171221144652" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="3">
+				<metadata-artifact status="no" details="" size="416" time="0" location="D:\Local_Repository\ivy-cache\com.alibaba\druid\ivy-1.0.26.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.alibaba\druid\ivys\ivy-1.0.26.xml" origin-is-local="false" origin-location="UNKNOWN"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="1.0.26" rev-constraint-default="1.0.26" rev-constraint-dynamic="1.0.26" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="druid" type="jar" ext="jar" status="no" details="" size="2129752" time="0" location="D:\Local_Repository\ivy-cache\com.alibaba\druid\jars\druid-1.0.26.jar">
+						<origin-location is-local="false" location="http://192.168.138.15/com.alibaba/druid/jars/druid-1.0.26.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="cap-ate-order-api">
+			<revision name="1.0.5.1" status="integration" pubdate="20160530183637" resolver="bill99_repository_buildbuffer" artresolver="bill99_repository_buildbuffer" downloaded="false" searched="false" default="false" conf="default" position="2">
+				<metadata-artifact status="no" details="" size="576" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\cap-ate-order-api\ivy-1.0.5.1.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.99bill\cap-ate-order-api\ivy-1.0.5.1.xml.original" origin-is-local="false" origin-location="http://192.168.138.16/com.99bill/cap-ate-order-api/ivys/ivy-1.0.5.1.xml"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="1.0.5.1" rev-constraint-default="1.0.5.1" rev-constraint-dynamic="1.0.5.1" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="cap-ate-order-api" type="jar" ext="jar" status="no" details="" size="36243" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\cap-ate-order-api\jars\cap-ate-order-api-1.0.5.1.jar">
+						<origin-location is-local="false" location="http://192.168.138.16/com.99bill/cap-ate-order-api/jars/cap-ate-order-api-1.0.5.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="if-mdp">
+			<revision name="4.3.40.1" status="release" pubdate="20121121154502" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="13">
+				<metadata-artifact status="no" details="" size="393" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\if-mdp\ivy-4.3.40.1.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.99bill\if-mdp\ivys\ivy-4.3.40.1.xml" origin-is-local="false" origin-location="http://192.168.52.211/com.99bill/if-mdp/ivys/ivy-4.3.40.1.xml"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="4.3.40.1" rev-constraint-default="4.3.40.1" rev-constraint-dynamic="4.3.40.1" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="if-mdp" type="jar" ext="jar" status="no" details="" size="76294" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\if-mdp\jars\if-mdp-4.3.40.1.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/com.99bill/if-mdp/jars/if-mdp-4.3.40.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="cap-ate-api">
+			<revision name="1.0.3.1" status="release" pubdate="20151117133420" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="1">
+				<metadata-artifact status="no" details="" size="428" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\cap-ate-api\ivy-1.0.3.1.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.99bill\cap-ate-api\ivys\ivy-1.0.3.1.xml" origin-is-local="false" origin-location="UNKNOWN"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="1.0.3.1" rev-constraint-default="1.0.3.1" rev-constraint-dynamic="1.0.3.1" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="cap-ate-api" type="jar" ext="jar" status="no" details="" size="10151" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\cap-ate-api\jars\cap-ate-api-1.0.3.1.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/com.99bill/cap-ate-api/jars/cap-ate-api-1.0.3.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="antlr" name="antlr">
+			<revision name="2.7.6" status="release" pubdate="20121121152341" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="0">
+				<metadata-artifact status="no" details="" size="383" time="0" location="D:\Local_Repository\ivy-cache\antlr\antlr\ivy-2.7.6.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\antlr\antlr\ivys\ivy-2.7.6.xml" origin-is-local="false" origin-location="http://192.168.52.211/antlr/antlr/ivys/ivy-2.7.6.xml"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="zip" rev="2.7.6" rev-constraint-default="2.7.6" rev-constraint-dynamic="2.7.6" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="antlr" type="jar" ext="jar" status="no" details="" size="443432" time="0" location="D:\Local_Repository\ivy-cache\antlr\antlr\jars\antlr-2.7.6.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/antlr/antlr/jars/antlr-2.7.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

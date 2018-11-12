@@ -1,0 +1,72 @@
+package com.bill99.mcs.orm;
+
+import com.bill99.mcs.common.dto.TClrTxnList;
+import com.bill99.mcs.common.dto.TStlList;
+import com.bill99.mcs.common.dto.TStlOrder;
+import com.bill99.mcs.common.dto.TxnCtrl;
+
+import java.util.List;
+
+/**
+ * Description: maspos数据库服务
+ * Author: zhenfeng.liu
+ * Date: 2017/10/16 9:21
+ */
+public interface MasposDBAccessService {
+
+    /**
+     * 通过交易编号查询T_TXN_CTRL表数据
+     *
+     * @param idTxn 交易编号
+     * @return T_TXN_CTRL表对象
+     */
+    TxnCtrl queryTxnCtrlTable(String idTxn);
+
+    /**
+     * 通过交易编号查询T_CLR_TXN_LIST表数据
+     *
+     * @param idTxn 交易编号
+     * @return T_CLR_TXN_LIST表对象
+     */
+    TClrTxnList queryTClrTxnListTable(String idTxn);
+    
+    /**
+     * 通过交易编号修改T_CLR_TXN_LIST表数据
+     *
+     * @param idTxn 交易编号
+     * 
+     */
+    //增加内容_wsy
+    void updateTClrTxnTable(String idTxn);
+    
+    
+    
+
+    /**
+     * 通过结算源参考编号查询T_STL_LIST表数据
+     *
+     * @param stlSrcRef 结算源参考编号
+     * @return T_STL_LIST表对象
+     */
+    TStlList queryTStlListTable(String stlSrcRef);
+
+    /**
+     * 通过结算指令编号查询T_STL_LIST表列表数据
+     *
+     * @param idStlOrder 结算指令
+     * @return T_STL_LIST表对象列表
+     */
+    List<TStlList> queryTStlListTableList(String idStlOrder);
+
+    /**
+     * 通过结算指令编号查询T_STL_ORDER表数据
+     *
+     * @param idStlOrder 结算指令编号
+     * @return T_STL_ORDER表数据对象
+     */
+    TStlOrder queryTStlOrderTable(String idStlOrder);
+    
+    
+ 
+	
+}

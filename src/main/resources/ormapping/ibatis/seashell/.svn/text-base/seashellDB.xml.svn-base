@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+    "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="seashellDB"> 
+	
+	 <select id="getSmscontent" parameterClass="string" resultClass="String">
+	    select * from 
+	    (select t.content from seashell.smsnotificationlog t 
+	      where  t.mobile=#value# and t.sendstatus=0 order by t.sendtime desc)
+	     where rownum=1 
+	</select>
+	
+	<select id="qryDealIdFrmDeal" parameterClass="java.util.Map" resultClass="java.lang.String">
+		select dealid from seashell.deal Where orderseqid = #orderSeqId# and dealcode=#dealCode#
+	</select>
+	
+	<select id="qryStatusFrmWthdrwWrkrOrder" parameterClass="java.lang.String" resultClass="java.lang.String">
+	 select status from seashell.withdrawworkorder where orderseqId =#orderSeqId# 
+	</select>
+	
+	<select id="qryCuntFrmPymentorder" parameterClass="java.util.Map" resultClass="java.lang.Integer">
+	select count(*) from seashell.paymentorder where sequenceid = #sequenceId# 
+		and  orderamount=#orderAmount# and orderstatus=#orderStatus# and ordercode=#orderCode#
+	</select>
+	
+	<select id="qryCuntFrmDeal" parameterClass="java.util.Map" resultClass="java.lang.Integer">
+		select count(*) from seashell.deal where orderseqid =#orderSeqId# 
+			and dealamount=#dealAmount# and dealstatus=#dealStatus# and dealcode =#dealCode#
+	</select>
+	
+	<select id="qryCuntFrmEntry" parameterClass="java.util.Map" resultClass="java.lang.Integer">
+	select * from seashell.Entry where dealid = #dealId# and 
+		acctcode=#acctCode# and value=#value# and crdr=#crdr#
+	</select> 
+
+	<select id="getPaymentOrderByseq" parameterClass="String" resultClass="com.bill99.ifs.common.dto.PaymentOrderDto">
+		select * from seashell.paymentorder where sequenceid=#seq#
+	</select>
+	
+	<select id="getDealByDealid" parameterClass="String" resultClass="com.bill99.ifs.common.dto.DealDto">
+		select * from seashell.deal  where  dealid=#dealid#
+	</select>
+	
+	<select id="getEntryByMap" parameterClass="java.util.Map" resultClass="com.bill99.ifs.common.dto.EntryDto">
+		select * from seashell.entry   where dealid=#dealid# and crdr=#crdr#
+	</select>
+
+</sqlMap>

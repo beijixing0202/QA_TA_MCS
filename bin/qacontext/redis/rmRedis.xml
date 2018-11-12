@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
+
+
+	<!-- #最大分配的对象数 -->
+	<!-- redis.pool.maxActive=1024 -->
+	<!-- #最大能够保持idel状态的对象数 -->
+	<!-- redis.pool.maxIdle=200 -->
+	<!-- #当池内没有返回对象时，最大等待时间 -->
+	<!-- redis.pool.maxWait=1000 -->
+	<!-- #当调用borrow Object方法时，是否进行有效性检查 -->
+	<!-- redis.pool.testOnBorrow=true -->
+	<!-- #当调用return Object方法时，是否进行有效性检查 -->
+	<!-- redis.pool.testOnReturn=true -->
+
+	<!-- #当调用超时 -->
+	<!-- redis.pool.timeout=2000 -->
+	<!-- #IP -->
+	<!-- redis.ip=127.0.0.1 -->
+	<!-- #Port -->
+	<!-- redis.port=6379 -->
+
+	<!-- redis.db_index=0 -->
+
+	<bean id="jedisPoolConfig" class="redis.clients.jedis.JedisPoolConfig">
+		<property name="maxTotal" value="30" />
+		<property name="maxIdle" value="10" />
+		<property name="minIdle" value="10" />
+		<property name="blockWhenExhausted" value="true"></property>
+		<property name="maxWaitMillis" value="3000" />
+		<property name="testOnBorrow" value="true" />
+		<property name="testOnReturn" value="false" />
+		<property name="testWhileIdle" value="false" />
+	</bean>
+
+	<bean id="mymaster" class="org.springframework.data.redis.connection.RedisNode">
+		<property name="name" value="${rm.rtms.redisName}"></property>
+	</bean>
+
+	<bean id="redisNode1" class="org.springframework.data.redis.connection.RedisNode">
+		<constructor-arg index="0" value="${rm.rtms.redisNode1Address}"></constructor-arg>
+		<constructor-arg index="1" value="${rm.rtms.redisNode1Port}"></constructor-arg>
+	</bean>
+	<bean id="redisNode2" class="org.springframework.data.redis.connection.RedisNode">
+		<constructor-arg index="0" value="${rm.rtms.redisNode2Address}"></constructor-arg>
+		<constructor-arg index="1" value="${rm.rtms.redisNode2Port}"></constructor-arg>
+	</bean>
+	<bean id="redisNode3" class="org.springframework.data.redis.connection.RedisNode">
+		<constructor-arg index="0" value="${rm.rtms.redisNode3Address}"></constructor-arg>
+		<constructor-arg index="1" value="${rm.rtms.redisNode3Port}"></constructor-arg>
+	</bean>
+
+	<bean id="sentinelConfig" class="org.springframework.data.redis.connection.RedisSentinelConfiguration">
+		<property name="master" ref="mymaster" />
+		<property name="sentinels">
+			<set>
+				<ref bean="redisNode1" />
+				<ref bean="redisNode2" />
+				<ref bean="redisNode3" />
+			</set>
+		</property>
+	</bean>
+
+	<bean id="jedisConnectionFactory" class="org.springframework.data.redis.connection.jedis.JedisConnectionFactory">
+		<constructor-arg index="0" ref="sentinelConfig"></constructor-arg>
+		<constructor-arg index="1" ref="jedisPoolConfig"></constructor-arg>
+	</bean>
+
+	<bean id="stringRedisSerializer" class="org.springframework.data.redis.serializer.StringRedisSerializer"></bean>
+	<bean id="jsonSerializer" class="com.bill99.inf.redis.ext.serializer.JsonSerializer"></bean>
+	<bean id="jdkSerializer" class="com.bill99.inf.redis.ext.serializer.JdkSerializer"></bean>
+
+
+	<bean id="stringRedisTemplate" class="org.springframework.data.redis.core.StringRedisTemplate">
+		<property name="connectionFactory" ref="jedisConnectionFactory"/>
+	</bean>
+
+	<bean id="strObjRedisTemplate" class="org.springframework.data.redis.core.RedisTemplate">
+		<property name="connectionFactory" ref="jedisConnectionFactory" />
+		<property name="keySerializer" ref="stringRedisSerializer" />
+		<property name="valueSerializer" ref="jsonSerializer" />
+		<property name="hashKeySerializer" ref="stringRedisSerializer" />
+		<property name="hashValueSerializer" ref="jsonSerializer" />
+		<property name="defaultSerializer" ref="jsonSerializer" />
+	</bean>
+	
+	<bean id="strHashRedisTemplate" class="org.springframework.data.redis.core.RedisTemplate">
+		<property name="connectionFactory" ref="jedisConnectionFactory" />
+		<property name="keySerializer" ref="stringRedisSerializer" />
+		<property name="valueSerializer" ref="jdkSerializer" />
+		<property name="hashKeySerializer" ref="stringRedisSerializer" />
+		<property name="hashValueSerializer" ref="jdkSerializer" />
+		<property name="defaultSerializer" ref="jdkSerializer" />
+	</bean>
+
+</beans> 

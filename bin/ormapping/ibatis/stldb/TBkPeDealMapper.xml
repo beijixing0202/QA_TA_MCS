@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+        "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="TBkPeDeal">
+    <resultMap class="com.bill99.mcs.common.dto.TBkPeDeal" id="BaseResultMap">
+        <result column="ID_BK_PE_DEAL" jdbcType="DECIMAL" property="idBkPeDeal" />
+        <result column="ID_BK_PE_PAYMENT_ORDER" jdbcType="DECIMAL" property="idBkPePaymentOrder" />
+        <result column="DEAL_ID" jdbcType="VARCHAR" property="dealId" />
+        <result column="DEAL_TYPE" jdbcType="DECIMAL" property="dealType" />
+        <result column="DEAL_CODE" jdbcType="DECIMAL" property="dealCode" />
+        <result column="DEAL_AMT" jdbcType="DECIMAL" property="dealAmt" />
+        <result column="DEAL_STATUS" jdbcType="DECIMAL" property="dealStatus" />
+        <result column="DEAL_BEGIN_DATE" jdbcType="DATE" property="dealBeginDate" />
+        <result column="PAYMENT_SRV_PKG_CODE" jdbcType="VARCHAR" property="paymentSrvPkgCode" />
+        <result column="PAYER_ORG_TYPE" jdbcType="DECIMAL" property="payerOrgType" />
+        <result column="PAYER_ORG_CODE" jdbcType="DECIMAL" property="payerOrgCode" />
+        <result column="PAYER_ACCT_TYPE" jdbcType="DECIMAL" property="payerAcctType" />
+        <result column="PAYER_ACCT_CODE" jdbcType="VARCHAR" property="payerAcctCode" />
+        <result column="PAYEE_ORG_TYPE" jdbcType="DECIMAL" property="payeeOrgType" />
+        <result column="PAYEE_ORG_CODE" jdbcType="DECIMAL" property="payeeOrgCode" />
+        <result column="PAYEE_ACCT_TYPE" jdbcType="DECIMAL" property="payeeAcctType" />
+        <result column="PAYEE_ACCT_CODE" jdbcType="VARCHAR" property="payeeAcctCode" />
+        <result column="CRT_TIME" jdbcType="DATE" property="crtTime" />
+        <result column="UPD_TIME" jdbcType="DATE" property="updTime" />
+        <result column="PAYER_CHAN" jdbcType="VARCHAR" property="payerChan" />
+        <result column="PAYEE_CHAN" jdbcType="VARCHAR" property="payeeChan" />
+        <result column="FEE_TYPE" jdbcType="CHAR" property="feeType" />
+        <result column="PAYEE_FEE" jdbcType="DECIMAL" property="payeeFee" />
+        <result column="HAS_CALC_FEE" jdbcType="CHAR" property="hasCalcFee" />
+        <result column="PRIORITY" jdbcType="CHAR" property="priority" />
+        <result column="ID_BK_PE_DEAL_EXT" jdbcType="DECIMAL" property="idBkPeDealExt" />
+        <result column="TRANS_DATE" jdbcType="DATE" property="transDate" />
+    </resultMap>
+    <sql id="BaseColumnList">
+        ID_BK_PE_DEAL, ID_BK_PE_PAYMENT_ORDER, DEAL_ID, DEAL_TYPE, DEAL_CODE, DEAL_AMT, DEAL_STATUS,
+        DEAL_BEGIN_DATE, PAYMENT_SRV_PKG_CODE, PAYER_ORG_TYPE, PAYER_ORG_CODE, PAYER_ACCT_TYPE,
+        PAYER_ACCT_CODE, PAYEE_ORG_TYPE, PAYEE_ORG_CODE, PAYEE_ACCT_TYPE, PAYEE_ACCT_CODE,
+        CRT_TIME, UPD_TIME, PAYER_CHAN, PAYEE_CHAN, FEE_TYPE, PAYEE_FEE, HAS_CALC_FEE, PRIORITY,
+        ID_BK_PE_DEAL_EXT, TRANS_DATE
+    </sql>
+    <select id="getTBkPeDeal" parameterClass="com.bill99.mcs.common.dto.TBkPeDeal" resultMap="BaseResultMap">
+        select
+        <include refid="BaseColumnList"/>
+        from cpsacct.t_bk_pe_deal
+        <dynamic prepend="where">
+            <isNotEmpty prepend="and" property="idBkPePaymentOrder">
+                ID_BK_PE_PAYMENT_ORDER=#idBkPePaymentOrder#
+            </isNotEmpty>
+        </dynamic>
+    </select>
+</sqlMap>

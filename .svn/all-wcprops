@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/opt/99billdoc/!svn/ver/465323/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS
+END
+QA_TA_MCS.iml
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/QA_TA_MCS.iml
+END
+ivy.xml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/ivy.xml
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/.project
+END
+jenkins_job.xml
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/jenkins_job.xml
+END
+.classpath
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/.classpath
+END

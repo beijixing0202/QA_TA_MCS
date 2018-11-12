@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+    "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="TestSeashellDb">
+
+
+	<select id="ibatisCheckGatewayDealState" parameterClass="java.util.HashMap" resultClass="int">
+
+		select count(1) from seashell.paymentorder p,seashell.deal d
+		,seashell.entry e
+		where p.orderid=#orderId# and p.sequenceid=d.orderseqid
+		and d.dealid=e.dealid
+		and p.orderstatus=111 and d.dealstatus=1
+
+	</select>
+
+	<select id="ibatisCheckGatewayDealStateByOrgOrderId" parameterClass="java.util.HashMap" resultClass="int">
+
+		select count(1) from seashell.paymentorder p,seashell.deal d
+		,seashell.entry e
+		where p.orgorderid=#orgorderID# and p.sequenceid=d.orderseqid
+		and d.dealid=e.dealid
+		and p.orderstatus=111 and d.dealstatus=1
+
+	</select>
+	
+	<select id="ibatisCheckMergeDealState" parameterClass="java.util.HashMap" resultClass="int">
+
+		select count(1) from seashell.paymentorder p,seashell.deal d
+		where p.orderid=#orderId# and p.orderstatus=111 and p.sequenceid=d.orderseqid and d.dealstatus=0
+
+	</select>
+
+	<select id="checkCNPDealState" parameterClass="java.util.HashMap" resultClass="int">
+
+		select count(1) from seashell.paymentorder p,seashell.deal d
+		where p.orderid=#orderId# and p.sequenceid=d.orderseqid
+		and p.orderstatus=111 and d.dealstatus=0
+
+	</select>
+
+	<select id="checkGatewayorder" parameterClass="java.util.HashMap" resultClass="int">
+
+		Select count(1) From seashell.gatewayorder gy , seashell.paymentorder p
+		Where p.orderid =#orderId# And p.sequenceid=gy.sequenceid
+
+	</select>
+
+	<select id="ibatisCheckAtaNotifyLogDbCheck" parameterClass="java.util.HashMap" resultClass="int">
+
+		Select count(*) From gateway.atanotifyworkorder ga Where
+		ga.sequenceid in
+		(Select a.sequenceid From seashell.paymentorder a Where a.Orderid=#orderId#)
+
+	</select>
+	
+	
+	<select id="getSequenceidByOrderid" parameterClass="java.util.HashMap" resultClass="com.bill99.fi.orm.entity.Paymentorder">
+
+		select
+		p.sequenceid,p.orderid,p.submitacctcode,p.orgorderid,p.orderamount,p.orderstatus,d.dealid from seashell.paymentorder p,seashell.deal d where
+		p.ordertime>=sysdate-100 and p.orderid=#orderId# and p.ordercode in (930,935,966,999) and p.sequenceid=d.orderseqid
+	</select>
+
+	<select id="getInstallmentSequenceidByOrderid" parameterClass="java.util.HashMap" resultClass="com.bill99.fi.orm.entity.Paymentorder">
+
+		select
+		p.sequenceid,p.orderid,p.submitacctcode,p.orgorderid,p.orderamount,p.orderstatus,d.dealid from seashell.paymentorder p,seashell.deal d where
+		p.orderid=#orderId# and p.ordercode=999 and p.sequenceid=d.orderseqid
+	</select>
+
+
+	<select id="getMobileValidateCode" parameterClass="java.util.HashMap" resultClass="String">
+		select * from (select substr(content,5,6) from seashell.SMSNOTIFICATIONLOG where APPID=#orderId#) where rownum=1
+
+	</select>
+
+	<select id="getGateWayFxLogSequenId" parameterClass="String" resultClass="String">
+		select sequenceid from seashell.gatewayfxlog where MSGCONTENT like '%' || #orderId# || '%' and logtype=7
+	</select>
+
+	<select id="fxlogtype2" parameterClass="String" resultClass="String">
+		select count(*) from seashell.gatewayfxlog where sequenceid =#sid8# and logtype=2 and MSGCONTENT like '%successFlag=true%'
+	</select>
+
+	<select id="fxlogtype8" parameterClass="String" resultClass="String">
+		select count(*) from seashell.gatewayfxlog where sequenceid =#sid8# and logtype=8 and MSGCONTENT like '%successFlag=true%'
+	</select>
+
+	<select id="getUnionorderlog" parameterClass="String" resultClass="com.bill99.fi.orm.entity.Unionorderlog">
+		select u.sequenceid  sequenceid,u.payorderid payorderid,u.payamt payamt  from seashell.unionorderlog u where u.payorderid=#value#
+	</select>
+	
+	<select id="getRefundOrderIdBySeqId" parameterClass="String" resultClass="String">
+		select p.orderid  from seashell.paymentorder p where p.relatedsequenceid=#seqId#
+	</select>
+	
+	<select id="getSmsNotification" parameterClass="java.util.HashMap" resultClass="String">
+		select * from(select substr(content,0,100) from  seashell.smsnotificationlog  where mobile = #selectOfflineEmail# and templateid='72' order by sendtime desc)where rownum=1
+	</select>
+	
+	<select id="getRechargeWithOffineDealState" parameterClass="java.util.HashMap" resultClass="int">
+		select count(1) from seashell.deal where orderseqid= #dealid#  and dealstatus=0
+	</select>
+	<select id="getDealidWithOrgorderId" parameterClass="java.util.HashMap" resultClass="com.bill99.fi.orm.entity.Paymentorder">
+
+		select
+		p.sequenceid,p.orderid,p.submitacctcode,p.orgorderid,p.orderamount,p.orderstatus,d.dealid from seashell.paymentorder p,seashell.deal d where
+		p.orgorderid=#orgorderID#  and p.sequenceid=d.orderseqid
+	</select>
+	<select id="getAcctItermsWithOrderid1" parameterClass="java.util.HashMap" resultClass="int">
+
+		select count(1) from seashell.paymentorder p,seashell.deal d
+		,seashell.entry e
+		where p.orderid=#orderId# and p.sequenceid=d.orderseqid
+		and d.dealid=e.dealid
+		and p.orderstatus=111 and d.dealstatus=1 and e.acctcode = '201001011001285119901' and e.value = #amount# and e.CRDR = '1'
+	</select>
+	<select id="getAcctItermsWithOrderid2" parameterClass="java.util.HashMap" resultClass="int">
+
+		select count(1) from seashell.paymentorder p,seashell.deal d
+		,seashell.entry e
+		where p.orderid=#orderId# and p.sequenceid=d.orderseqid
+		and d.dealid=e.dealid
+		and p.orderstatus=111 and d.dealstatus=1 and e.acctcode = '1281999010001' and e.value = #amount# and e.CRDR = '2'
+	</select>
+	<select id="getAcctItermsWithOrderid3" parameterClass="java.util.HashMap" resultClass="int">
+
+		select count(1) from seashell.paymentorder p,seashell.deal d
+		,seashell.entry e
+		where p.orderid=#orderId# and p.sequenceid=d.orderseqid
+		and d.dealid=e.dealid
+		and p.orderstatus=111 and d.dealstatus=1 and e.acctcode = '1281999010001' and e.value = #amount# and e.CRDR = '1'
+	</select>
+	<select id="getAcctItermsWithOrderid4" parameterClass="java.util.HashMap" resultClass="int">
+
+		select count(1) from seashell.paymentorder p,seashell.deal d
+		,seashell.entry e
+		where p.orderid=#orderId# and p.sequenceid=d.orderseqid
+		and d.dealid=e.dealid
+		and p.orderstatus=111 and d.dealstatus=1 and e.acctcode = '201002011001147854301' and e.value = #amount# and e.CRDR = '2'
+	</select>
+	<select id="getAcctItermsWithOrderid5" parameterClass="java.util.HashMap" resultClass="int">
+
+		select count(1) from seashell.paymentorder p,seashell.deal d
+		,seashell.entry e
+		where p.orderid=#orderId# and p.sequenceid=d.orderseqid
+		and d.dealid=e.dealid
+		and p.orderstatus=111 and d.dealstatus=1 and e.acctcode = '201002011001147854301' and e.value = #poundage# and e.CRDR = '1'
+	</select>
+	<select id="getAcctItermsWithOrderid6" parameterClass="java.util.HashMap" resultClass="int">
+
+		select count(1) from seashell.paymentorder p,seashell.deal d
+		,seashell.entry e
+		where p.orderid=#orderId# and p.sequenceid=d.orderseqid
+		and d.dealid=e.dealid
+		and p.orderstatus=111 and d.dealstatus=1 and e.acctcode = '515101002' and e.value = #poundage# and e.CRDR = '2'
+	</select>
+	<select id="getAcctItermsWithOrderid11" parameterClass="java.util.HashMap" resultClass="int">
+
+		select count(1) from seashell.paymentorder p,seashell.deal d
+		,seashell.entry e
+		where p.orderid=#orderId# and p.sequenceid=d.orderseqid
+		and d.dealid=e.dealid
+		and p.orderstatus=111 and d.dealstatus=1 and e.acctcode = '201001011001163778801' and e.value = #amount# and e.CRDR = '1'
+	</select>
+	<select id="getAcctItermsWithOrderid12" parameterClass="java.util.HashMap" resultClass="int">
+
+		select count(1) from seashell.paymentorder p,seashell.deal d
+		,seashell.entry e
+		where p.orderid=#orderId# and p.sequenceid=d.orderseqid
+		and d.dealid=e.dealid
+		and p.orderstatus=111 and d.dealstatus=1 and e.acctcode = '2281999010001' and e.value = #amount# and e.CRDR = '2'
+	</select>
+	<select id="getAcctItermsWithOrderid13" parameterClass="java.util.HashMap" resultClass="int">
+
+		select count(1) from seashell.paymentorder p,seashell.deal d
+		,seashell.entry e
+		where p.orderid=#orderId# and p.sequenceid=d.orderseqid
+		and d.dealid=e.dealid
+		and p.orderstatus=111 and d.dealstatus=1 and e.acctcode = '201001011001285119901' and e.value = #amount# and e.CRDR = '2'
+	</select>
+	<select id="getAcctItermsWithOrderid14" parameterClass="java.util.HashMap" resultClass="int">
+
+		select count(1) from seashell.paymentorder p,seashell.deal d
+		,seashell.entry e
+		where p.orderid=#orderId# and p.sequenceid=d.orderseqid
+		and d.dealid=e.dealid
+		and p.orderstatus=111 and d.dealstatus=1 and e.acctcode = '2281999010001' and e.value = #amount# and e.CRDR = '1'
+	</select>
+	<select id="getAcctItermsWithOrderid15" parameterClass="java.util.HashMap" resultClass="int">
+
+		select count(1) from seashell.paymentorder p,seashell.deal d
+		,seashell.entry e
+		where p.orderid=#orderId# and p.sequenceid=d.orderseqid
+		and d.dealid=e.dealid
+		and p.orderstatus=111 and d.dealstatus=1 and e.acctcode = '515101002' and e.value = #poundage# and e.CRDR = '1'
+	</select>
+	<select id="getAcctItermsWithOrderid16" parameterClass="java.util.HashMap" resultClass="int">
+
+		select count(1) from seashell.paymentorder p,seashell.deal d
+		,seashell.entry e
+		where p.orderid=#orderId# and p.sequenceid=d.orderseqid
+		and d.dealid=e.dealid
+		and p.orderstatus=111 and d.dealstatus=1 and e.acctcode = '1260010011001163778807' and e.value = #poundage# and e.CRDR = '2'
+	</select>
+	<select id="getAcctItermsWithOrderid21" parameterClass="java.util.HashMap" resultClass="int">
+
+		select count(1) from seashell.paymentorder p,seashell.deal d
+		,seashell.entry e
+		where p.orderid=#orderId# and p.sequenceid=d.orderseqid
+		and d.dealid=e.dealid
+		and p.orderstatus=111 and d.dealstatus=1 and e.acctcode = '201001011001162931901' and e.value = #amount# and e.CRDR = '2'
+	</select>
+	<select id="getAcctItermsWithOrderid22" parameterClass="java.util.HashMap" resultClass="int">
+
+		select count(1) from seashell.paymentorder p,seashell.deal d
+		,seashell.entry e
+		where p.orderid=#orderId# and p.sequenceid=d.orderseqid
+		and d.dealid=e.dealid
+		and p.orderstatus=111 and d.dealstatus=1 and e.acctcode = '1281010310004' and e.value = #amount# and e.CRDR = '1'
+	</select>
+	<select id="getAcctItermsWithOrderid23" parameterClass="java.util.HashMap" resultClass="int">
+
+		select count(1) from seashell.paymentorder p,seashell.deal d
+		,seashell.entry e
+		where p.orderid=#orderId# and p.sequenceid=d.orderseqid
+		and d.dealid=e.dealid
+		and p.orderstatus=111 and d.dealstatus=1 and e.acctcode = '201001011001162931901' and e.value = #poundage# and e.CRDR = '1'
+	</select>
+	<select id="getAcctItermsWithOrderid24" parameterClass="java.util.HashMap" resultClass="int">
+
+		select count(1) from seashell.paymentorder p,seashell.deal d
+		,seashell.entry e
+		where p.orderid=#orderId# and p.sequenceid=d.orderseqid
+		and d.dealid=e.dealid
+		and p.orderstatus=111 and d.dealstatus=1 and e.acctcode = '515101001' and e.value = #poundage# and e.CRDR = '2'
+	</select>
+	<select id="getAcctItermsWithOrderid25" parameterClass="java.util.HashMap" resultClass="int">
+
+		select count(1) from seashell.paymentorder p,seashell.deal d
+		,seashell.entry e
+		where p.sequenceid=#seqId# and p.sequenceid=d.orderseqid
+		and d.dealid=e.dealid
+		and p.orderstatus=111 and d.dealstatus=1 and e.acctcode = '201002011001343104101' and e.value = #amount# and e.CRDR = '2'
+	</select>
+	<select id="getAcctItermsWithOrderid26" parameterClass="java.util.HashMap" resultClass="int">
+
+		select count(1) from seashell.paymentorder p,seashell.deal d
+		,seashell.entry e
+		where p.sequenceid=#seqId# and p.sequenceid=d.orderseqid
+		and d.dealid=e.dealid
+		and p.orderstatus=111 and d.dealstatus=1 and e.acctcode = '1281010310004' and e.value = #amount# and e.CRDR = '1'
+	</select>
+	<select id="getAcctItermsWithOrderid31" parameterClass="java.util.HashMap" resultClass="int">
+
+		select count(1) from seashell.paymentorder p,seashell.deal d
+		,seashell.entry e
+		where p.orderid=#orderId# and p.sequenceid=d.orderseqid
+		and d.dealid=e.dealid
+		and p.orderstatus=111 and d.dealstatus=1 and e.acctcode = '201001011001162931901' and e.value = #amount# and e.CRDR = '1'
+	</select>
+	<select id="getAcctItermsWithOrderid32" parameterClass="java.util.HashMap" resultClass="int">
+
+		select count(1) from seashell.paymentorder p,seashell.deal d
+		,seashell.entry e
+		where p.orderid=#orderId# and p.sequenceid=d.orderseqid
+		and d.dealid=e.dealid
+		and p.orderstatus=111 and d.dealstatus=1 and e.acctcode = '201001011001162931901' and e.value = #poundage# and e.CRDR = '2'
+	</select>
+	<select id="getAcctItermsWithOrderid33" parameterClass="java.util.HashMap" resultClass="int">
+
+		select count(1) from seashell.paymentorder p,seashell.deal d
+		,seashell.entry e
+		where p.orderid=#orderId# and p.sequenceid=d.orderseqid
+		and d.dealid=e.dealid
+		and p.orderstatus=111 and d.dealstatus=1 and e.acctcode = '515101001' and e.value = #poundage# and e.CRDR = '1'
+	</select>
+	<select id="getAcctItermsWithOrderid34" parameterClass="java.util.HashMap" resultClass="int">
+
+		select count(1) from seashell.paymentorder p,seashell.deal d
+		,seashell.entry e
+		where p.orderid=#orderId# and p.sequenceid=d.orderseqid
+		and d.dealid=e.dealid
+		and p.orderstatus=111 and d.dealstatus=1 and e.acctcode = '2281010310004' and e.value = #amount# and e.CRDR = '2'
+	</select>
+	<select id="getAcctItermsWithOrderid51" parameterClass="java.util.HashMap" resultClass="int">
+
+		select count(1) from seashell.paymentorder p,seashell.deal d
+		,seashell.entry e
+		where p.orderid=#orderId# and p.sequenceid=d.orderseqid
+		and d.dealid=e.dealid
+		and p.orderstatus=111 and d.dealstatus=1 and e.acctcode = '201001011001285119901' and e.value = #amount# and e.CRDR = '1'
+	</select>
+	<select id="getAcctItermsWithOrderid52" parameterClass="java.util.HashMap" resultClass="int">
+
+		select count(1) from seashell.paymentorder p,seashell.deal d
+		,seashell.entry e
+		where p.orderid=#orderId# and p.sequenceid=d.orderseqid
+		and d.dealid=e.dealid
+		and p.orderstatus=111 and d.dealstatus=1 and e.acctcode = '201001081001147954202' and e.value = #amount# and e.CRDR = '2'
+	</select>
+	<select id="getAcctItermsWithOrderid53" parameterClass="java.util.HashMap" resultClass="int">
+
+		select count(1) from seashell.paymentorder p,seashell.deal d
+		,seashell.entry e
+		where p.orderid=#orderId# and p.sequenceid=d.orderseqid
+		and d.dealid=e.dealid
+		and p.orderstatus=111 and d.dealstatus=1 and e.acctcode = '201001081001147954202' and e.value = #halfAmount# and e.CRDR = '1'
+	</select>
+	<select id="getAcctItermsWithOrderid54" parameterClass="java.util.HashMap" resultClass="int">
+
+		select count(1) from seashell.paymentorder p,seashell.deal d
+		,seashell.entry e
+		where p.orderid=#orderId# and p.sequenceid=d.orderseqid
+		and d.dealid=e.dealid
+		and p.orderstatus=111 and d.dealstatus=1 and e.acctcode = '201001011001147861601' and e.value = #halfAmount# and e.CRDR = '2'
+	</select>
+	<select id="getAcctItermsWithOrderid55" parameterClass="java.util.HashMap" resultClass="int">
+
+		select count(1) from seashell.paymentorder p,seashell.deal d
+		,seashell.entry e
+		where p.orderid=#orderId# and p.sequenceid=d.orderseqid
+		and d.dealid=e.dealid
+		and p.orderstatus=111 and d.dealstatus=1 and e.acctcode = '201001081001147954202' and e.value = #halfAmountAfterPoundage# and e.CRDR = '1'
+	</select>
+	<select id="getAcctItermsWithOrderid56" parameterClass="java.util.HashMap" resultClass="int">
+
+		select count(1) from seashell.paymentorder p,seashell.deal d
+		,seashell.entry e
+		where p.orderid=#orderId# and p.sequenceid=d.orderseqid
+		and d.dealid=e.dealid
+		and p.orderstatus=111 and d.dealstatus=1 and e.acctcode = '201001011001162931901' and e.value = #halfAmountAfterPoundage# and e.CRDR = '2'
+	</select>
+	<select id="getAcctItermsWithOrderid57" parameterClass="java.util.HashMap" resultClass="int">
+
+		select count(1) from seashell.paymentorder p,seashell.deal d
+		,seashell.entry e
+		where p.orderid=#orderId# and p.sequenceid=d.orderseqid
+		and d.dealid=e.dealid
+		and p.orderstatus=111 and d.dealstatus=1 and e.acctcode = '201001081001147954202' and e.value = #poundage# and e.CRDR = '1'
+	</select>
+	<select id="getAcctItermsWithOrderid58" parameterClass="java.util.HashMap" resultClass="int">
+
+		select count(1) from seashell.paymentorder p,seashell.deal d
+		,seashell.entry e
+		where p.orderid=#orderId# and p.sequenceid=d.orderseqid
+		and d.dealid=e.dealid
+		and p.orderstatus=111 and d.dealstatus=1 and e.acctcode = '515101052' and e.value = #poundage# and e.CRDR = '2'
+	</select>
+	<select id="getAcctItermsWithOrderid59" parameterClass="java.util.HashMap" resultClass="int">
+
+		select count(1) from seashell.paymentorder p,seashell.deal d
+		,seashell.entry e
+		where p.orderid=#orderId# and p.sequenceid=d.orderseqid
+		and d.dealid=e.dealid
+		and p.orderstatus=111 and d.dealstatus=1 and e.acctcode = '1281010310004' and e.value = #amount# and e.CRDR = '1'
+	</select>
+	<select id="getAcctItermsWithOrderid510" parameterClass="java.util.HashMap" resultClass="int">
+
+		select count(1) from seashell.paymentorder p,seashell.deal d
+		,seashell.entry e
+		where p.orderid=#orderId# and p.sequenceid=d.orderseqid
+		and d.dealid=e.dealid
+		and p.orderstatus=111 and d.dealstatus=1 and e.acctcode = '201001081001169632902' and e.value = #amount# and e.CRDR = '2'
+	</select>
+	<select id="getAcctItermsWithOrderid511" parameterClass="java.util.HashMap" resultClass="int">
+
+		select count(1) from seashell.paymentorder p,seashell.deal d
+		,seashell.entry e
+		where p.orderid=#orderId# and p.sequenceid=d.orderseqid
+		and d.dealid=e.dealid
+		and p.orderstatus=111 and d.dealstatus=1 and e.acctcode = '201001081001169632902' and e.value = #halfAmount# and e.CRDR = '1'
+	</select>
+	<select id="getAcctItermsWithOrderid512" parameterClass="java.util.HashMap" resultClass="int">
+
+		select count(1) from seashell.paymentorder p,seashell.deal d
+		,seashell.entry e
+		where p.orderid=#orderId# and p.sequenceid=d.orderseqid
+		and d.dealid=e.dealid
+		and p.orderstatus=111 and d.dealstatus=1 and e.acctcode = '201001081001169632902' and e.value = #halfAmountAfterPoundage# and e.CRDR = '1'
+	</select>
+	<select id="getAcctItermsWithOrderid513" parameterClass="java.util.HashMap" resultClass="int">
+
+		select count(1) from seashell.paymentorder p,seashell.deal d
+		,seashell.entry e
+		where p.orderid=#orderId# and p.sequenceid=d.orderseqid
+		and d.dealid=e.dealid
+		and p.orderstatus=111 and d.dealstatus=1 and e.acctcode = '201001011001162931901' and e.value = #halfAmountAfterPoundage# and e.CRDR = '2'
+	</select>
+	<select id="getAcctItermsWithOrderid514" parameterClass="java.util.HashMap" resultClass="int">
+
+		select count(1) from seashell.paymentorder p,seashell.deal d
+		,seashell.entry e
+		where p.orderid=#orderId# and p.sequenceid=d.orderseqid
+		and d.dealid=e.dealid
+		and p.orderstatus=111 and d.dealstatus=1 and e.acctcode = '201001081001169632902' and e.value = #poundage# and e.CRDR = '1'
+	</select>
+	<select id="getAcctItermsWithOrderid515" parameterClass="java.util.HashMap" resultClass="int">
+
+		select count(1) from seashell.paymentorder p,seashell.deal d
+		,seashell.entry e
+		where p.orderid=#orderId# and p.sequenceid=d.orderseqid
+		and d.dealid=e.dealid
+		and p.orderstatus=111 and d.dealstatus=1 and e.acctcode = '515101051' and e.value = #poundage# and e.CRDR = '2'
+	</select>
+	<select id="getAcctItermsWithOrderid516" parameterClass="java.util.HashMap" resultClass="int">
+
+		select count(1) from seashell.paymentorder p,seashell.deal d
+		,seashell.entry e
+		where p.orderid=#orderId# and p.sequenceid=d.orderseqid
+		and d.dealid=e.dealid
+		and p.orderstatus=111 and d.dealstatus=1 and e.acctcode = '201001011001169632901' and e.value = #Tolerance# and e.CRDR = '1'
+	</select>
+	<select id="getAcctItermsWithOrderid517" parameterClass="java.util.HashMap" resultClass="int">
+
+		select count(1) from seashell.paymentorder p,seashell.deal d
+		,seashell.entry e
+		where p.orderid=#orderId# and p.sequenceid=d.orderseqid
+		and d.dealid=e.dealid
+		and p.orderstatus=111 and d.dealstatus=1 and e.acctcode = '201001081001169632902' and e.value = #Tolerance# and e.CRDR = '2'
+	</select>
+	<select id="getAcctItermsWithOrderid61" parameterClass="java.util.HashMap" resultClass="int">
+
+		select count(1) from seashell.paymentorder p,seashell.deal d
+		,seashell.entry e
+		where p.orderid=#orderId# and p.sequenceid=d.orderseqid
+		and d.dealid=e.dealid
+		and p.orderstatus=111 and d.dealstatus=1 and e.acctcode = '201001011001169632901' and e.value = '1970' and e.CRDR = '1'
+	</select>
+	<select id="getAcctItermsWithOrderid62" parameterClass="java.util.HashMap" resultClass="int">
+
+		select count(1) from seashell.paymentorder p,seashell.deal d
+		,seashell.entry e
+		where p.orderid=#orderId# and p.sequenceid=d.orderseqid
+		and d.dealid=e.dealid
+		and p.orderstatus=111 and d.dealstatus=1 and e.acctcode = '201001081001169632902' and e.value = '1970' and e.CRDR = '2'
+	</select>
+	<select id="getAcctItermsWithOrderid63" parameterClass="java.util.HashMap" resultClass="int">
+
+		select count(1) from seashell.paymentorder p,seashell.deal d
+		,seashell.entry e
+		where p.orderid=#orderId# and p.sequenceid=d.orderseqid
+		and d.dealid=e.dealid
+		and p.orderstatus=111 and d.dealstatus=1 and e.acctcode = '201001011001162931901' and e.value = '1970' and e.CRDR = '1'
+	</select>
+	<select id="getAcctItermsWithOrderid64" parameterClass="java.util.HashMap" resultClass="int">
+
+		select count(1) from seashell.paymentorder p,seashell.deal d
+		,seashell.entry e
+		where p.orderid=#orderId# and p.sequenceid=d.orderseqid
+		and d.dealid=e.dealid
+		and p.orderstatus=111 and d.dealstatus=1 and e.acctcode = '201001011001169632901' and e.value = '1970' and e.CRDR = '2'
+	</select>
+	<select id="getAcctItermsWithOrderid65" parameterClass="java.util.HashMap" resultClass="int">
+
+		select count(1) from seashell.paymentorder p,seashell.deal d
+		,seashell.entry e
+		where p.orderid=#orderId# and p.sequenceid=d.orderseqid
+		and d.dealid=e.dealid
+		and p.orderstatus=111 and d.dealstatus=1 and e.acctcode = '201001011001147861601' and e.value = '1000' and e.CRDR = '1'
+	</select>
+	<select id="getAcctItermsWithOrderid66" parameterClass="java.util.HashMap" resultClass="int">
+
+		select count(1) from seashell.paymentorder p,seashell.deal d
+		,seashell.entry e
+		where p.orderid=#orderId# and p.sequenceid=d.orderseqid
+		and d.dealid=e.dealid
+		and p.orderstatus=111 and d.dealstatus=1 and e.acctcode = '201001011001169632901' and e.value = '1000' and e.CRDR = '2'
+	</select>
+	<select id="getAcctItermsWithOrderid67" parameterClass="java.util.HashMap" resultClass="int">
+
+		select count(1) from seashell.paymentorder p,seashell.deal d
+		,seashell.entry e
+		where p.orderid=#orderId# and p.sequenceid=d.orderseqid
+		and d.dealid=e.dealid
+		and p.orderstatus=111 and d.dealstatus=1 and e.acctcode = '201001011001169632901' and e.value = '1000' and e.CRDR = '1'
+	</select>
+	<select id="getAcctItermsWithOrderid68" parameterClass="java.util.HashMap" resultClass="int">
+
+		select count(1) from seashell.paymentorder p,seashell.deal d
+		,seashell.entry e
+		where p.orderid=#orderId# and p.sequenceid=d.orderseqid
+		and d.dealid=e.dealid
+		and p.orderstatus=111 and d.dealstatus=1 and e.acctcode = '201001081001169632902' and e.value = '1000' and e.CRDR = '2'
+	</select>
+	<select id="getAcctItermsWithOrderid71" parameterClass="java.util.HashMap" resultClass="int">
+
+		select count(1) from seashell.paymentorder p,seashell.deal d
+		,seashell.entry e
+		where p.orderid=#refundOrderId# and p.sequenceid=d.orderseqid
+		and d.dealid=e.dealid
+		and p.orderstatus=111 and d.dealstatus=1 and e.acctcode = '201001011001162931901' and e.value = '1980' and e.CRDR = '1'
+	</select>
+	<select id="getAcctItermsWithOrderid72" parameterClass="java.util.HashMap" resultClass="int">
+
+		select count(1) from seashell.paymentorder p,seashell.deal d
+		,seashell.entry e
+		where p.orderid=#refundOrderId# and p.sequenceid=d.orderseqid
+		and d.dealid=e.dealid
+		and p.orderstatus=111 and d.dealstatus=1 and e.acctcode = '201001081001169632902' and e.value = '1980' and e.CRDR = '2'
+	</select>
+	<select id="getAcctItermsWithOrderid73" parameterClass="java.util.HashMap" resultClass="int">
+
+		select count(1) from seashell.paymentorder p,seashell.deal d
+		,seashell.entry e
+		where p.orderid=#refundOrderId# and p.sequenceid=d.orderseqid
+		and d.dealid=e.dealid
+		and p.orderstatus=111 and d.dealstatus=1 and e.acctcode = '201001011001147861601' and e.value = '1000' and e.CRDR = '1'
+	</select>
+	<select id="getAcctItermsWithOrderid74" parameterClass="java.util.HashMap" resultClass="int">
+
+		select count(1) from seashell.paymentorder p,seashell.deal d
+		,seashell.entry e
+		where p.orderid=#refundOrderId# and p.sequenceid=d.orderseqid
+		and d.dealid=e.dealid
+		and p.orderstatus=111 and d.dealstatus=1 and e.acctcode = '201001081001169632902' and e.value = '1000' and e.CRDR = '2'
+	</select>
+	<select id="getAcctItermsWithOrderid75" parameterClass="java.util.HashMap" resultClass="int">
+
+		select count(1) from seashell.paymentorder p,seashell.deal d
+		,seashell.entry e
+		where p.orderid=#refundOrderId# and p.sequenceid=d.orderseqid
+		and d.dealid=e.dealid
+		and p.orderstatus=111 and d.dealstatus=1 and e.acctcode = '201001011001169632901' and e.value = '1000' and e.CRDR = '2'
+	</select>
+	<select id="getAcctItermsWithOrderid76" parameterClass="java.util.HashMap" resultClass="int">
+
+		select count(1) from seashell.paymentorder p,seashell.deal d
+		,seashell.entry e
+		where p.orderid=#refundOrderId# and p.sequenceid=d.orderseqid
+		and d.dealid=e.dealid
+		and p.orderstatus=111 and d.dealstatus=1 and e.acctcode = '201001081001169632902' and e.value = '1000' and e.CRDR = '1'
+	</select>
+	
+</sqlMap>

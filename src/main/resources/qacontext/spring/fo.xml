@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+		http://www.springframework.org/schema/aop
+		http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+		http://www.springframework.org/schema/context
+		http://www.springframework.org/schema/context/spring-context-2.5.xsd">
+		
+	<!-- service服务 -->
+	<bean id="loginService" class="com.bill99.fo.service.impl.LoginServiceImpl"></bean>
+	<bean id="directedPaymentCashService" class="com.bill99.fo.service.impl.DirectedPaymentCashServiceImpl"></bean>	
+	<bean id="netBankRemitService" class="com.bill99.fo.service.impl.NetBankRemitServiceImpl"></bean>
+	<bean id="infsBalanceService" class="com.bill99.fo.service.impl.InfsBalanceServiceImpl"></bean>
+	
+	<!-- 数据库orm服务 -->
+	<bean id="seashellDB"  class="com.bill99.fo.orm.impl.SeashellDBImpl">
+		<property name="taSeashellDbHandller" ref="taSeashellDbHandller"></property>
+	</bean>
+	
+</beans>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+        "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="PaymentOrder">
+    <resultMap class="com.bill99.mcs.common.dto.PaymentOrder" id="BaseResultMap">
+        <result column="SEQUENCEID" jdbcType="DECIMAL" property="sequenceid"/>
+        <result column="ORDERID" jdbcType="VARCHAR" property="orderId"/>
+        <result column="SUBMITACCTCODE" jdbcType="DECIMAL" property="submitacctcode"/>
+        <result column="ORDERCODE" jdbcType="DECIMAL" property="ordercode"/>
+        <result column="PAYMETHOD" jdbcType="DECIMAL" property="paymethod"/>
+        <result column="ORGORDERID" jdbcType="VARCHAR" property="orgorderid"/>
+        <result column="PRODUCTNAME" jdbcType="VARCHAR" property="productname"/>
+        <result column="PRODUCTNUM" jdbcType="DECIMAL" property="productnum"/>
+        <result column="ORDERAMOUNT" jdbcType="DECIMAL" property="orderamount"/>
+        <result column="DISCOUNTAMOUNT" jdbcType="DECIMAL" property="discountamount"/>
+        <result column="COUPONNUMBER" jdbcType="VARCHAR" property="couponnumber"/>
+        <result column="PAYERACCTCODE" jdbcType="DECIMAL" property="payeracctcode"/>
+        <result column="PAYERACCTTYPE" jdbcType="DECIMAL" property="payeraccttype"/>
+        <result column="PAYERORGCODE" jdbcType="DECIMAL" property="payerorgcode"/>
+        <result column="PAYERORGTYPE" jdbcType="DECIMAL" property="payerorgtype"/>
+        <result column="PAYEEACCTCODE" jdbcType="DECIMAL" property="payeeacctcode"/>
+        <result column="PAYEEACCTTYPE" jdbcType="DECIMAL" property="payeeaccttype"/>
+        <result column="PAYEEORGCODE" jdbcType="DECIMAL" property="payeeorgcode"/>
+        <result column="PAYEEORGTYPE" jdbcType="DECIMAL" property="payeeorgtype"/>
+        <result column="ORDERTIME" jdbcType="DATE" property="ordertime"/>
+        <result column="ORDERSTATUS" jdbcType="DECIMAL" property="orderstatus"/>
+        <result column="LASTUPDATETIME" jdbcType="DATE" property="lastupdatetime"/>
+        <result column="RETURNURL" jdbcType="VARCHAR" property="returnurl"/>
+        <result column="VERSION" jdbcType="VARCHAR" property="version"/>
+        <result column="MEMO" jdbcType="VARCHAR" property="memo"/>
+        <result column="RELATEDSEQUENCEID" jdbcType="VARCHAR" property="relatedsequenceid"/>
+        <result column="RELATEDTYPE" jdbcType="DECIMAL" property="relatedtype"/>
+        <result column="PAYEEIDENTITY" jdbcType="VARCHAR" property="payeeidentity"/>
+        <result column="ORDERDIGEST" jdbcType="VARCHAR" property="orderdigest"/>
+        <result column="TERMINALTYPECODE" jdbcType="DECIMAL" property="terminaltypecode"/>
+        <result column="ORDERORIGIN" jdbcType="DECIMAL" property="orderorigin"/>
+        <result column="ISREVERSED" jdbcType="DECIMAL" property="isreversed"/>
+        <result column="IP" jdbcType="VARCHAR" property="ip"/>
+        <result column="REFERENCENUM" jdbcType="VARCHAR" property="referencenum"/>
+        <result column="LOYALCARDNUMBER" jdbcType="VARCHAR" property="loyalcardnumber"/>
+        <result column="MERCHANTORDERTIME" jdbcType="DATE" property="merchantordertime"/>
+        <result column="OPVERSION" jdbcType="DECIMAL" property="opversion"/>
+        <result column="CURRENCYCODE" jdbcType="VARCHAR" property="currencycode"/>
+        <result column="PAYERDISPLAYNAME" jdbcType="VARCHAR" property="payerdisplayname"/>
+        <result column="PAYEEDISPLAYNAME" jdbcType="VARCHAR" property="payeedisplayname"/>
+        <result column="PAYEECHANNEL" jdbcType="VARCHAR" property="payeechannel"/>
+        <result column="PAYERCHANNEL" jdbcType="VARCHAR" property="payerchannel"/>
+    </resultMap>
+    <sql id="BaseColumnList">
+        SEQUENCEID, ORDERID, SUBMITACCTCODE, ORDERCODE, PAYMETHOD, ORGORDERID, PRODUCTNAME,
+        PRODUCTNUM, ORDERAMOUNT, DISCOUNTAMOUNT, COUPONNUMBER, PAYERACCTCODE, PAYERACCTTYPE,
+        PAYERORGCODE, PAYERORGTYPE, PAYEEACCTCODE, PAYEEACCTTYPE, PAYEEORGCODE, PAYEEORGTYPE,
+        ORDERTIME, ORDERSTATUS, LASTUPDATETIME, RETURNURL, VERSION, MEMO, RELATEDSEQUENCEID,
+        RELATEDTYPE, PAYEEIDENTITY, ORDERDIGEST, TERMINALTYPECODE, ORDERORIGIN, ISREVERSED,
+        IP, REFERENCENUM, LOYALCARDNUMBER, MERCHANTORDERTIME, OPVERSION, CURRENCYCODE, PAYERDISPLAYNAME,
+        PAYEEDISPLAYNAME, PAYEECHANNEL, PAYERCHANNEL
+    </sql>
+    <select id="getPaymentOrder" parameterClass="com.bill99.mcs.common.dto.PaymentOrder" resultMap="BaseResultMap">
+        select
+        <include refid="BaseColumnList"/>
+        from seashell.paymentorder
+        <dynamic prepend="where">
+            <isNotEmpty prepend="and" property="orderId">
+                ORDERID=#orderId#
+            </isNotEmpty>
+            <isNotEmpty prepend="and" property="ordercode">
+				ORDERCODE=#ordercode#
+            </isNotEmpty>
+        </dynamic>
+    </select>
+</sqlMap>

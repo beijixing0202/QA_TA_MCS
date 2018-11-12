@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+"http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+	<bean class="shelper.spring.ext.PropertyPlaceholderConfigurer">
+		<property name="systemPropertiesModeName" value="SYSTEM_PROPERTIES_MODE_OVERRIDE" />
+		<property name="ignoreResourceNotFound" value="true" />
+		<property name="rootLocation">
+			<value>classpath:properties/env_dir.props</value>
+		</property>
+		<property name="childLocations">
+            <list>			   	
+            	<value>classpath:/properties/framework/jdbc-common.props</value>
+				<value>classpath:/properties/framework/${STAGE_ID}/${GROUP_ID}/jdbc.props</value>
+            	 <!--<value>classpath:/properties/${STAGE_ID}/${GROUP_ID}/mgwdb.properties</value>-->
+				<value>classpath:/properties/${STAGE_ID}/${GROUP_ID}/security.properties</value>
+				
+				<value>classpath:/properties/${STAGE_ID}/${GROUP_ID}/cps/httpurl.properties</value>
+ 				<value>classpath:/properties/${STAGE_ID}/${GROUP_ID}/ate/url.properties</value>
+ 				<value>classpath:/properties/${STAGE_ID}/${GROUP_ID}/mcs/mcs.properties</value>
+				<value>classpath:/properties/${STAGE_ID}/${GROUP_ID}/mcs/mcsdb.properties</value>
+ 				<value>classpath:/properties/${STAGE_ID}/${GROUP_ID}/pe/pe.properties</value>
+ 				
+ 				<value>classpath:/properties/${STAGE_ID}/${GROUP_ID}/monitor.properties</value>
+ 				<value>classpath:/properties/${STAGE_ID}/${GROUP_ID}/fo/fo.properties</value>
+				<value>classpath:/properties/${STAGE_ID}/${GROUP_ID}/fi/fi_url.properties</value>
+				<value>classpath:/properties/${STAGE_ID}/${GROUP_ID}/fi/fi_logdb.properties</value>
+				<value>classpath:/properties/${STAGE_ID}/${GROUP_ID}/ifs/ifs.properties</value>
+			</list>
+		</property>
+		
+		<property name="convertToSystemLocations">
+			<list>
+			    <value>classpath:/properties/framework/jdbc-common.props</value>
+				<value>classpath:/properties/framework/${STAGE_ID}/${GROUP_ID}/jdbc.props</value>
+				<value>classpath:/properties/uitest.props</value>
+				<value>classpath:/properties/${STAGE_ID}/${GROUP_ID}/fo/fo.properties</value>
+								
+<!-- 				<value>classpath:/properties/${STAGE_ID}/${GROUP_ID}/cps/httpurl.properties</value> -->
+<!-- 				<value>classpath:/properties/${STAGE_ID}/${GROUP_ID}/ate/url.properties</value> -->
+<!-- 				<value>classpath:/properties/${STAGE_ID}/${GROUP_ID}/mcs/mcs.properties</value> -->
+			</list>
+		</property>
+	</bean>
+</beans>

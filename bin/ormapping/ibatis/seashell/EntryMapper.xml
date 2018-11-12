@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+        "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="Entry">
+    <resultMap class="com.bill99.mcs.common.dto.Entry" id="BaseResultMap">
+        <result column="VOUCHERCODE" jdbcType="DECIMAL" property="voucherCode" />
+        <result column="ACCTCODE" jdbcType="DECIMAL" property="acctCode" />
+        <result column="CRDR" jdbcType="DECIMAL" property="crdr" />
+        <result column="VALUE" jdbcType="DECIMAL" property="value" />
+        <result column="TEXT" jdbcType="VARCHAR" property="text" />
+        <result column="DEALID" jdbcType="VARCHAR" property="dealId" />
+        <result column="PAYMENTSERVICECODE" jdbcType="DECIMAL" property="paymentServiceCode" />
+        <result column="CREATIONDATE" jdbcType="DATE" property="creationDate" />
+        <result column="STATUS" jdbcType="DECIMAL" property="status" />
+        <result column="ENTRYCODE" jdbcType="DECIMAL" property="entryCode" />
+        <result column="POSTDATE" jdbcType="DATE" property="postDate" />
+        <result column="ENTRYTYPE" jdbcType="DECIMAL" property="entryType" />
+        <result column="CURRENCYCODE" jdbcType="VARCHAR" property="currencyCode" />
+        <result column="EXCHANGERATE" jdbcType="DECIMAL" property="exchangeRate" />
+        <result column="TRANSACTIONDATE" jdbcType="DATE" property="transactionDate" />
+        <result column="ASYNACCOUNTING" jdbcType="DECIMAL" property="asynAccounting" />
+    </resultMap>
+    <sql id="BaseColumnList">
+        VOUCHERCODE, ACCTCODE, CRDR, VALUE, TEXT, DEALID, PAYMENTSERVICECODE,CREATIONDATE, STATUS,
+        ENTRYCODE, POSTDATE, ENTRYTYPE, CURRENCYCODE, EXCHANGERATE, TRANSACTIONDATE, ASYNACCOUNTING
+    </sql>
+    <select id="getEntry" parameterClass="com.bill99.mcs.common.dto.Entry" resultMap="BaseResultMap">
+        select
+        <include refid="BaseColumnList"/>
+        from seashell.entry
+        <dynamic prepend="where">
+            <isNotEmpty prepend="and" property="dealId">
+                DEALID=#dealId#
+            </isNotEmpty>
+        </dynamic>
+    </select>
+    <select id="getEntryByDealIds" resultMap="BaseResultMap">
+        select
+        <include refid="BaseColumnList"/>
+        from seashell.entry
+        <dynamic prepend="where">
+                DEALID IN
+                  <iterate open="(" close=")" conjunction=",">
+                      #[]#
+                  </iterate>
+        </dynamic>
+    </select>
+</sqlMap>

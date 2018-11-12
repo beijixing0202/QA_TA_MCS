@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fi/common/dto/gatewayqueryV21
+END
+V21GatewayOrderDetail.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fi/common/dto/gatewayqueryV21/V21GatewayOrderDetail.java
+END
+V21GatewayOrderQueryResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fi/common/dto/gatewayqueryV21/V21GatewayOrderQueryResponse.java
+END
+GatewayOrderQueryRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fi/common/dto/gatewayqueryV21/GatewayOrderQueryRequest.java
+END

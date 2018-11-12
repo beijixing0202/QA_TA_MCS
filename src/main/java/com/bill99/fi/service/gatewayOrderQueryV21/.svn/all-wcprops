@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fi/service/gatewayOrderQueryV21
+END
+V21GatewayOrderQueryServiceLocator.java
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fi/service/gatewayOrderQueryV21/V21GatewayOrderQueryServiceLocator.java
+END
+GatewayOrderQueryV21SoapBindingStub.java
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fi/service/gatewayOrderQueryV21/GatewayOrderQueryV21SoapBindingStub.java
+END
+V21GatewayOrderQuery.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fi/service/gatewayOrderQueryV21/V21GatewayOrderQuery.java
+END
+V21GatewayOrderQueryService.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fi/service/gatewayOrderQueryV21/V21GatewayOrderQueryService.java
+END
+V21GatewayOrderQueryProxy.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fi/service/gatewayOrderQueryV21/V21GatewayOrderQueryProxy.java
+END

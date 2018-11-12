@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+		http://www.springframework.org/schema/aop
+		http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+		http://www.springframework.org/schema/context
+		http://www.springframework.org/schema/context/spring-context-2.5.xsd">
+
+	<!-- -->
+	<bean id="mgwhttpsubmit" class="com.bill99.cps.access.http.MgwHttpSubmit">
+		<property name="autip" value="${cpsa.mgw.autip}" />
+		<property name="sslport" value="${cpsa.mgw.sslport}"></property>
+		<property name="autuser" value="${cpsa.mgw.autuser}"></property>
+		<property name="autuserpass" value="${cpsa.mgw.autuserpass}"></property>
+		<property name="keystorepass" value="${cpsa.mgw.keystorepass}"></property>
+		<property name="trustkeystorepass" value="${cpsa.mgw.trustkeystorepass}"></property>
+	</bean>
+
+	<bean id="httpContentService" class="com.bill99.cps.service.impl.HttpCnpServiceImpl">
+		<property name="mgwhttpsubmit" ref="mgwhttpsubmit" />
+		<property name="pururl" value="${cpsa.mgw.CnpPurchaseUrl}" />
+		<property name="inpurl" value="${mgw.INP_url}"></property>
+		<property name="preurl" value="${mgw.PRE_url}"></property>
+		<property name="cfmurl" value="${mgw.CFM_url}"></property>
+		<property name="vtxurl" value="${mgw.VTX_url}"></property>
+		<property name="rfdurl" value="${mgw.RFD_url}"></property>
+	</bean>
+
+	<!-- 增加本地保单操作api的实现类 -->
+	<bean id="httpQueryOrderService" class="com.bill99.cps.service.impl.HttpQueryOrderServiceImpl">
+		<property name="mgwhttpsubmit" ref="mgwhttpsubmit" />
+		<property name="url" value="${cpsa.mgw.queryInsuranceUrl}" />
+	</bean>
+
+	<bean id="internalService" class="com.bill99.cps.service.impl.InternalServiceImpl">
+		<property name="internalmockurl" value="${internal.mock_url}"></property>
+	</bean>
+
+	<bean id="converMgwDataDriverService"
+		class="com.bill99.cps.service.impl.ConverMgwDataDriverServiceImpl">
+	</bean>
+
+	<bean id="oracleDao" class="com.bill99.cps.orm.impl.OracleDaoImpl">
+		<property name="cpsconnect" value="${qa.vposdb.jdbc.url}"></property>
+		<property name="seashellconnect" value="${qa.billdb.jdbc.url}"></property>
+		<property name="cps02connect" value="${qa.vposdb.jdbc.url}"></property>
+		<property name="ccs02connect" value="${qa.vposdb.jdbc.url}"></property>
+		<property name="cpsname" value="${qa.vposdb.jdbc.username}"></property>
+		<property name="cpspassw" value="${qa.vposdb.jdbc.password}"></property>
+		<property name="seashellname" value="${qa.billdb.jdbc.username}"></property>
+		<property name="seashellpassw" value="${qa.billdb.jdbc.password}"></property>
+		<property name="cps02name" value="${qa.vposdb.jdbc.username}"></property>
+		<property name="cps02passw" value="${qa.vposdb.jdbc.password}"></property>
+		<property name="ccs02name" value="${qa.vposdb.jdbc.username}"></property>
+		<property name="ccs02passw" value="${qa.vposdb.jdbc.password}"></property>
+	</bean>
+
+	<bean id="dbOracleCheck" class="com.bill99.cps.service.impl.DBOracleCheckImpl">
+		<property name="oracleDao" ref="oracleDao"></property>
+		<property name="keyString" value="${key}"></property>
+
+	</bean>
+
+	<bean id="cpsDbCheck" class="com.bill99.cps.service.check.CpsDbCheck">
+		<property name="oracleDao" ref="oracleDao"></property>
+		<property name="keyString" value="${key}"></property>
+
+	</bean>
+
+
+	<bean id="getDynNumService" class="com.bill99.cps.service.impl.HttpGetDynNumServiceImpl">
+		<property name="mgwhttpsubmit" ref="mgwhttpsubmit" />
+		<property name="getDynNumUrl" value="${cpsa.mgw.CnpGetDynNumUrl}" />
+	</bean>
+
+	<bean id="pciStoreService" class="com.bill99.cps.service.impl.HttpPciStoreServiceImpl">
+		<property name="mgwhttpsubmit" ref="mgwhttpsubmit" />
+		<property name="pcistoreurl" value="${cpsa.mgw.CnpPci_storeUrl}" />
+	</bean>
+
+	<bean id="pciQueryService" class="com.bill99.cps.service.impl.HttpPciQueryServiceImpl">
+		<property name="mgwhttpsubmit" ref="mgwhttpsubmit" />
+		<property name="pciqueryurl" value="${cpsa.mgw.CnpPci_queryUrl}" />
+	</bean>
+	<bean id="pciDelService" class="com.bill99.cps.service.impl.HttpPciDelServiceImpl">
+		<property name="mgwhttpsubmit" ref="mgwhttpsubmit" />
+		<property name="pcidelurl" value="${cpsa.mgw.CnpPci_delUrl}" />
+	</bean>
+
+	<bean id="txnQueryService" class="com.bill99.cps.service.impl.HttpTxnQueryServiceImpl">
+		<property name="mgwhttpsubmit" ref="mgwhttpsubmit" />
+		<property name="txnqueryurl" value="${cpsa.mgw.CnpQuery_ExnUrl}" />
+	</bean>
+
+	<bean id="batchtxnQueryService"
+		class="com.bill99.cps.service.impl.HttpBatchTxnQueryServiceImpl">
+		<property name="mgwhttpsubmit" ref="mgwhttpsubmit" />
+		<property name="batchtxnqueryurl" value="${cpsa.mgw.CnpQuery_txn_list}" />
+	</bean>
+
+	<bean id="settletxnQueryService"
+		class="com.bill99.cps.service.impl.HttpSettleTxnQueryServiceImpl">
+		<property name="mgwhttpsubmit" ref="mgwhttpsubmit" />
+		<property name="settletxnqueryurl" value="${cpsa.mgw.CnpQuery_settlement_txn_list}" />
+	</bean>
+
+	<bean id="confirmtxnQueryService"
+		class="com.bill99.cps.service.impl.HttpConfirmTxnQueryServiceImpl">
+		<property name="mgwhttpsubmit" ref="mgwhttpsubmit" />
+		<property name="confirmtxnqueryurl" value="${cpsa.mgw.CnpQuery_confirm_txn_list}" />
+	</bean>
+
+	<bean id="cardinfoQueryService"
+		class="com.bill99.cps.service.impl.HttpCardInfoQueryServiceImpl">
+		<property name="mgwhttpsubmit" ref="mgwhttpsubmit" />
+		<property name="cardinfoqueryurl" value="${cpsa.mgw.CnpQuery_cardinfo}" />
+	</bean>
+
+	<bean id="acceptcapacityQueryService"
+		class="com.bill99.cps.service.impl.HttpAcceptCapacityQueryServiceImpl">
+		<property name="mgwhttpsubmit" ref="mgwhttpsubmit" />
+		<property name="acceptcapacityqueryurl" value="${cpsa.mgw.CnpQuery_accept_capacity}" />
+	</bean>
+
+	<bean id="ivrtxnQueryService"
+		class="com.bill99.cps.service.impl.HttpIvrTxnQueryServiceImpl">
+		<property name="mgwhttpsubmit" ref="mgwhttpsubmit" />
+		<property name="ivrtxnqueryurl" value="${cpsa.mgw.CnpQuery_ivr_txn}" />
+	</bean>
+
+	<bean id="independAuthentService"
+		class="com.bill99.cps.service.impl.HttpIndependAuthentServiceImpl">
+		<property name="mgwhttpsubmit" ref="mgwhttpsubmit" />
+		<property name="indepentAuthUrl" value="${cpsa.mgw.Indepent_Authent_apply}" />
+	</bean>
+
+	<bean id="independAuthentVerifyServiceImpl"
+		class="com.bill99.cps.service.impl.HttpIndependAuthentVerifyServiceImpl">
+		<property name="mgwhttpsubmit" ref="mgwhttpsubmit" />
+		<property name="indAuthVerificationUrl" value="${cpsa.mgw.Indepent_Authent_verify}" />
+	</bean>
+
+	<bean id = "accessDB" class="com.bill99.cps.orm.AccessDB" />
+
+		<!-- SK ADD -->
+	<bean id="mockConverInternalDataDriverService" class="com.bill99.cps.service.impl.MockConverInternalDataDriverServiceImpl">
+	</bean>
+	<bean id="httpInternalPost" class="com.bill99.cps.access.http.HttpInternalPost">
+	<!-- 发起cnp交易 -->
+	</bean>
+	<bean id="httpInternalContentService" class="com.bill99.cps.service.impl.HttpInternalCnpServiceImpl">
+		<property name="httpInternalPost" ref="httpInternalPost" />
+		<property name="cnpUrl" value="${cnpUrl}"></property>
+		<property name="posturl" value="${postUrl}"></property>
+	</bean>
+	<!-- 获取手机动态码鉴权 -->
+	<bean id="getDynCodeService" class="com.bill99.cps.service.impl.HttpInternalGetDynCodeImpl">
+		<property name="httpInternalPost" ref="httpInternalPost"></property>
+		<property name="getDynCodeUrl" value="${getDynCodeUrl}"></property>
+		<property name="posturl" value="{postUrl}"></property>
+	</bean>
+
+</beans>

@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+    "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="OrderMaster">
+	<resultMap class="com.bill99.ate.orm.dto.OrderMasterDto"
+		id="BaseResultMap">
+		<result column="MASTER_ID" jdbcType="DECIMAL" property="masterId" />
+		<result column="BILL_ORDER_NO" jdbcType="VARCHAR" property="billOrderNo" />
+		<result column="OUT_TRADE_NO" jdbcType="VARCHAR" property="outTradeNo" />
+		<result column="MERCHANT_CODE" jdbcType="VARCHAR" property="merchantCode" />
+		<result column="APP_ID" jdbcType="VARCHAR" property="appId" />
+		<result column="CHANNEL_TYPE" jdbcType="DECIMAL" property="channelType" />
+		<result column="ORDER_TYPE" jdbcType="DECIMAL" property="orderType" />
+		<result column="FUNCTION_CODE" jdbcType="DECIMAL" property="functionCode" />
+		<result column="TXN_TIME_START" jdbcType="TIMESTAMP" property="txnTimeStart" />
+		<result column="TXN_PROCESS_TIME" jdbcType="TIMESTAMP"
+			property="txnProcessTime" />
+		<result column="ORDER_AMOUNT" jdbcType="DECIMAL" property="orderAmount" />
+		<result column="TRADE_ID" jdbcType="VARCHAR" property="tradeId" />
+		<result column="BIS_REQUEST_NO" jdbcType="VARCHAR" property="bisRequestNo" />
+		<result column="BIS_RESPONSE_NO" jdbcType="VARCHAR" property="bisResponseNo" />
+		<result column="OUT_ORDER_TYPE" jdbcType="DECIMAL" property="outOrderType" />
+		<result column="TXN_END_TIME" jdbcType="TIMESTAMP" property="txnEndTime" />
+		<result column="TXN_TIME_EXPIRE" jdbcType="TIMESTAMP" property="txnTimeExpire" />
+		<result column="ORDER_STATUS" jdbcType="DECIMAL" property="orderStatus" />
+		<result column="PAY_STATUS" jdbcType="DECIMAL" property="payStatus" />
+		<result column="EQUITY_STATUS" jdbcType="DECIMAL" property="equityStatus" />
+		<result column="PAY_AMOUNT" jdbcType="DECIMAL" property="payAmount" />
+		<result column="EQUITY_FLAG" jdbcType="DECIMAL" property="equityFlag" />
+		<result column="EQUITY_CODE" jdbcType="VARCHAR" property="equityCode" />
+		<result column="EQUITY_AMOUNT" jdbcType="DECIMAL" property="equityAmount" />
+		<result column="EQUITY_DESC" jdbcType="VARCHAR" property="equityDesc" />
+		<result column="PAY_MEDIA" jdbcType="DECIMAL" property="payMedia" />
+		<result column="AUTH_CODE" jdbcType="VARCHAR" property="authCode" />
+		<result column="PAY_MODE" jdbcType="DECIMAL" property="payMode" />
+		<result column="MEMBER_BANK_ID" jdbcType="VARCHAR" property="memberBankId" />
+		<result column="CURRENCY_CODE" jdbcType="VARCHAR" property="currencyCode" />
+		<result column="BANK_ACCT_ID" jdbcType="VARCHAR" property="bankAcctId" />
+		<result column="BANK_ACCT_TYPE" jdbcType="VARCHAR" property="bankAcctType" />
+		<result column="BANK_ACCT_NAME" jdbcType="VARCHAR" property="bankAcctName" />
+		<result column="SECURE_TYPE" jdbcType="DECIMAL" property="secureType" />
+		<result column="MEMBER_CODE" jdbcType="VARCHAR" property="memberCode" />
+		<result column="MEMBER_MARK" jdbcType="VARCHAR" property="memberMark" />
+		<result column="PRODUCT_TAG" jdbcType="VARCHAR" property="productTag" />
+		<result column="PRODUCT_DESC" jdbcType="VARCHAR" property="productDesc" />
+		<result column="ORDER_COUNT" jdbcType="DECIMAL" property="orderCount" />
+		<result column="SUB_MERCHANT_ID" jdbcType="VARCHAR" property="subMerchantId" />
+		<result column="SUB_MERCHANT_NAME" jdbcType="VARCHAR" property="subMerchantName" />
+		<result column="STL_MERCHANT_CODE" jdbcType="VARCHAR" property="stlMerchantCode" />
+		<result column="MAIN_MERCHANT_ID" jdbcType="VARCHAR" property="mainMerchantId" />
+		<result column="BILL_ORDER_ID" jdbcType="VARCHAR" property="billOrderId" />
+		<result column="BATCH_ID" jdbcType="VARCHAR" property="batchId" />
+		<result column="TXN_SEND_IP" jdbcType="VARCHAR" property="txnSendIp" />
+		<result column="SUB_TERMINAL_ID" jdbcType="VARCHAR" property="subTerminalId" />
+		<result column="DEVICE_INFO" jdbcType="VARCHAR" property="deviceInfo" />
+		<result column="MEMO" jdbcType="VARCHAR" property="memo" />
+		<result column="ERROR_CODE" jdbcType="VARCHAR" property="errorCode" />
+		<result column="ERROR_INFO" jdbcType="VARCHAR" property="errorInfo" />
+		<result column="REFUND_AMOUNT" jdbcType="DECIMAL" property="refundAmount" />
+		<result column="TXN_REVERSE_TIME" jdbcType="TIMESTAMP"
+			property="txnReverseTime" />
+		<result column="REF_ID_TXN" jdbcType="VARCHAR" property="refIdTxn" />
+		<result column="REF_ID_CTRL" jdbcType="VARCHAR" property="refIdCtrl" />
+		<result column="REF_NUM" jdbcType="VARCHAR" property="refNum" />
+		<result column="ORIG_TRADE_ID" jdbcType="VARCHAR" property="origTradeId" />
+		<result column="PAGE_URL" jdbcType="VARCHAR" property="pageUrl" />
+		<result column="STAGE_INFO" jdbcType="VARCHAR" property="stageInfo" />
+		<result column="SIGN_PATH" jdbcType="VARCHAR" property="signPath" />
+		<result column="RECEIPT" jdbcType="VARCHAR" property="receipt" />
+		<result column="CREATE_TIME" jdbcType="TIMESTAMP" property="createTime" />
+		<result column="UPDATE_TIME" jdbcType="TIMESTAMP" property="updateTime" />
+		<result column="EXT1" jdbcType="VARCHAR" property="ext1" />
+		<result column="EXT2" jdbcType="VARCHAR" property="ext2" />
+		<result column="EXT3" jdbcType="VARCHAR" property="ext3" />
+		<result column="MERCHANT_ID" jdbcType="VARCHAR" property="merchantId" />
+		<result column="TXN_TYPE" jdbcType="DECIMAL" property="txnType" />
+	</resultMap>
+
+	<sql id="Base_Column_List">
+		MASTER_ID, BILL_ORDER_NO, OUT_TRADE_NO, MERCHANT_CODE,
+		APP_ID, CHANNEL_TYPE,
+		ORDER_TYPE,
+		FUNCTION_CODE, TXN_TIME_START,
+		TXN_PROCESS_TIME, ORDER_AMOUNT, TRADE_ID,
+		BIS_REQUEST_NO,
+		BIS_RESPONSE_NO, OUT_ORDER_TYPE, TXN_END_TIME, TXN_TIME_EXPIRE,
+		ORDER_STATUS,
+		PAY_STATUS,
+		EQUITY_STATUS, PAY_AMOUNT, EQUITY_FLAG,
+		EQUITY_CODE, EQUITY_AMOUNT, EQUITY_DESC,
+		PAY_MEDIA, AUTH_CODE,
+		PAY_MODE, MEMBER_BANK_ID, CURRENCY_CODE,
+		BANK_ACCT_ID, BANK_ACCT_TYPE,
+		BANK_ACCT_NAME, SECURE_TYPE, MEMBER_CODE, MEMBER_MARK, PRODUCT_TAG,
+		PRODUCT_DESC,
+		ORDER_COUNT, SUB_MERCHANT_ID, SUB_MERCHANT_NAME,
+		STL_MERCHANT_CODE,
+		MAIN_MERCHANT_ID,
+		BILL_ORDER_ID, BATCH_ID,
+		TXN_SEND_IP, SUB_TERMINAL_ID, DEVICE_INFO, MEMO,
+		ERROR_CODE,
+		ERROR_INFO, REFUND_AMOUNT, TXN_REVERSE_TIME, REF_ID_TXN, REF_ID_CTRL,
+		REF_NUM,
+		ORIG_TRADE_ID,
+		PAGE_URL, STAGE_INFO, SIGN_PATH, RECEIPT,
+		CREATE_TIME, UPDATE_TIME, EXT1, EXT2,
+		EXT3,
+		MERCHANT_ID, TXN_TYPE
+	</sql>
+
+	<select id="selectOrderMasterDtoByOrderMasterDto"
+		parameterClass="com.bill99.ate.orm.dto.OrderMasterDto"
+		resultMap="BaseResultMap">
+		select
+		<include refid="Base_Column_List" />
+		from
+		(select
+		<include refid="Base_Column_List" />
+		from ACCTPAY.T_ACC_ORDER_MASTER t
+		<dynamic prepend="where">
+			<isNotEmpty prepend="and" property="outTradeNo">
+				out_Trade_No
+				=#outTradeNo#
+			</isNotEmpty>
+			<isNotEmpty prepend="and" property="billOrderNo">
+				bill_order_No
+				=#billOrderNo#
+			</isNotEmpty>
+			<isNotEmpty prepend="and" property="masterId">
+				master_Id =#masterId#
+			</isNotEmpty>
+			<isNotEmpty prepend="and" property="merchantCode">
+				merchant_Code
+				=#merchantCode#
+			</isNotEmpty>
+			<isNotEmpty prepend="and" property="channelType">
+				channel_Type
+				=#channelType#
+			</isNotEmpty>
+			<isNotEmpty prepend="and" property="orderType">
+				order_Type =#orderType#
+			</isNotEmpty>
+			<isNotEmpty prepend="and" property="tradeId">
+				trade_Id =#tradeId#
+			</isNotEmpty>
+			<isNotEmpty prepend="and" property="outOrderType">
+				out_Order_Type
+				=#outOrderType#
+			</isNotEmpty>
+			<isNotEmpty prepend="and" property="authCode">
+				auth_Code =#authCode#
+			</isNotEmpty>
+			<isNotEmpty prepend="and" property="orderStatus">
+				order_Status
+				=#orderStatus#
+			</isNotEmpty>
+			<isNotEmpty prepend="and" property="payStatus">
+				pay_Status =#payStatus#
+			</isNotEmpty>
+		</dynamic>
+		order by master_id desc)
+		where rownum = 1
+	</select>
+
+	<update id="updateOrderMasterTxnEndTimeReduceOneDay"
+		parameterClass="com.bill99.ate.orm.dto.OrderMasterDto">
+		update ACCTPAY.T_ACC_ORDER_MASTER set txn_end_time =
+		txn_end_time-1 where out_trade_no = #outTradeNo#
+	</update>
+
+	<update id="updateTrasnsactionFlowingTxnEndTimeReduceOneDay"
+		parameterClass="com.bill99.ate.orm.dto.OrderMasterDto">
+		update ACCTPAY.ATE_TRANSACTION_FLOWING set
+		trade_end_time = trade_end_time-1 where trade_id = #tradeId#
+	</update>
+
+	<select id="queryOrderCounts"
+		parameterClass="com.bill99.ate.orm.dto.OrderMasterDto"
+		resultClass="int">
+		select count(*) from ACCTPAY.T_ACC_ORDER_MASTER
+		<dynamic prepend="where">
+			<isNotNull prepend="and" property="orderTypeListString">
+				order_Type in ($orderTypeListString$)
+			</isNotNull>
+			<isNotEmpty prepend="and" property="memberCode">
+				member_Code = #memberCode#
+			</isNotEmpty>
+		</dynamic>
+	</select>
+
+	<select id="queryTransactionFlowingCounts"
+		parameterClass="com.bill99.ate.orm.dto.OrderMasterDto"
+		resultClass="int">
+		select count(*) from ACCTPAY.ATE_TRANSACTION_FLOWING a,
+		ACCTPAY.T_ACC_ORDER_MASTER b
+		<dynamic prepend="where">
+			<isParameterPresent prepend="and">
+				a.INNER_TRADE_NO = b.BILL_ORDER_NO
+			</isParameterPresent>
+			<isNotEmpty prepend="and" property="orderTypeListString">
+				b.order_Type in ($orderTypeListString$)
+			</isNotEmpty>
+			<isEqual property="orderType" compareValue="180002" prepend="and">
+				(a.MEMBER_CODE = #memberCode# or b.MERCHANT_CODE = #memberCode# )
+			</isEqual>
+			<isNotEqual property="orderType" compareValue="180002"
+				prepend="and">
+				(a.MEMBER_CODE = #memberCode# )
+			</isNotEqual>
+			<isNotEmpty prepend="and" property="channelType">
+				b.channel_Type = #channelType#
+			</isNotEmpty>
+		</dynamic>
+	</select>
+	
+	<select id="queryFlowing" parameterClass="String" resultClass="java.util.HashMap">
+		select * from ACCTPAY.ATE_TRANSACTION_FLOWING where trade_id = #trade_id#
+	</select>
+
+
+</sqlMap>

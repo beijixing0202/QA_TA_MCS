@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xmlns:context="http://www.springframework.org/schema/context"
+	   xmlns:aop="http://www.springframework.org/schema/aop" xmlns:util="http://www.springframework.org/schema/util"
+
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+		http://www.springframework.org/schema/aop
+		http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+		http://www.springframework.org/schema/context
+		http://www.springframework.org/schema/context/spring-context-2.5.xsd
+		http://www.springframework.org/schema/util
+        http://www.springframework.org/schema/util/spring-util-2.5.xsd">
+   
+
+    <bean id="checkIfsDbService"
+		class="com.bill99.ifs.service.impl.CheckIfsDbServiceImpl">
+		<property name="ifsDao" ref="ifsDao" />
+		<property name="seashellDB" ref="seashellDB" />
+	</bean>	
+	
+	<bean id="ifsUrlDto"
+		class="com.bill99.ifs.common.dto.IfsUrlDto">
+		<property name="applyUrl" value="${apply.url}"> </property>
+		<property name="txnUrl" value="${txn.url}"> </property>
+		<property name="parameterUrl" value="${parameter.url}"> </property>
+		<property name="creditLimitUrl" value="${creditLimit.url}"> </property>
+		<property name="orderUrl" value="${order.url}"> </property>
+		<property name="repaymentUrl" value="${repayment.url}"> </property>
+		<property name="queryRepayUrl" value="${queryRepay.url}"> </property>
+		<property name="autoRepayUrl" value="${autoRepay.url}"> </property>
+	</bean>
+	
+	
+	<bean id="repayService"
+		class="com.bill99.ifs.service.impl.RepayServiceImpl">
+		<property name="ifsUrlDto" ref="ifsUrlDto" />
+		<property name="ifsDao" ref="ifsDao" />
+	</bean>
+	
+</beans>

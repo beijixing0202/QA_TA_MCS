@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/ate/common/httpclient
+END
+SSLClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/ate/common/httpclient/SSLClient.java
+END
+PostHttpClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/ate/common/httpclient/PostHttpClient.java
+END
+StringUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/ate/common/httpclient/StringUtil.java
+END
+HttpClientUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/ate/common/httpclient/HttpClientUtil.java
+END
+HttpUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/ate/common/httpclient/HttpUtil.java
+END
+GetHttpClient.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/ate/common/httpclient/GetHttpClient.java
+END

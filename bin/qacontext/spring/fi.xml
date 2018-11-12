@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jee="http://www.springframework.org/schema/jee"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:aop="http://www.springframework.org/schema/aop" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+	http://www.springframework.org/schema/tx 
+	http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+	http://www.springframework.org/schema/jee 
+	http://www.springframework.org/schema/jee/spring-jee-2.5.xsd
+	http://www.springframework.org/schema/aop
+	http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+	http://www.springframework.org/schema/context 
+	http://www.springframework.org/schema/context/spring-context-2.5.xsd">
+
+	<!-- 提交请求 -->
+	<bean id="doSubmit" class="com.bill99.fi.access.http.impl.DoSubmitImpl">
+		<property name="parametersInitialization" ref="parametersInitialization"></property>
+		<property name="parameterSignMsg" ref="parameterSignMsg"></property>
+	</bean>
+	
+	<bean id="LogDbCheck" class="com.bill99.fi.orm.dao.impl.LogDbCheckImpl">
+		<property name="jdbcTemplate" ref="jdbcTemplate"></property>
+		<property name="gatewayDbCheck" ref="gatewayDbCheck"></property>
+		<property name="ibatisCheckDealState" ref="ibatisCheckDealState"></property>
+	</bean>
+
+	<bean id="parameterSignMsg" class="com.bill99.fi.common.helper.ParameterSignMsg" />
+
+
+	<bean id="ibatisCheckDealState" class="com.bill99.fi.orm.dao.impl.IbatisCheckDealStateImpl">
+		<property name="taSeashellDbHandller" ref="taSeashellDbHandller" />
+		<property name="taInfoDbHandller" ref="taInfoDbHandller" />	
+	</bean>
+
+	<bean id="gatewayDbCheck" class="com.bill99.fi.orm.mng.impl.GatewayDbCheckImpl">
+		<property name="ibatisCheckDealState" ref="ibatisCheckDealState"></property>
+		<property name="ibatisMasposCheckDealState" ref="ibatisMasposCheckDealState"></property>
+		
+	</bean>
+
+	<bean id="gatewayRefund" class="com.bill99.fi.service.refund.impl.GatewayRefundImpl">
+		<property name="doSubmit" ref="doSubmit" />
+
+	</bean>
+	<bean id="mobilegatewayRefund" class="com.bill99.fi.service.refund.impl.MobileGatewayRefundImpl">
+		<property name="doSubmit" ref="doSubmit" />
+
+	</bean>
+
+	<bean id="msgatewayRefund" class="com.bill99.fi.service.refund.impl.MsgatewayRefundImpl">
+		<property name="doSubmit" ref="doSubmit" />
+	</bean>
+
+	<bean id="gatewayPageSubmit" class="com.bill99.fi.service.gateway.impl.GatewayPageSubmitImpl">
+		<property name="parametersInitialization" ref="parametersInitialization"></property>
+		<property name="gatewayDbCheck" ref="gatewayDbCheck"></property>
+		
+	</bean>
+
+
+
+	<bean id="paymentController" class="com.bill99.fi.service.payments.impl.PaymentControllerImpl">
+		<property name="gatewayDbCheck" ref="gatewayDbCheck"></property>
+		<property name="parametersInitialization" ref="parametersInitialization"></property>
+		
+	</bean>
+	
+	<bean id="ibatisMasposCheckDealState" class="com.bill99.fi.orm.dao.impl.IbatisMasposCheckDealStateImpl">
+		<property name="taMasposDbHandller" ref="taMasposDbHandller" />
+	</bean>
+	
+	<bean id="chinaUnicomRefund" class="com.bill99.fi.service.refund.impl.ChinaUnicomRefundImpl" />
+	<bean id="parametersInitialization" class="com.bill99.fi.common.helper.ParametersInitialization">
+		<property name="gatewayUrl" value="${fi_url.gatewayUrl}"></property>
+		<property name="gatewayPayTypeUrl" value="${fi_url.gatewayPayTypeUrl}"></property>
+		<property name="gatewayBankUrl" value="${fi_url.gatewayBankUrl}"></property>
+		<property name="gatewayToBankUrl" value="${fi_url.gatewayToBankUrl}"></property>
+		<property name="gatewayToB2BUrl" value="${fi_url.gatewayToB2Burl}"></property>
+		<property name="msGatewayUrl" value="${fi_url.msGatewayUrl}"></property>
+		<property name="msGatewayPayTypeUrl" value="${fi_url.msGatewayPayTypeUrl}"></property>
+		<property name="msGatewayBankUrl" value="${fi_url.msGatewayBankUrl}"></property>
+		<property name="msGatewayToBankUrl" value="${fi_url.msGatewayToBankUrl}"></property>
+		<property name="msGatewayToB2BUrl" value="${fi_url.msGatewayToB2BUrl}"></property>
+		<property name="oldGatewayUrl" value="${fi_url.oldGatewayUrl}"></property>
+
+		<property name="gateApiRefundwayUrl" value="${fi_url.gateApiRefundwayUrl}"></property>
+		<property name="msGateApiRefundwayUrl" value="${fi_url.msGateApiRefundwayUrl}"></property>
+		<property name="intraUrl" value="${fi_url.intraUrl}"></property>
+		<property name="intraUserName" value="${fi_url.intraUserName}"></property>
+		<property name="intraPassWord" value="${fi_url.intraPassWord}"></property>
+		<property name="authenticationUrl" value="${fi_url.authenticationUrl}"></property>
+
+		<property name="staticGatewayUrl" value="${fi_url.staticGatewayUrl}"></property>
+		<property name="accountAutoPayUrl" value="${fi_url.accountAutoPayUrl}"></property>
+		<property name="chinaUnicomUrl" value="${fi_url.chinaUnicomUrl}"></property>
+		<property name="hxGatewayUrl" value="${fi_url.hxGatewayUrl}"></property>
+		<property name="hxGatewayRefundUrl" value="${fi_url.hxGatewayRefundUrl}"></property>
+
+		<property name="mobileGatewayUrl" value="${fi_url.mobileGatewayUrl}"></property>
+		<property name="mobilePayActionUrl" value="${fi_url.mobilePayActionUrl}"></property>
+		<property name="mobileCreditPayAction" value="${fi_url.mobileCreditPayAction}"></property>
+		<property name="mobileDebitPayAction" value="${fi_url.mobileDebitPayAction}"></property>
+		<property name="mobileDebitRefundUrl" value="${fi_url.mobileDebitRefundUrl}"></property>
+
+		<property name="msGatewayModifyUrl" value="${fi_url.msGatewayModifyUrl}"></property>
+		<property name="msGatewayConfirmUrl" value="${fi_url.msGatewayConfirmUrl}"></property>
+		<property name="msGatewayRefundModifyUrl" value="${fi_url.msGatewayRefundModifyUrl}"></property>
+		<property name="msGatewayRefundActionUrl" value="${fi_url.msGatewayRefundActionUrl}"></property>
+		
+
+		<property name="hwGatewayPayUrl" value="${fi_url.hwPayUrl}"></property>
+
+		<property name="msGatewayRefundUrl" value="${fi_url.msGatewayRefundUrl}"></property>
+
+
+
+	</bean>
+		<!-- 负责数据源的连接 -->
+	<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+		<constructor-arg>
+			<ref bean="dataSource" />
+		</constructor-arg>
+	</bean>
+
+	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName">
+			<value>${qa.jdbc.driverClassName.Oracle}</value>
+		</property>
+		<property name="url">
+			<value>${qa.logdb.jdbc.url}</value>
+		</property>
+		<property name="username">
+			<value>${qa.logdb.jdbc.username}</value>
+		</property>
+		<property name="password">
+			<value>${qa.logdb.jdbc.password}</value>
+		</property>
+	</bean>
+	
+</beans>

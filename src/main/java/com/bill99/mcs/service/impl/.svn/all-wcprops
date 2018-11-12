@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/opt/99billdoc/!svn/ver/465259/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/mcs/service/impl
+END
+RfdImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/opt/99billdoc/!svn/ver/465259/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/mcs/service/impl/RfdImpl.java
+END
+McsServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/opt/99billdoc/!svn/ver/466121/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/mcs/service/impl/McsServiceImpl.java
+END
+PayImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/opt/99billdoc/!svn/ver/466121/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/mcs/service/impl/PayImpl.java
+END
+OracleCheckerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/opt/99billdoc/!svn/ver/465259/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/mcs/service/impl/OracleCheckerImpl.java
+END
+MockLoginServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/mcs/service/impl/MockLoginServiceImpl.java
+END
+MysqlCheckerImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/opt/99billdoc/!svn/ver/465259/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/mcs/service/impl/MysqlCheckerImpl.java
+END
+ManualClearingImp.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/opt/99billdoc/!svn/ver/465259/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/mcs/service/impl/ManualClearingImp.java
+END

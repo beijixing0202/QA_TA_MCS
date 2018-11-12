@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/opt/99billdoc/!svn/ver/465323/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/mcs/orm/impl
+END
+MySqlDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/opt/99billdoc/!svn/ver/465312/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/mcs/orm/impl/MySqlDaoImpl.java
+END
+SeaShellDBImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/opt/99billdoc/!svn/ver/465311/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/mcs/orm/impl/SeaShellDBImpl.java
+END
+StldbAccessImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/opt/99billdoc/!svn/ver/464014/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/mcs/orm/impl/StldbAccessImpl.java
+END
+DbCheckServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/opt/99billdoc/!svn/ver/466126/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/mcs/orm/impl/DbCheckServiceImpl.java
+END
+StlDBImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/opt/99billdoc/!svn/ver/464014/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/mcs/orm/impl/StlDBImpl.java
+END
+MasposDBAccessImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/mcs/orm/impl/MasposDBAccessImpl.java
+END
+OracleDaoImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/mcs/orm/impl/OracleDaoImpl.java
+END
+MasposDBImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/opt/99billdoc/!svn/ver/464014/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/mcs/orm/impl/MasposDBImpl.java
+END
+SeaShellDBAccessImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/opt/99billdoc/!svn/ver/465323/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/mcs/orm/impl/SeaShellDBAccessImpl.java
+END

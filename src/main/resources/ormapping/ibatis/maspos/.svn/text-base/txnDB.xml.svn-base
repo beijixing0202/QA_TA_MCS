@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+    "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="txnDB"> 
+	 
+	<select id="getTxnInfo" parameterClass="string" resultClass="com.bill99.cps.common.dto.TxnDBInfo">
+		select t.txn_type,t.txn_flg from t_txn_ctrl t where
+		t.ext_trace_no=#value#
+	</select> 
+	<update id = "updateTermReconFlg"  parameterClass="String" >
+		update t_txn_ctrl set term_recon_flg = 'C'  where id_txn =#idTxn#
+	</update>
+	
+	<select id="queryTermReconFlgUpdateResult" parameterClass="string" resultClass="Integer">
+		select count(*) from t_txn_ctrl t where id_txn =#idTxn# and term_recon_flg = 'C'
+	</select> 
+	<select id="purchaseDBcheck" parameterClass="string" resultClass="com.bill99.cps.common.dto.MgwInfoDto">
+		select txn_flg as txnFlg,txn_type as txnType,app_type as appType,tunnel_data as tunnelData,auth_net_id as authNetId from t_txn_ctrl where ext_trace_no =#externalRefNumber# order by ID_TXN_CTRL ASC 
+	</select> 
+		
+</sqlMap>

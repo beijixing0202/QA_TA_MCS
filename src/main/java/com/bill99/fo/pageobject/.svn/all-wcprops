@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fo/pageobject
+END
+FscLoginPage.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fo/pageobject/FscLoginPage.java
+END
+WebsiteMainPage.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fo/pageobject/WebsiteMainPage.java
+END
+RemitResultHandlePage.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fo/pageobject/RemitResultHandlePage.java
+END
+WelcomePage.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fo/pageobject/WelcomePage.java
+END
+HandBatchPage.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fo/pageobject/HandBatchPage.java
+END
+RemitCheckPage.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fo/pageobject/RemitCheckPage.java
+END
+DirectedPaymentCashPage.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fo/pageobject/DirectedPaymentCashPage.java
+END
+WebsiteLogonPage.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fo/pageobject/WebsiteLogonPage.java
+END

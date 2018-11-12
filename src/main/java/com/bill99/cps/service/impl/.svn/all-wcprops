@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/cps/service/impl
+END
+HttpTxnQueryServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/cps/service/impl/HttpTxnQueryServiceImpl.java
+END
+HttpPciDelServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/cps/service/impl/HttpPciDelServiceImpl.java
+END
+HttpPciQueryServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/cps/service/impl/HttpPciQueryServiceImpl.java
+END
+HttpInternalGetDynCodeImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/cps/service/impl/HttpInternalGetDynCodeImpl.java
+END
+HttpBatchTxnQueryServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/cps/service/impl/HttpBatchTxnQueryServiceImpl.java
+END
+HttpQueryOrderServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/cps/service/impl/HttpQueryOrderServiceImpl.java
+END
+HttpAcceptCapacityQueryServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/cps/service/impl/HttpAcceptCapacityQueryServiceImpl.java
+END
+HttpIndependAuthentVerifyServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/cps/service/impl/HttpIndependAuthentVerifyServiceImpl.java
+END
+MockConverInternalDataDriverServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/cps/service/impl/MockConverInternalDataDriverServiceImpl.java
+END
+HttpGetDynNumServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/cps/service/impl/HttpGetDynNumServiceImpl.java
+END
+HttpCardInfoQueryServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/cps/service/impl/HttpCardInfoQueryServiceImpl.java
+END
+InternalServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/cps/service/impl/InternalServiceImpl.java
+END
+HttpInternalCnpServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/cps/service/impl/HttpInternalCnpServiceImpl.java
+END
+HttpConfirmTxnQueryServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/cps/service/impl/HttpConfirmTxnQueryServiceImpl.java
+END
+ConverMgwDataDriverServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/cps/service/impl/ConverMgwDataDriverServiceImpl.java
+END
+HttpIndependAuthentServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/cps/service/impl/HttpIndependAuthentServiceImpl.java
+END
+HttpIvrTxnQueryServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/cps/service/impl/HttpIvrTxnQueryServiceImpl.java
+END
+HttpCnpServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/cps/service/impl/HttpCnpServiceImpl.java
+END
+HttpSettleTxnQueryServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/cps/service/impl/HttpSettleTxnQueryServiceImpl.java
+END
+DBOracleCheckImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/cps/service/impl/DBOracleCheckImpl.java
+END
+HttpPciStoreServiceImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/cps/service/impl/HttpPciStoreServiceImpl.java
+END

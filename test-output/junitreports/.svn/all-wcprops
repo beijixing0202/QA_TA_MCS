@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/opt/99billdoc/!svn/ver/464129/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/test-output/junitreports
+END
+TEST-com.bill99.cps.test.interfaces.MgwCnp.xml
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/test-output/junitreports/TEST-com.bill99.cps.test.interfaces.MgwCnp.xml
+END
+TEST-com.bill99.cps.test.interfaces.MgwWithPayEquity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/test-output/junitreports/TEST-com.bill99.cps.test.interfaces.MgwWithPayEquity.xml
+END
+TEST-com.bill99.mcs.test.MCS_AcctDepoistTest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/opt/99billdoc/!svn/ver/464129/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/test-output/junitreports/TEST-com.bill99.mcs.test.MCS_AcctDepoistTest.xml
+END
+TEST-com.bill99.ate.test.BDCA_AteRechargeTest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/test-output/junitreports/TEST-com.bill99.ate.test.BDCA_AteRechargeTest.xml
+END
+TEST-com.bill99.mcs.test.BDCA_AteBindCardTest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/test-output/junitreports/TEST-com.bill99.mcs.test.BDCA_AteBindCardTest.xml
+END
+TEST-com.bill99.cps.test.interfaces.MgwCnpWithPayEquity.xml
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/test-output/junitreports/TEST-com.bill99.cps.test.interfaces.MgwCnpWithPayEquity.xml
+END
+TEST-com.bill99.ate.test.BDCA_AtePayOneStepTest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/test-output/junitreports/TEST-com.bill99.ate.test.BDCA_AtePayOneStepTest.xml
+END
+TEST-com.bill99.mcs.service.impl.AteBindCardSubmitServiceImpl.xml
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/test-output/junitreports/TEST-com.bill99.mcs.service.impl.AteBindCardSubmitServiceImpl.xml
+END
+TEST-com.bill99.mcs.test.AteBindCardTest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/test-output/junitreports/TEST-com.bill99.mcs.test.AteBindCardTest.xml
+END

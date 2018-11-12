@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fi/service/refundHx
+END
+ServiceRefundSoapBindingStub.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fi/service/refundHx/ServiceRefundSoapBindingStub.java
+END
+RefundHx.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fi/service/refundHx/RefundHx.java
+END
+RefundHxService.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fi/service/refundHx/RefundHxService.java
+END
+RefundHxProxy.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fi/service/refundHx/RefundHxProxy.java
+END
+RefundHxServiceLocator.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fi/service/refundHx/RefundHxServiceLocator.java
+END

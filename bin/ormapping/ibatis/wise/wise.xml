@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" 
+"http://www.ibatis.com/dtd/sql-map-2.dtd">
+<sqlMap namespace="wise">
+	
+	<select id = "getfcsTxnByTxnAcctNo"  parameterClass="String" resultClass="com.bill99.ifs.common.dto.FcsTxnDto">
+	        select * from wise.fcs_txn b where b.txn_acct_no=#txnAcctNo#  and function_code='10'    
+	</select>
+	
+    <select id = "getfcsTxnByOutTradeNo"  parameterClass="String" resultClass="com.bill99.ifs.common.dto.FcsTxnDto">
+	        select * from wise.fcs_txn b where b.out_trade_no=#billOrderNo#       
+	</select>	
+
+    <select id = "getfcsTxnByOutTradeNoAndType"  parameterClass= "java.util.Map" resultClass="com.bill99.ifs.common.dto.FcsTxnDto">
+	        select * from wise.fcs_txn b where b.trade_id=(select trade_id from wise.fcs_txn b where b.out_trade_no=#billOrderNo#) and b.function_code=#functionCode#    
+	</select>
+	
+	<select id = "getfcsTxnByAcctNoAndType"  parameterClass= "java.util.Map" resultClass="com.bill99.ifs.common.dto.FcsTxnDto">
+	        select * from wise.fcs_txn b where b.txn_acct_no=(select txn_acct_no from wise.fcs_txn  where out_trade_no=#billOrderNo#) and b.function_code=#functionCode#    
+	</select>
+	
+	<select id = "getRefundTxnByMemberAndType"  parameterClass= "java.util.Map" resultClass="com.bill99.ifs.common.dto.FcsTxnDto">
+	        select * from (select b.* from wise.fcs_txn b,wise.LM_CUSTOMER l where b.member_code=#memberCode#and b.member_code=l.external_id and l.status='0' and l.block_code=' ' and b.function_code='10' and b.status=#status# and b.txn_flag='2'and b.use_limit_type=#type# and trunc(b.txn_time)!=trunc(sysdate) order by b.id desc ) where rownum=1    
+	</select>
+	
+    <select id = "getAcct1TypeByAcctNbr"  parameterClass="String" resultClass="String">
+	        select TRANSACTION_TYPE  from wise.LM_ACCOUNT1 a where account_nmbr=#account_nmbr#       
+	</select>
+	
+	<select id = "getAcct2CountByAcctNbr"  parameterClass="String" resultClass="String">
+	        select count(*)  from wise.LM_ACCOUNT2 a where account_nmbr=#account_nmbr#       
+	</select>
+	
+	<select id = "getApplicationAmtByAcctNbr"  parameterClass="String" resultClass="String">
+	        select tran_amnt from wise.LM_APPLICATION  where account_nmbr=#account_nmbr# and tran_type='02'       
+	</select>
+	
+	<select id = "getInstallAmtAndStatusByAcctNbr"  parameterClass="String" resultClass="java.util.HashMap">
+	        select t.principal,t.status from wise.LM_INSTALLMENT_TRAN t  where t.account_nmbr=#account_nmbr#      
+	</select>
+	
+	<select id = "getInstallDetailSumAmtByAcctNbr"  parameterClass="String" resultClass="String">
+	        select sum(tran_amt) from wise.LM_INSTALLMENT_TRAN_D where account_nmbr=#account_nmbr# and tran_type=4000      
+	</select>
+	
+	<select id = "getTransactionByAcctNbrAndCode"  parameterClass="java.util.HashMap" resultClass="java.util.HashMap">
+	        select * from wise.lm_transaction l  where l.account_nmbr=#accountNmbr# and l.transaction_code=#transactionCode# and l.crt_time>=(select max(crt_time) from wise.lm_transaction l  where l.account_nmbr=#accountNmbr# and l.transaction_code=#transactionCode# )     
+	</select>
+	
+	<select id = "getAcctRequestByEntryId"  parameterClass="String" resultClass="java.util.HashMap">
+	        select id_txn_acct_request,txn_amt,acct_status from wise.t_txn_acct_request  where entry_id=#entryId#      
+	</select>
+	
+	<select id = "getDataRequsetByAcctNbr"  parameterClass="String" resultClass="java.util.HashMap">
+	        select txn_type,sales_amt,status,reduce_fee_rate from wise.t_txn_data_request t where t.acct_number=#account_nmbr#   
+	</select>
+	
+	<select id = "getDataRequsetByRef"  parameterClass="String" resultClass="java.util.HashMap">
+	        select txn_type,sales_amt,status,reduce_fee_rate from wise.t_txn_data_request t where t.source_ref=#source_ref#   
+	</select>
+	
+	<select id = "getTxnLegByAcctNbr"  parameterClass="String" resultClass="java.util.HashMap">
+	        select stl_amt,fee,fee_rate,txn_type,acct_status,valid_flag from wise.t_txn_clr_list_leg t1 where t1.acct_number =#account_nmbr#
+	</select>
+	
+	<select id = "getTxnLegByRef"  parameterClass="String" resultClass="java.util.HashMap">
+	        select id_txn_clr_list_leg as id,stl_amt,fee,fee_rate,txn_type,acct_status,valid_flag from wise.t_txn_clr_list_leg t1 where t1.source_ref =#source_ref#
+	</select>
+	
+	<select id = "getTxnLegByRefAndType"  parameterClass="java.util.HashMap" resultClass="java.util.HashMap">
+	        select id_txn_clr_list_leg as id,stl_amt,fee,fee_rate,txn_type,acct_status,valid_flag from wise.t_txn_clr_list_leg t1 where t1.source_ref =#source_ref# and txn_type=#type#
+	</select>
+	
+	<select id = "getPeTxnByexternalTxnId"  parameterClass="String" resultClass="java.util.HashMap">
+	        select deal_id,order_seq_id,status,fund_in_amount from (select * from wise.t_atm_pe_txn pe where pe.external_txn_id=#externalTxnId# order by pe.cdate desc) where rownum=1 
+	</select>
+	
+	<select id = "getCountTranDetByMap"  parameterClass="java.util.HashMap" resultClass="int">
+	        select count(*)  from wise.LM_INSTALLMENT_TRAN_D t where t.account_nmbr =#accountNmbr# and t.billing_flag!=#billingFlag# and t.pymt_flag!=#pymtFlag# and lst_upd_uid='BATCH_REFUND'
+	</select>
+	
+	<update id = "updateCashDrawByRef"  parameterClass="String" >
+	        update wise.T_CASH_DRAW_ORDER set fo_status=1 where source_ref=#ref#
+	</update>
+	
+	<update id = "updateCashDrawByMemberCode"  parameterClass="String" >
+	        update wise.T_CASH_DRAW_ORDER set fo_status='3' where source_ref in(select to_char(id) from wise.fcs_txn where member_code=#MemberCode# and txn_flag='2' and function_code='10' and status in(10,21))
+	</update>
+	
+	<select id = "getRepayInstallDetailCountByAcctNbr"  parameterClass="String" resultClass="int">
+	        select count(1)  from wise.LM_INSTALLMENT_TRAN_D t where t.account_nmbr =#accountNmbr#  and term in(select o.stage from wise.fcs_repay_writeoff o where acct_no=#accountNmbr# )and t.billing_flag!='01' and t.pymt_flag!='01'
+	</select>
+	
+	<select id = "getCountInstallDetailByAcctNbrAndTerm"  parameterClass="java.util.HashMap" resultClass="int">
+	        select count(1)  from wise.LM_INSTALLMENT_TRAN_D t where t.account_nmbr =#acctNbr# and term =#term# and t.billing_flag!='01' and t.pymt_flag!='01'
+	</select>
+</sqlMap>

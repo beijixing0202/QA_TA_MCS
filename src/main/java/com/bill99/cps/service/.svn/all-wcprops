@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/cps/service
+END
+HttpQueryOrderService.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/cps/service/HttpQueryOrderService.java
+END
+HttpInternalContentService.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/cps/service/HttpInternalContentService.java
+END
+DBOracleCheck.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/cps/service/DBOracleCheck.java
+END
+MockConverInternalDataDriverService.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/cps/service/MockConverInternalDataDriverService.java
+END
+HttpContentService.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/cps/service/HttpContentService.java
+END
+InternalService.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/cps/service/InternalService.java
+END
+ConverMgwDataDriverService.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/cps/service/ConverMgwDataDriverService.java
+END

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+        "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="TStlList">
+    <resultMap class="com.bill99.mcs.common.dto.TStlList" id="BaseResultMap">
+        <result column="ID_STL_LIST" jdbcType="DECIMAL" property="idStlList"/>
+        <result column="ID_STL_BATCH" jdbcType="DECIMAL" property="idStlBatch"/>
+        <result column="STL_TYPE" jdbcType="CHAR" property="stlType"/>
+        <result column="STL_SRC_TYPE" jdbcType="CHAR" property="stlSrcType"/>
+        <result column="STL_SRC_REF" jdbcType="VARCHAR" property="stlSrcRef"/>
+        <result column="STL_CTR_PARTY_TYPE" jdbcType="CHAR" property="stlCtrPartyType"/>
+        <result column="STL_CTR_PARTY" jdbcType="VARCHAR" property="stlCtrParty"/>
+        <result column="AMT1" jdbcType="DECIMAL" property="amt1"/>
+        <result column="AMT2" jdbcType="DECIMAL" property="amt2"/>
+        <result column="AMT3" jdbcType="DECIMAL" property="amt3"/>
+        <result column="AMT4" jdbcType="DECIMAL" property="amt4"/>
+        <result column="AMT5" jdbcType="DECIMAL" property="amt5"/>
+        <result column="AMT6" jdbcType="DECIMAL" property="amt6"/>
+        <result column="NET_TOTAL" jdbcType="DECIMAL" property="netTotal"/>
+        <result column="REAL_STL_AMT" jdbcType="DECIMAL" property="realStlAmt"/>
+        <result column="VALUE_DATE" jdbcType="DATE" property="valueDate"/>
+        <result column="STATUS" jdbcType="CHAR" property="status"/>
+        <result column="STL_DATE" jdbcType="DATE" property="stlDate"/>
+        <result column="ID_ETL_LOG" jdbcType="DECIMAL" property="idEtlLog"/>
+        <result column="MEMO" jdbcType="VARCHAR" property="memo"/>
+        <result column="LOCK_FLG" jdbcType="CHAR" property="lockFlg"/>
+        <result column="ATTR1" jdbcType="VARCHAR" property="attr1"/>
+        <result column="ATTR2" jdbcType="VARCHAR" property="attr2"/>
+        <result column="ATTR3" jdbcType="VARCHAR" property="attr3"/>
+        <result column="ATTR4" jdbcType="VARCHAR" property="attr4"/>
+        <result column="ATTR5" jdbcType="VARCHAR" property="attr5"/>
+        <result column="ATTR6" jdbcType="VARCHAR" property="attr6"/>
+        <result column="BATCH_PROC_ID" jdbcType="DECIMAL" property="batchProcId"/>
+        <result column="ID_STL_ORDER" jdbcType="DECIMAL" property="idStlOrder"/>
+        <result column="STL_ORDER_EXE_TIME" jdbcType="TIMESTAMP" property="stlOrderExeTime"/>
+        <result column="CLEARING_HOUSE_ID" jdbcType="VARCHAR" property="clearingHouseId"/>
+        <result column="CRT_TIME" jdbcType="DATE" property="crtTime"/>
+        <result column="STP_FLAG" jdbcType="CHAR" property="stpFlag"/>
+        <result column="TXN_DATE" jdbcType="DATE" property="txnDate"/>
+        <result column="DIG_ACT_FLAG" jdbcType="CHAR" property="digActFlag"/>
+        <result column="OL_RFD_TYPE" jdbcType="CHAR" property="olRfdType"/>
+        <result column="STL_BIZ_FLG" jdbcType="CHAR" property="stlBizFlg"/>
+        <result column="ORIGINAL_CRT_TIME" jdbcType="DATE" property="originalCrtTime"/>
+        <result column="APP_SRC" jdbcType="VARCHAR" property="appSrc"/>
+        <result column="ORIG_RFD_FEE" jdbcType="DECIMAL" property="origRfdFee"/>
+        <result column="RFD_SRV_FEE" jdbcType="DECIMAL" property="rfdSrvFee"/>
+        <result column="STL_BIZ_TYPE" jdbcType="VARCHAR" property="stlBizType"/>
+    </resultMap>
+    <sql id="BaseColumnList">
+        ID_STL_LIST, ID_STL_BATCH, STL_TYPE, STL_SRC_TYPE, STL_SRC_REF, STL_CTR_PARTY_TYPE,
+        STL_CTR_PARTY, AMT1, AMT2, AMT3, AMT4, AMT5, AMT6, NET_TOTAL, REAL_STL_AMT, VALUE_DATE,
+        STATUS, STL_DATE, ID_ETL_LOG, MEMO, LOCK_FLG, ATTR1, ATTR2, ATTR3, ATTR4, ATTR5,
+        ATTR6, BATCH_PROC_ID, ID_STL_ORDER, STL_ORDER_EXE_TIME, CLEARING_HOUSE_ID, CRT_TIME,
+        STP_FLAG, TXN_DATE, DIG_ACT_FLAG, OL_RFD_TYPE, STL_BIZ_FLG, ORIGINAL_CRT_TIME, APP_SRC,
+        ORIG_RFD_FEE, RFD_SRV_FEE, STL_BIZ_TYPE
+    </sql>
+    <select id="getTStlListByStlSrcRef" parameterClass="com.bill99.mcs.common.dto.TStlList" resultMap="BaseResultMap">
+        select
+        <include refid="BaseColumnList"/>
+        from maspos.t_stl_list
+        <dynamic prepend="where">
+            <isNotEmpty prepend="and" property="stlSrcRef">
+                STL_SRC_REF=#stlSrcRef#
+            </isNotEmpty>
+        </dynamic>
+    </select>
+    <select id="getTStlListByIdStlOrder" parameterClass="com.bill99.mcs.common.dto.TStlList" resultMap="BaseResultMap">
+        select
+        <include refid="BaseColumnList"/>
+        from maspos.t_stl_list
+        <dynamic prepend="where">
+            <isNotEmpty prepend="and" property="idStlOrder">
+                ID_STL_ORDER=#idStlOrder#
+            </isNotEmpty>
+        </dynamic>
+    </select>
+</sqlMap>

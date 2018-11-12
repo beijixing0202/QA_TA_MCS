@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+        "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="Deal">
+    <resultMap class="com.bill99.mcs.common.dto.Deal" id="BaseResultMap">
+        <result column="DEALID" jdbcType="VARCHAR" property="dealid" />
+        <result column="DEALBEGINDATE" jdbcType="DATE" property="dealbegindate" />
+        <result column="ORDERSEQID" jdbcType="DECIMAL" property="orderSeqId" />
+        <result column="DEALAMOUNT" jdbcType="DECIMAL" property="dealamount" />
+        <result column="PAYERACCTCODE" jdbcType="DECIMAL" property="payeracctcode" />
+        <result column="PAYEEACCTCODE" jdbcType="DECIMAL" property="payeeacctcode" />
+        <result column="DEALSTATUS" jdbcType="DECIMAL" property="dealstatus" />
+        <result column="DEALENDDATE" jdbcType="DATE" property="dealenddate" />
+        <result column="ORGORDERID" jdbcType="VARCHAR" property="orgorderid" />
+        <result column="DEALCODE" jdbcType="DECIMAL" property="dealcode" />
+        <result column="PAYMENTSERVICEPKGCODE" jdbcType="VARCHAR" property="paymentservicepkgcode" />
+        <result column="PAYERORGCODE" jdbcType="DECIMAL" property="payerorgcode" />
+        <result column="PAYEEORGCODE" jdbcType="DECIMAL" property="payeeorgcode" />
+        <result column="ORDERTIME" jdbcType="DATE" property="ordertime" />
+        <result column="SUBMITACCTCODE" jdbcType="DECIMAL" property="submitacctcode" />
+        <result column="PAYERACCTTYPE" jdbcType="DECIMAL" property="payeraccttype" />
+        <result column="PAYERORGTYPE" jdbcType="DECIMAL" property="payerorgtype" />
+        <result column="PAYEEACCTTYPE" jdbcType="DECIMAL" property="payeeaccttype" />
+        <result column="PAYEEORGTYPE" jdbcType="DECIMAL" property="payeeorgtype" />
+        <result column="DEALTYPE" jdbcType="DECIMAL" property="dealtype" />
+        <result column="PAYEEFEE" jdbcType="DECIMAL" property="payeefee" />
+        <result column="PAYERFEE" jdbcType="DECIMAL" property="payerfee" />
+        <result column="SYNCTOKEN" jdbcType="DECIMAL" property="synctoken" />
+        <result column="PAYEESERVICELEVEL" jdbcType="DECIMAL" property="payeeservicelevel" />
+        <result column="PAYERSERVICELEVEL" jdbcType="DECIMAL" property="payerservicelevel" />
+        <result column="PAYERCURRENCYCODE" jdbcType="VARCHAR" property="payercurrencycode" />
+        <result column="EXCHANGERATE" jdbcType="DECIMAL" property="exchangerate" />
+        <result column="PAYEECURRENCYCODE" jdbcType="VARCHAR" property="payeecurrencycode" />
+        <result column="HASCACULATEDPRICE" jdbcType="DECIMAL" property="hascaculatedprice" />
+        <result column="ASYNACCOUNTING" jdbcType="DECIMAL" property="asynaccounting" />
+        <result column="TRANSACTIONDATE" jdbcType="DATE" property="transactiondate" />
+        <result column="PAYEECHANNEL" jdbcType="VARCHAR" property="payeechannel" />
+        <result column="PAYERCHANNEL" jdbcType="VARCHAR" property="payerchannel" />
+        <result column="FEETYPE" jdbcType="DECIMAL" property="feetype" />
+        <result column="PAYERFEEACCTCODE" jdbcType="DECIMAL" property="payerfeeacctcode" />
+        <result column="PAYEEFEEACCTCODE" jdbcType="DECIMAL" property="payeefeeacctcode" />
+    </resultMap>
+    <sql id="BaseColumnList">
+        DEALID, DEALBEGINDATE, ORDERSEQID, DEALAMOUNT, PAYERACCTCODE, PAYEEACCTCODE, DEALSTATUS,
+        DEALENDDATE, ORGORDERID, DEALCODE, PAYMENTSERVICEPKGCODE, PAYERORGCODE, PAYEEORGCODE,
+        ORDERTIME, SUBMITACCTCODE, PAYERACCTTYPE, PAYERORGTYPE, PAYEEACCTTYPE, PAYEEORGTYPE,
+        DEALTYPE, PAYEEFEE, PAYERFEE, SYNCTOKEN, PAYEESERVICELEVEL, PAYERSERVICELEVEL, PAYERCURRENCYCODE,
+        EXCHANGERATE, PAYEECURRENCYCODE, HASCACULATEDPRICE, ASYNACCOUNTING, TRANSACTIONDATE,
+        PAYEECHANNEL, PAYERCHANNEL, FEETYPE, PAYERFEEACCTCODE, PAYEEFEEACCTCODE
+    </sql>
+    <select id="getDeal" parameterClass="com.bill99.mcs.common.dto.Deal" resultMap="BaseResultMap">
+        select
+        <include refid="BaseColumnList"/>
+        from seashell.deal
+        <dynamic prepend="where">
+            <isNotEmpty prepend="and" property="orderSeqId">
+                ORDERSEQID=#orderSeqId#
+            </isNotEmpty>
+        </dynamic>
+    </select>
+</sqlMap>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+        "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="TBkApply">
+    <resultMap class="com.bill99.mcs.common.dto.TBkApply" id="BaseResultMap">
+        <result column="ID_BK_APPLY" jdbcType="DECIMAL" property="idBkApply"/>
+        <result column="SYSTEM_ID" jdbcType="VARCHAR" property="systemId"/>
+        <result column="SOURCE_ID" jdbcType="VARCHAR" property="sourceId"/>
+        <result column="BK_TYPE" jdbcType="VARCHAR" property="bkType"/>
+        <result column="REFERENCE" jdbcType="VARCHAR" property="reference"/>
+        <result column="BK_STATUS" jdbcType="CHAR" property="bkStatus"/>
+        <result column="BK_PARAMS" jdbcType="VARCHAR" property="bkParams"/>
+        <result column="APP_EXC_CODE" jdbcType="VARCHAR" property="appExcCode"/>
+        <result column="APP_TIME" jdbcType="DATE" property="appTime"/>
+        <result column="UPD_TIME" jdbcType="DATE" property="updTime"/>
+        <result column="REV_TYPE" jdbcType="VARCHAR" property="revType"/>
+        <result column="RESP_CODE" jdbcType="CHAR" property="respCode"/>
+        <result column="ADDITIONAL_CODE" jdbcType="VARCHAR" property="additionalCode"/>
+        <result column="ASYNC_FLAG" jdbcType="CHAR" property="asyncFlag"/>
+        <result column="NOTIFY_RESULT" jdbcType="CHAR" property="notifyResult"/>
+    </resultMap>
+    <sql id="BaseColumnList">
+        ID_BK_APPLY, SYSTEM_ID, SOURCE_ID, BK_TYPE, REFERENCE, BK_STATUS, BK_PARAMS, APP_EXC_CODE,
+        APP_TIME, UPD_TIME, REV_TYPE, RESP_CODE, ADDITIONAL_CODE, ASYNC_FLAG, NOTIFY_RESULT
+    </sql>
+    <select id="getTBkApply" parameterClass="com.bill99.mcs.common.dto.TBkApply" resultMap="BaseResultMap">
+        select
+        <include refid="BaseColumnList"/>
+        from cpsacct.t_bk_apply
+        <dynamic prepend="where">
+            <isNotEmpty prepend="and" property="reference">
+                REFERENCE=#reference#
+            </isNotEmpty>
+        </dynamic>
+    </select>
+</sqlMap>

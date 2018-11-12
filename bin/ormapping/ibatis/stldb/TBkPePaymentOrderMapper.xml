@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+        "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="TBkPePaymentOrder">
+    <resultMap class="com.bill99.mcs.common.dto.TBkPePaymentOrder" id="BaseResultMap">
+        <result column="ID_BK_PE_PAYMENT_ORDER" jdbcType="DECIMAL" property="idBkPePaymentOrder" />
+        <result column="ORDER_ID" jdbcType="VARCHAR" property="orderId" />
+        <result column="ORDER_TYPE" jdbcType="DECIMAL" property="orderType" />
+        <result column="ORDER_AMT" jdbcType="DECIMAL" property="orderAmt" />
+        <result column="ORDER_STATUS" jdbcType="DECIMAL" property="orderStatus" />
+        <result column="ORDER_TIME" jdbcType="DATE" property="orderTime" />
+        <result column="PROD_NUM" jdbcType="DECIMAL" property="prodNum" />
+        <result column="PROD_NAME" jdbcType="VARCHAR" property="prodName" />
+        <result column="PAY_METHOD" jdbcType="DECIMAL" property="payMethod" />
+        <result column="PAYER_ORG_TYPE" jdbcType="DECIMAL" property="payerOrgType" />
+        <result column="PAYER_ORG_CODE" jdbcType="DECIMAL" property="payerOrgCode" />
+        <result column="PAYER_ACCT_TYPE" jdbcType="DECIMAL" property="payerAcctType" />
+        <result column="PAYER_ACCT_CODE" jdbcType="VARCHAR" property="payerAcctCode" />
+        <result column="PAYEE_ORG_TYPE" jdbcType="DECIMAL" property="payeeOrgType" />
+        <result column="PAYEE_ORG_CODE" jdbcType="DECIMAL" property="payeeOrgCode" />
+        <result column="PAYEE_ACCT_TYPE" jdbcType="DECIMAL" property="payeeAcctType" />
+        <result column="PAYEE_ACCT_CODE" jdbcType="VARCHAR" property="payeeAcctCode" />
+        <result column="VERSION" jdbcType="VARCHAR" property="version" />
+        <result column="MEMO" jdbcType="VARCHAR" property="memo" />
+        <result column="CRT_TIME" jdbcType="DATE" property="crtTime" />
+        <result column="UPD_TIME" jdbcType="DATE" property="updTime" />
+        <result column="SEQ_ID" jdbcType="DECIMAL" property="seqId" />
+        <result column="PAYER_CHAN" jdbcType="VARCHAR" property="payerChan" />
+        <result column="PAYEE_CHAN" jdbcType="VARCHAR" property="payeeChan" />
+        <result column="RELATION_SEQ_ID" jdbcType="VARCHAR" property="relationSeqId" />
+    </resultMap>
+    <sql id="BaseColumnList">
+        ID_BK_PE_PAYMENT_ORDER, ORDER_ID, ORDER_TYPE, ORDER_AMT, ORDER_STATUS, ORDER_TIME,
+        PROD_NUM, PROD_NAME, PAY_METHOD, PAYER_ORG_TYPE, PAYER_ORG_CODE, PAYER_ACCT_TYPE,
+        PAYER_ACCT_CODE, PAYEE_ORG_TYPE, PAYEE_ORG_CODE, PAYEE_ACCT_TYPE, PAYEE_ACCT_CODE,
+        VERSION, MEMO, CRT_TIME, UPD_TIME, SEQ_ID, PAYER_CHAN, PAYEE_CHAN, RELATION_SEQ_ID
+    </sql>
+    <select id="getTBkPePaymentOrder" parameterClass="com.bill99.mcs.common.dto.TBkPePaymentOrder" resultMap="BaseResultMap">
+        select
+        <include refid="BaseColumnList"/>
+        from cpsacct.t_bk_pe_payment_order
+        <dynamic prepend="where">
+            <isNotEmpty prepend="and" property="orderId">
+                ORDER_ID=#orderId#
+            </isNotEmpty>
+        </dynamic>
+    </select>
+</sqlMap>

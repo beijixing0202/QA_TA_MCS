@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+        "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="TxnCtrl">
+    <resultMap class="com.bill99.mcs.common.dto.TxnCtrl" id="BaseResultMap">
+        <result column="ID_TXN_CTRL" jdbcType="INTEGER" property="idTxnCtrl"/>
+        <result column="ID_TXN" jdbcType="INTEGER" property="idTxn"/>
+        <result column="ORIG_ID_TXN_CTRL" jdbcType="INTEGER" property="origIdTxnCtrl"/>
+        <result column="ORIG_ID_TXN" jdbcType="INTEGER" property="origIdTxn"/>
+        <result column="TXN_TYPE" jdbcType="VARCHAR" property="txnType"/>
+        <result column="TXN_MODE" jdbcType="CHAR" property="txnMode"/>
+        <result column="MERCHANT_ID" jdbcType="VARCHAR" property="MerchantId"/>
+        <result column="MERCH_HIERARCHY_ID" jdbcType="VARCHAR" property="merchHierarchyid"/>
+        <result column="MERCH_CID" jdbcType="VARCHAR" property="merchCid"/>
+        <result column="MERCHANT_NAME" jdbcType="VARCHAR" property="merchName"/>
+        <result column="STL_MERCHANT_ID" jdbcType="VARCHAR" property="stlMerchantId"/>
+        <result column="STL_MERCHANT_Name" jdbcType="VARCHAR" property="stlMerchantName"/>
+        <result column="MCC" jdbcType="CHAR" property="mcc"/>  
+        <result column="TERMINAL_ID" jdbcType="VARCHAR" property="terminalId"/>
+        <result column="TERM_HIERARCHY_ID" jdbcType="VARCHAR" property="termHierarchyId"/> 
+        <result column="TERMINAL_NAME" jdbcType="VARCHAR" property="terminalName"/>
+        <result column="CLIENT_IP" jdbcType="VARCHAR" property="clientIp"/>
+        <result column="SITE_TYPE" jdbcType="CHAR" property="siteType"/>
+        <result column="SITE_ID" jdbcType="VARCHAR" property="siteId"/>
+        <result column="PROVINCE_CODE" jdbcType="CHAR" property="provinceCode"/>
+        <result column="CITY_CODE" jdbcType="CHAR" property="cityCode"/> 
+        <result column="DISTRICT_CODE" jdbcType="CHAR" property="districtCode"/>
+        <result column="LONGITUDE" jdbcType="FLOAT" property="longitude"/>
+        <result column="LATITUDE" jdbcType="FLOAT" property="latitude"/>
+        <result column="PAN" jdbcType="VARCHAR" property="pan"/>
+        <result column="S_PAN" jdbcType="VARCHAR" property="sPan"/>
+        <result column="CARDHOLDER_CID" jdbcType="VARCHAR" property="cardholderCid"/> 
+        <result column="EXP_DATE" jdbcType="VARCHAR" property="expDate"/>
+        <result column="CNP_FLG" jdbcType="CHAR" property="cnpFlg"/>
+        <result column="SEC_INFO_BITMAP" jdbcType="VARCHAR" property="secInfoBitmap"/> 
+        <result column="CARD_TYPE" jdbcType="VARCHAR" property="cardType"/>
+        <result column="CARD_NAME" jdbcType="VARCHAR" property="cardName"/>
+        <result column="CARD_ORG" jdbcType="CHAR" property="cardOrg"/>
+        <result column="FOR_CARD_ORG" jdbcType="CHAR" property="forCardOrg"/>
+        <result column="APP_TYPE" jdbcType="VARCHAR" property="appType"/>
+        <result column="TXN_FLG" jdbcType="CHAR" property="txnFlg"/>
+        <result column="TXN_STATUS" jdbcType="CHAR" property="txnStatus"/>
+        <result column="ID_FWD_LIST" jdbcType="INTEGER" property="idFwdList"/>
+        <result column="APP_EXC_CODE" jdbcType="VARCHAR" property="appExcCode"/> 
+        <result column="RESP_CODE" jdbcType="CHAR" property="respCode"/>
+       	<result column="TXN_TIME" jdbcType="TIMESTAMP" property="txnTime"/>
+        <result column="RESP_TIME" jdbcType="TIMESTAMP" property="respTime"/>
+       	<result column="CUR" jdbcType="CHAR" property="cur"/>
+        <result column="AMT" jdbcType="DECIMAL" property="amt"/>
+        <result column="REWARD_PTS" jdbcType="DECIMAL" property="rewardPts"/>
+        <result column="TERM_IN_MONTHS" jdbcType="DECIMAL" property="termInMonths"/>
+        <result column="PDT_ID" jdbcType="VARCHAR" property="convRate"/>
+        <result column="REFUND_AMT" jdbcType="DECIMAL" property="refundAmt"/>
+        <result column="AUTH_AMT" jdbcType="DECIMAL" property="authAmt"/>
+        <result column="CONV_RATE" jdbcType="DECIMAL" property="convRate"/>
+        <result column="CONV_CUR" jdbcType="CHAR" property="convCur"/>
+        <result column="CONV_AMT" jdbcType="DECIMAL" property="convAmt"/>
+        <result column="TR_IN_ACCT_NO" jdbcType="VARCHAR" property="trInAcctNo"/>
+        <result column="TERM_TXN_TIME" jdbcType="TIMESTAMP" property="termTxnTime"/>
+        <result column="TERM_TRACE_NO" jdbcType="VARCHAR" property="termTraceNo"/>
+        <result column="TERM_INVOICE_NO" jdbcType="VARCHAR" property="termInvoiceNo"/>
+        <result column="TERM_BATCH_NO" jdbcType="VARCHAR" property="termBatchNo"/>
+        <result column="TERM_RECON_FLG" jdbcType="CHAR" property="termReconFlg"/>
+        <result column="TERM_OPER_ID" jdbcType="VARCHAR" property="termOperId"/>
+       	<result column="EXT_CUSTOMER_ID" jdbcType="VARCHAR" property="extCustomerId"/>
+        <result column="EXT_TRACE_NO" jdbcType="VARCHAR" property="extTraceNo"/>
+        <result column="RECON_DATE" jdbcType="DATE" property="reconDate"/>
+        <result column="SRV_ENTRY_MODE" jdbcType="CHAR" property="srvEntryMode"/>
+        <result column="SRV_COND_CODE" jdbcType="CHAR" property="srvCondCode"/>
+        <result column="SRV_CHAN_TYPE" jdbcType="CHAR" property="srvChanType"/>
+        <result column="SRV_CHAN_TRACE_NO" jdbcType="VARCHAR" property="srvChanTraceNo"/>
+        <result column="ACQUIRER_ID" jdbcType="VARCHAR" property="acquirerId"/>
+        <result column="ISSUER_ID" jdbcType="VARCHAR" property="issuerId"/>
+        <result column="TRANSFER_IN" jdbcType="VARCHAR" property="transferIn"/>
+        <result column="ON_US" jdbcType="CHAR" property="onUs"/> 
+        <result column="AUTH_NET_ID" jdbcType="VARCHAR" property="authNetId"/>
+        <result column="AUTH_TIME" jdbcType="TIMESTAMP" property="authTime"/>
+        <result column="AUTH_MERCHANT_ID" jdbcType="VARCHAR" property="authMerchantId"/>
+        <result column="AUTH_TERMINAL_ID" jdbcType="VARCHAR" property="authTerminalId"/>
+        <result column="AUTH_REF" jdbcType="VARCHAR" property="authRef"/>
+        <result column="AUTH_TRACE_NO" jdbcType="VARCHAR" property="authTraceNo"/>
+        <result column="AUTH_INVOICE_NO" jdbcType="VARCHAR" property="authInvoiceNo"/>
+        <result column="AUTH_BATCH_NO" jdbcType="VARCHAR" property="authBatchNo"/>
+        <result column="AUTH_CODE" jdbcType="VARCHAR" property="authCode"/>
+        <result column="AUTH_EXP_TIME" jdbcType="TIMESTAMP" property="authExpTime"/>
+       	<result column="AUTH_RESP_CODE" jdbcType="VARCHAR" property="authRespCode"/>
+       	<result column="AUTH_RECON_FLG" jdbcType="CHAR" property="authReconFlg"/>
+        <result column="ID_AUTH_TERM_BATCH" jdbcType="DECIMAL" property="idAuthTermBatch"/>
+        <result column="RISK_LV" jdbcType="DECIMAL" property="riskLv"/>
+        <result column="RISK_RESULT" jdbcType="VARCHAR" property="riskResult"/>
+        <result column="RISK_STATUS" jdbcType="CHAR" property="riskStatus"/>
+        <result column="VALUE_DATE" jdbcType="DATE" property="valueDate"/>
+        <result column="TUNNEL_DATA" jdbcType="VARCHAR" property="tunnelData"/>
+        <result column="POSTING_FLG" jdbcType="CHAR" property="postingFlg"/> 
+		<result column="STL_FLG" jdbcType="CHAR" property="stlFlg"/>
+		<result column="RUNTIME_NODE_ID" jdbcType="VARCHAR" property="runtimeNodeId"/>
+		<result column="SRC_ID" jdbcType="VARCHAR" property="srcId"/>
+		<result column="ID_ETL_LOG" jdbcType="DECIMAL" property="idEtlLog"/> 
+		<result column="PRIC_CURY" jdbcType="VARCHAR" property="pricCury"/>
+		<result column="PRIC_AMT" jdbcType="DECIMAL" property="pricAmt"/>
+        <result column="BILL_CURY" jdbcType="VARCHAR" property="billCury"/>
+        <result column="BILL_AMTDISC_AMT" jdbcType="DECIMAL" property="billAmt"/>
+        <result column="EXGE_FLAG" jdbcType="CHAR" property="exgeFlag"/>
+        <result column="EXGE_RATE_DIRE" jdbcType="CHAR" property="exgeRateDire"/>
+        <result column="EXGE_RATE" jdbcType="DECIMAL" property="exgeRate"/> 
+        <result column="DISC_AMT" jdbcType="DECIMAL" property="discAmt"/>
+        <result column="DISC_RATE" jdbcType="DECIMAL" property="discRate"/>
+        <result column="SRV_CHAN_SRC" jdbcType="CHAR" property="srvChanSrc"/>
+        <result column="ORIG_TXN_TYPE" jdbcType="VARCHAR" property="origTxnType"/>
+        <result column="QUICK_RFD_FLAG" jdbcType="CHAR" property="quickRfdFlag"/>
+        <result column="ENTRY_CVV2_FLAG" jdbcType="CHAR" property="entryCvv2Flag"/>
+        <result column="NII" jdbcType="CHAR" property="nii"/>
+        <result column="STL_BIZ_FLG" jdbcType="CHAR" property="stlBizFlg"/>
+        <result column="PRODUCT_CODE" jdbcType="CHAR" property="productCode"/>
+        <result column="TXN_RULE_ID" jdbcType="VARCHAR" property="txnRuleId"/>
+        <result column="AUTH_RULE_ID" jdbcType="VARCHAR" property="authRuleId"/>   
+    </resultMap>
+    <sql id="BaseColumnList">
+    	ID_TXN_CTRL,ID_TXN,ORIG_ID_TXN_CTRL,ORIG_ID_TXN,TXN_TYPE,TXN_MODE,MERCHANT_ID,MERCH_HIERARCHY_ID,MERCH_CID,
+    	MERCHANT_NAME,STL_MERCHANT_ID,STL_MERCHANT_Name,MCC,TERMINAL_ID,TERM_HIERARCHY_ID,TERMINAL_NAME,CLIENT_IP,
+    	SITE_TYPE,SITE_ID,PROVINCE_CODE,CITY_CODE,DISTRICT_CODE,LONGITUDE,LATITUDE,PAN,S_PAN,CARDHOLDER_CID,EXP_DATE,
+    	CNP_FLG,SEC_INFO_BITMAP,CARD_TYPE,CARD_NAME,CARD_ORG,FOR_CARD_ORG,APP_TYPE,TXN_FLG,TXN_STATUS,ID_FWD_LIST,
+    	APP_EXC_CODE,RESP_CODE,TXN_TIME,RESP_TIME,CUR,AMT,REWARD_PTS,TERM_IN_MONTHS,PDT_ID,REFUND_AMT,AUTH_AMT,CONV_RATE,
+    	CONV_CUR,CONV_AMT,TR_IN_ACCT_NO,TERM_TXN_TIME,TERM_TRACE_NO,TERM_INVOICE_NO,TERM_BATCH_NO,TERM_RECON_FLG,
+    	TERM_OPER_ID,EXT_CUSTOMER_ID,EXT_TRACE_NO,RECON_DATE,SRV_ENTRY_MODE,SRV_COND_CODE,SRV_CHAN_TYPE,SRV_CHAN_TRACE_NO,
+    	ACQUIRER_ID,ISSUER_ID,TRANSFER_IN,ON_US,AUTH_NET_ID,AUTH_TIME,AUTH_MERCHANT_ID,AUTH_TERMINAL_ID,AUTH_REF,
+    	AUTH_TRACE_NO,AUTH_INVOICE_NO,AUTH_BATCH_NO,AUTH_CODE,AUTH_EXP_TIME,AUTH_RESP_CODE,AUTH_RECON_FLG,ID_AUTH_TERM_BATCH,
+    	RISK_LV,RISK_RESULT,RISK_STATUS,VALUE_DATE,TUNNEL_DATA,POSTING_FLG,STL_FLG,RUNTIME_NODE_ID,SRC_ID,ID_ETL_LOG,
+    	PRIC_CURY,PRIC_AMT,BILL_CURY,BILL_AMTDISC_AMT,EXGE_FLAG,EXGE_RATE_DIRE,EXGE_RATE,DISC_AMT,DISC_RATE,SRV_CHAN_SRC,
+    	ORIG_TXN_TYPE,QUICK_RFD_FLAG,ENTRY_CVV2_FLAG,NII,STL_BIZ_FLG,PRODUCT_CODE,TXN_RULE_ID,AUTH_RULE_ID        
+    </sql>
+    <select id="getTxnCtrl" parameterClass="com.bill99.mcs.common.dto.TxnCtrl" resultMap="BaseResultMap">
+        select
+        <include refid="BaseColumnList"/>
+        from t_txn_ctrl
+        <dynamic prepend="where">
+            <isNotEmpty prepend="and" property="idTxn">
+                id_txn=#idTxn#
+            </isNotEmpty>
+        </dynamic>
+    </select>
+</sqlMap>

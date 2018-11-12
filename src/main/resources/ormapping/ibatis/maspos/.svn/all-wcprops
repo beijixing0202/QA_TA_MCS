@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/opt/99billdoc/!svn/ver/465312/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/resources/ormapping/ibatis/maspos
+END
+TStlOrderMapper.xml
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/resources/ormapping/ibatis/maspos/TStlOrderMapper.xml
+END
+txnDB.xml
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/resources/ormapping/ibatis/maspos/txnDB.xml
+END
+TClrTxnListMapper.xml
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/resources/ormapping/ibatis/maspos/TClrTxnListMapper.xml
+END
+TStlListMapper.xml
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/resources/ormapping/ibatis/maspos/TStlListMapper.xml
+END
+TxnCtrlMapper.xml
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/opt/99billdoc/!svn/ver/465312/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/resources/ormapping/ibatis/maspos/TxnCtrlMapper.xml
+END

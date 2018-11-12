@@ -1,0 +1,91 @@
+﻿<project name="common-jar-targets"
+         default=""
+         xmlns:ivy="antlib:org.apache.ivy.ant"
+>
+
+	<import file="./common-test.xml" />
+	<!-- ================================= 
+          target: resolve              
+         ================================= -->
+	<target name="resolve"
+	        description="--> resolve and retrieve dependencies with ivy"
+	>
+		<ivy:retrieve />
+	</target>
+
+		
+	<!-- ================================= 
+          target: compile              
+         ================================= -->
+	<target name="compile"  description="--> compile">
+		<mkdir dir="${classes.path}" />
+		<mkdir dir="${build.path}" />
+		<javac compiler="org.eclipse.jdt.core.JDTCompilerAdapter" encoding="${compile.encoding}"
+		       destdir="${classes.path}"
+		       classpathref="lib.path.id"
+		       debug="${build.debug}"
+		       fork="true" 
+		       includeAntRuntime="false"
+		       memoryinitialsize="128m"
+		       memorymaximumsize="256m" source="1.6" target="1.6"
+		>
+			<src path="${source.path}" />
+		</javac>
+		<copy todir="${build.path}">
+			<fileset dir="${classes.path}" />
+			<fileset dir="${resources.path}" excludes="**/*.java" />
+			<fileset dir="${source.path}" excludes="**/*.java"/>
+		</copy>
+	</target>
+		
+	<!-- ================================= 
+          target: jar              
+         ================================= -->
+	<target name="jar" depends="clean,resolve,compile" description="--> jar">
+		<jar destfile="${lib.path}/${ant.project.name}.jar">
+			<fileset dir="${build.path}" />
+		</jar>
+	</target>
+	
+	<!-- ================================= 
+          target: clean              
+         ================================= -->
+	<target name="clean" description="--> clean the project">	
+		<delete dir="${build.path}" />
+		<delete dir="${lib.path}" />
+	</target>
+	
+
+	<target name="main" depends="jar" description="execute main">  
+	  <echo message="----------- execute main ------------" />  
+	  <property name="email" value="jiangddp12@qa.99bill.com" />  
+	  <property name="pass" value="1qaz2wsx" />  
+	   <property name="amount" value="1" />  
+	   <java fork="true" classname="com.bill99.ta.fi.test.interfaces.recharge.Recharge">  
+	    <arg value="${email}"/>  
+	    <arg value="${pass}"/>  
+	    <arg value="${amount}"/>  
+	    <classpath refid="lib.path.id"/>  
+	   </java>  
+	   <echo message="----------- End------------" />  
+	 </target>  
+
+	<!-- ================================= 
+          target: runtest              
+         ================================= -->
+	<taskdef resource="testngtasks" classpath="${lib.local.dir}/bill99qa/testng-6.8-nobsh-noguice.jar" />
+	<target name="runtest" depends="jar">
+		<testng outputDir="${testng.report.path}" haltOnfailure="false"
+			listeners="com.bill99.testmp.ta.listener.SuiteListener,com.bill99.testmp.ta.listener.InvokedMethodListener">
+			<sysproperty key="JOB_NAME" value="${env.JOB_NAME}" />
+			<sysproperty key="BUILD_NUMBER" value="${env.BUILD_NUMBER}" />
+			<sysproperty key="BUILD_ID" value="${env.BUILD_ID}" />
+			<sysproperty key="ID_TA_TASK" value="${env.ID_TA_TASK}" />
+			<classpath refid="lib.path.id" />
+			<sysproperty key="GROUP_ID" value="${env.GROUP_ID}" />
+			<sysproperty key="STAGE_ID" value="${env.STAGE_ID}" />
+			<sysproperty key="user.dir" value="${basedir}" />
+			<xmlfileset dir="${basedir}" includes="jenkins_job.xml" />
+		</testng>
+	</target>
+</project>

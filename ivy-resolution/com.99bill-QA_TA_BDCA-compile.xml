@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="com.99bill"
+		module="QA_TA_BDCA"
+		revision="working@NJ30101057-PC"
+		conf="compile"
+		confs="default, compile, zip, test"
+		date="20181029140057"/>
+	<dependencies>
+		<module organisation="com.99bill" name="qa_ta_common_tools">
+			<revision name="1.0.0.5" status="release" pubdate="20181029140059" resolver="bill99_repository.tp.public" artresolver="bill99_repository.tp.public" downloaded="false" searched="true" default="true" conf="default" position="45">
+				<metadata-artifact status="no" details="" size="0" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\qa_ta_common_tools\ivy-1.0.0.5.xml" searched="true"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="compile" rev="latest.integration" rev-constraint-default="latest.integration" rev-constraint-dynamic="latest.integration" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="qa_ta_common_tools" type="jar" ext="jar" status="no" details="" size="25444" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\qa_ta_common_tools\jars\qa_ta_common_tools-1.0.0.5.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="qa_ta_ma_cps_db">
+			<revision name="1.0.0.3" status="release" pubdate="20181029140059" resolver="bill99_repository.tp.public" artresolver="bill99_repository.tp.public" downloaded="false" searched="true" default="true" conf="default" position="44">
+				<metadata-artifact status="no" details="" size="0" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\qa_ta_ma_cps_db\ivy-1.0.0.3.xml" searched="true"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="compile" rev="latest.integration" rev-constraint-default="latest.integration" rev-constraint-dynamic="latest.integration" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="qa_ta_ma_cps_db" type="jar" ext="jar" status="no" details="" size="35962" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\qa_ta_ma_cps_db\jars\qa_ta_ma_cps_db-1.0.0.3.jar">
+						<origin-location is-local="false" location="http://192.168.15.15/repository/com.99bill/qa_ta_ma_cps_db/jars/qa_ta_ma_cps_db-1.0.0.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="qa-ta-monitor">
+			<revision name="1.0.0.3" status="release" pubdate="20181029140058" resolver="bill99_repository.tp.public" artresolver="bill99_repository.tp.public" downloaded="false" searched="true" default="true" conf="default" position="43">
+				<metadata-artifact status="no" details="" size="0" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\qa-ta-monitor\ivy-1.0.0.3.xml" searched="true"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="compile" rev="latest.integration" rev-constraint-default="latest.integration" rev-constraint-dynamic="latest.integration" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="qa-ta-monitor" type="jar" ext="jar" status="no" details="" size="10305" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\qa-ta-monitor\jars\qa-ta-monitor-1.0.0.3.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="qa_ta_security_tool">
+			<revision name="1.0.0.5" status="release" pubdate="20181029140102" resolver="bill99_repository.tp.public" artresolver="bill99_repository.tp.public" downloaded="false" searched="true" default="true" conf="default" position="42">
+				<metadata-artifact status="no" details="" size="0" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\qa_ta_security_tool\ivy-1.0.0.5.xml" searched="true"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="compile" rev="latest.integration" rev-constraint-default="latest.integration" rev-constraint-dynamic="latest.integration" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="qa_ta_security_tool" type="jar" ext="jar" status="no" details="" size="6787" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\qa_ta_security_tool\jars\qa_ta_security_tool-1.0.0.5.jar">
+						<origin-location is-local="false" location="http://192.168.15.15/repository/com.99bill/qa_ta_security_tool/jars/qa_ta_security_tool-1.0.0.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google" name="guava">
+			<revision name="11.0.2" status="release" pubdate="20121121152529" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="41">
+				<metadata-artifact status="no" details="" size="389" time="0" location="D:\Local_Repository\ivy-cache\com.google\guava\ivy-11.0.2.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.google\guava\ivys\ivy-11.0.2.xml" origin-is-local="false" origin-location="http://192.168.52.211/com.google/guava/ivys/ivy-11.0.2.xml"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="compile" rev="11.0.2" rev-constraint-default="11.0.2" rev-constraint-dynamic="11.0.2" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="guava" type="jar" ext="jar" status="no" details="" size="1648200" time="0" location="D:\Local_Repository\ivy-cache\com.google\guava\jars\guava-11.0.2.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/com.google/guava/jars/guava-11.0.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.openqa" name="selenium-java">
+			<revision name="2.25.0" status="release" pubdate="20130912140956" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="40">
+				<metadata-artifact status="no" details="" size="431" time="0" location="D:\Local_Repository\ivy-cache\org.openqa\selenium-java\ivy-2.25.0.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\org.openqa\selenium-java\ivys\ivy-2.25.0.xml" origin-is-local="false" origin-location="UNKNOWN"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="compile" rev="2.25.0" rev-constraint-default="2.25.0" rev-constraint-dynamic="2.25.0" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="selenium-java" type="jar" ext="jar" status="no" details="" size="4327466" time="0" location="D:\Local_Repository\ivy-cache\org.openqa\selenium-java\jars\selenium-java-2.25.0.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/org.openqa/selenium-java/jars/selenium-java-2.25.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="steel">
+			<revision name="4.6.4" status="release" pubdate="20151117133419" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="39">
+				<metadata-artifact status="no" details="" size="414" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\steel\ivy-4.6.4.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.99bill\steel\ivys\ivy-4.6.4.xml" origin-is-local="false" origin-location="UNKNOWN"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="compile" rev="4.6.4" rev-constraint-default="4.6.4" rev-constraint-dynamic="4.6.4" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="steel" type="jar" ext="jar" status="no" details="" size="873326" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\steel\jars\steel-4.6.4.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/com.99bill/steel/jars/steel-4.6.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.ibatis" name="mybatis">
+			<revision name="3.0.4" status="release" pubdate="20151117133419" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="38">
+				<metadata-artifact status="no" details="" size="418" time="0" location="D:\Local_Repository\ivy-cache\com.ibatis\mybatis\ivy-3.0.4.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.ibatis\mybatis\ivys\ivy-3.0.4.xml" origin-is-local="false" origin-location="UNKNOWN"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="compile" rev="3.0.4" rev-constraint-default="3.0.4" rev-constraint-dynamic="3.0.4" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="mybatis" type="jar" ext="jar" status="no" details="" size="640609" time="0" location="D:\Local_Repository\ivy-cache\com.ibatis\mybatis\jars\mybatis-3.0.4.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/com.ibatis/mybatis/jars/mybatis-3.0.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.beust" name="jcommander">
+			<revision name="1.13" status="release" pubdate="20130912140956" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="37">
+				<metadata-artifact status="no" details="" size="422" time="0" location="D:\Local_Repository\ivy-cache\com.beust\jcommander\ivy-1.13.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.beust\jcommander\ivys\ivy-1.13.xml" origin-is-local="false" origin-location="UNKNOWN"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="compile" rev="1.13" rev-constraint-default="1.13" rev-constraint-dynamic="1.13" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="jcommander" type="jar" ext="jar" status="no" details="" size="31344" time="0" location="D:\Local_Repository\ivy-cache\com.beust\jcommander\jars\jcommander-1.13.jar">
+						<origin-location is-local="false" location="http://192.168.15.15/repository/com.beust/jcommander/jars/jcommander-1.13.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="mysql" name="mysql-connector-java">
+			<revision name="5.1.12" status="release" pubdate="20121121152422" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="36">
+				<metadata-artifact status="no" details="" size="414" time="0" location="D:\Local_Repository\ivy-cache\mysql\mysql-connector-java\ivy-5.1.12.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\mysql\mysql-connector-java\ivys\ivy-5.1.12.xml" origin-is-local="false" origin-location="http://192.168.52.211/mysql/mysql-connector-java/ivys/ivy-5.1.12.xml"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="compile" rev="5.1.12" rev-constraint-default="5.1.12" rev-constraint-dynamic="5.1.12" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="mysql-connector-java" type="jar" ext="jar" status="no" details="" size="732695" time="0" location="D:\Local_Repository\ivy-cache\mysql\mysql-connector-java\jars\mysql-connector-java-5.1.12.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/mysql/mysql-connector-java/jars/mysql-connector-java-5.1.12.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.sun" name="jna">
+			<revision name="3.4.0" status="release" pubdate="20130912141000" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="35">
+				<metadata-artifact status="no" details="" size="407" time="0" location="D:\Local_Repository\ivy-cache\com.sun\jna\ivy-3.4.0.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.sun\jna\ivys\ivy-3.4.0.xml" origin-is-local="false" origin-location="UNKNOWN"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="compile" rev="3.4.0" rev-constraint-default="3.4.0" rev-constraint-dynamic="3.4.0" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="jna" type="jar" ext="jar" status="no" details="" size="1006639" time="0" location="D:\Local_Repository\ivy-cache\com.sun\jna\jars\jna-3.4.0.jar">
+						<origin-location is-local="false" location="http://192.168.15.15/repository/com.sun/jna/jars/jna-3.4.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.json" name="json">
+			<revision name="20080701" status="release" pubdate="20130912141000" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="34">
+				<metadata-artifact status="no" details="" size="413" time="0" location="D:\Local_Repository\ivy-cache\org.json\json\ivy-20080701.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\org.json\json\ivys\ivy-20080701.xml" origin-is-local="false" origin-location="UNKNOWN"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="compile" rev="20080701" rev-constraint-default="20080701" rev-constraint-dynamic="20080701" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="json" type="jar" ext="jar" status="no" details="" size="37875" time="0" location="D:\Local_Repository\ivy-cache\org.json\json\jars\json-20080701.jar">
+						<origin-location is-local="false" location="http://192.168.15.15/repository/org.json/json/jars/json-20080701.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.json" name="json-lib">
+			<revision name="2.3-jdk15" status="release" pubdate="20130912140959" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="33">
+				<metadata-artifact status="no" details="" size="422" time="0" location="D:\Local_Repository\ivy-cache\org.json\json-lib\ivy-2.3-jdk15.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\org.json\json-lib\ivys\ivy-2.3-jdk15.xml" origin-is-local="false" origin-location="UNKNOWN"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="compile" rev="2.3-jdk15" rev-constraint-default="2.3-jdk15" rev-constraint-dynamic="2.3-jdk15" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="json-lib" type="jar" ext="jar" status="no" details="" size="151839" time="0" location="D:\Local_Repository\ivy-cache\org.json\json-lib\jars\json-lib-2.3-jdk15.jar">
+						<origin-location is-local="false" location="http://192.168.15.15/repository/org.json/json-lib/jars/json-lib-2.3-jdk15.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.jcraft" name="jsch">
+			<revision name="0.1.50" status="release" pubdate="20130913180108" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="32">
+				<metadata-artifact status="no" details="" size="387" time="0" location="D:\Local_Repository\ivy-cache\com.jcraft\jsch\ivy-0.1.50.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.jcraft\jsch\ivys\ivy-0.1.50.xml" origin-is-local="false" origin-location="http://192.168.52.211/com.jcraft/jsch/ivys/ivy-0.1.50.xml"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="compile" rev="0.1.50" rev-constraint-default="0.1.50" rev-constraint-dynamic="0.1.50" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="jsch" type="jar" ext="jar" status="no" details="" size="249282" time="0" location="D:\Local_Repository\ivy-cache\com.jcraft\jsch\jars\jsch-0.1.50.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/com.jcraft/jsch/jars/jsch-0.1.50.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.jdesktop" name="appframework">
+			<revision name="1.0.3" status="release" pubdate="20130912140959" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="31">
+				<metadata-artifact status="no" details="" size="430" time="0" location="D:\Local_Repository\ivy-cache\org.jdesktop\appframework\ivy-1.0.3.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\org.jdesktop\appframework\ivys\ivy-1.0.3.xml" origin-is-local="false" origin-location="UNKNOWN"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="compile" rev="1.0.3" rev-constraint-default="1.0.3" rev-constraint-dynamic="1.0.3" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="appframework" type="jar" ext="jar" status="no" details="" size="264192" time="0" location="D:\Local_Repository\ivy-cache\org.jdesktop\appframework\jars\appframework-1.0.3.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/org.jdesktop/appframework/jars/appframework-1.0.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="bill99_qa_ta_basetools">
+			<revision name="1.0" status="release" pubdate="20170206140615" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="30">
+				<metadata-artifact status="no" details="" size="446" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\bill99_qa_ta_basetools\ivy-1.0.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.99bill\bill99_qa_ta_basetools\ivys\ivy-1.0.xml" origin-is-local="false" origin-location="UNKNOWN"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="compile" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="bill99_qa_ta_basetools" type="jar" ext="jar" status="no" details="" size="19849" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\bill99_qa_ta_basetools\jars\bill99_qa_ta_basetools-1.0.jar">
+						<origin-location is-local="false" location="http://192.168.15.15/repository/com.99bill/bill99_qa_ta_basetools/jars/bill99_qa_ta_basetools-1.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="testng">
+			<revision name="6.8" status="release" pubdate="20130912140959" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="29">
+				<metadata-artifact status="no" details="" size="414" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\testng\ivy-6.8.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.99bill\testng\ivys\ivy-6.8.xml" origin-is-local="false" origin-location="UNKNOWN"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="compile" rev="6.8" rev-constraint-default="6.8" rev-constraint-dynamic="6.8" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="testng" type="jar" ext="jar" status="no" details="" size="810838" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\testng\jars\testng-6.8.jar">
+						<origin-location is-local="false" location="http://192.168.15.15/repository/com.99bill/testng/jars/testng-6.8.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="tp-ta-rpc-api">
+			<revision name="2.0.13" status="release" pubdate="20181029140101" resolver="bill99_repository.tp.public" artresolver="bill99_repository.tp.public" downloaded="false" searched="true" default="true" conf="default" position="28">
+				<metadata-artifact status="no" details="" size="0" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\tp-ta-rpc-api\ivy-2.0.13.xml" searched="true"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="compile" rev="latest.integration" rev-constraint-default="latest.integration" rev-constraint-dynamic="latest.integration" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="tp-ta-rpc-api" type="jar" ext="jar" status="no" details="" size="37350" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\tp-ta-rpc-api\jars\tp-ta-rpc-api-2.0.13.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="tp-ta-helper">
+			<revision name="1.5.1.63" status="release" pubdate="20121214192804" resolver="bill99_repository.tp.public" artresolver="bill99_repository.tp.public" downloaded="true" searched="true" default="true" conf="default" position="26">
+				<metadata-artifact status="successful" details="" size="519" time="171" location="D:\Local_Repository\ivy-cache\com.99bill\tp-ta-helper\ivy-1.5.1.63.xml" searched="true" original-local-location="D:\Local_Repository\ivy-cache\com.99bill\tp-ta-helper\ivy-1.5.1.63.xml.original" origin-is-local="false" origin-location="http://192.168.15.15/repository/com.99bill/tp-ta-helper/ivys/ivy-1.5.1.63.xml"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="compile" rev="latest.integration" rev-constraint-default="latest.integration" rev-constraint-dynamic="latest.integration" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="tp-ta-helper" type="jar" ext="jar" status="successful" details="" size="504107" time="1276" location="D:\Local_Repository\ivy-cache\com.99bill\tp-ta-helper\jars\tp-ta-helper-1.5.1.63.jar">
+						<origin-location is-local="false" location="http://192.168.15.15/repository/com.99bill/tp-ta-helper/jars/tp-ta-helper-1.5.1.63.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="c3p0" name="c3p0">
+			<revision name="0.9.1.2" status="release" pubdate="20171225181308" resolver="bill99_repository.ivy.public" artresolver="bill99_repository.ivy.public" downloaded="false" searched="false" default="true" conf="default, *" position="27">
+				<metadata-artifact status="no" details="" size="408" time="0" location="D:\Local_Repository\ivy-cache\c3p0\c3p0\ivy-0.9.1.2.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\c3p0\c3p0\ivys\ivy-0.9.1.2.xml" origin-is-local="false" origin-location="UNKNOWN"/>
+				<caller organisation="com.99bill" name="tp-ta-helper" conf="default" rev="0.9.1.2" rev-constraint-default="0.9.1.2" rev-constraint-dynamic="0.9.1.2" callerrev="1.5.1.63"/>
+				<artifacts>
+					<artifact name="c3p0" type="jar" ext="jar" status="no" details="" size="610790" time="0" location="D:\Local_Repository\ivy-cache\c3p0\c3p0\jars\c3p0-0.9.1.2.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="jxl" name="jxl-api">
+			<revision name="2.4" status="release" pubdate="20121121152419" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="25">
+				<metadata-artifact status="no" details="" size="383" time="0" location="D:\Local_Repository\ivy-cache\jxl\jxl-api\ivy-2.4.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\jxl\jxl-api\ivys\ivy-2.4.xml" origin-is-local="false" origin-location="http://192.168.52.211/jxl/jxl-api/ivys/ivy-2.4.xml"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="compile" rev="2.4" rev-constraint-default="2.4" rev-constraint-dynamic="2.4" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="jxl-api" type="jar" ext="jar" status="no" details="" size="486809" time="0" location="D:\Local_Repository\ivy-cache\jxl\jxl-api\jars\jxl-api-2.4.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/jxl/jxl-api/jars/jxl-api-2.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache" name="commons-discovery">
+			<revision name="0.2" status="release" pubdate="20151117133419" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="24">
+				<metadata-artifact status="no" details="" size="436" time="0" location="D:\Local_Repository\ivy-cache\org.apache\commons-discovery\ivy-0.2.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\org.apache\commons-discovery\ivys\ivy-0.2.xml" origin-is-local="false" origin-location="http://192.168.52.211/org.apache/commons-discovery/ivys/ivy-0.2.xml"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="compile" rev="0.2" rev-constraint-default="0.2" rev-constraint-dynamic="0.2" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="commons-discovery" type="jar" ext="jar" status="no" details="" size="71442" time="0" location="D:\Local_Repository\ivy-cache\org.apache\commons-discovery\jars\commons-discovery-0.2.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/org.apache/commons-discovery/jars/commons-discovery-0.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache" name="commons-net">
+			<revision name="3.0.1" status="release" pubdate="20121121152506" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="23">
+				<metadata-artifact status="no" details="" size="400" time="0" location="D:\Local_Repository\ivy-cache\org.apache\commons-net\ivy-3.0.1.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\org.apache\commons-net\ivys\ivy-3.0.1.xml" origin-is-local="false" origin-location="http://192.168.52.211/org.apache/commons-net/ivys/ivy-3.0.1.xml"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="compile" rev="3.0.1" rev-constraint-default="3.0.1" rev-constraint-dynamic="3.0.1" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="commons-net" type="jar" ext="jar" status="no" details="" size="269014" time="0" location="D:\Local_Repository\ivy-cache\org.apache\commons-net\jars\commons-net-3.0.1.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/org.apache/commons-net/jars/commons-net-3.0.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache" name="commons-io">
+			<revision name="1.4" status="release" pubdate="20121121152506" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="22">
+				<metadata-artifact status="no" details="" size="396" time="0" location="D:\Local_Repository\ivy-cache\org.apache\commons-io\ivy-1.4.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\org.apache\commons-io\ivys\ivy-1.4.xml" origin-is-local="false" origin-location="http://192.168.52.211/org.apache/commons-io/ivys/ivy-1.4.xml"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="compile" rev="1.4" rev-constraint-default="1.4" rev-constraint-dynamic="1.4" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="commons-io" type="jar" ext="jar" status="no" details="" size="109043" time="0" location="D:\Local_Repository\ivy-cache\org.apache\commons-io\jars\commons-io-1.4.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/org.apache/commons-io/jars/commons-io-1.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache" name="commons-httpclient">
+			<revision name="3.1.1" status="release" pubdate="20130912140955" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="21">
+				<metadata-artifact status="no" details="" size="440" time="0" location="D:\Local_Repository\ivy-cache\org.apache\commons-httpclient\ivy-3.1.1.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\org.apache\commons-httpclient\ivys\ivy-3.1.1.xml" origin-is-local="false" origin-location="UNKNOWN"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="compile" rev="3.1.1" rev-constraint-default="3.1.1" rev-constraint-dynamic="3.1.1" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="commons-httpclient" type="jar" ext="jar" status="no" details="" size="228660" time="0" location="D:\Local_Repository\ivy-cache\org.apache\commons-httpclient\jars\commons-httpclient-3.1.1.jar">
+						<origin-location is-local="false" location="http://192.168.15.15/repository/org.apache/commons-httpclient/jars/commons-httpclient-3.1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache" name="commons-fileupload">
+			<revision name="1.1.1" status="release" pubdate="20121121152505" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="20">
+				<metadata-artifact status="no" details="" size="414" time="0" location="D:\Local_Repository\ivy-cache\org.apache\commons-fileupload\ivy-1.1.1.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\org.apache\commons-fileupload\ivys\ivy-1.1.1.xml" origin-is-local="false" origin-location="http://192.168.52.211/org.apache/commons-fileupload/ivys/ivy-1.1.1.xml"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="compile" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="commons-fileupload" type="jar" ext="jar" status="no" details="" size="31909" time="0" location="D:\Local_Repository\ivy-cache\org.apache\commons-fileupload\jars\commons-fileupload-1.1.1.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/org.apache/commons-fileupload/jars/commons-fileupload-1.1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache" name="commons-exec">
+			<revision name="1.1" status="release" pubdate="20130912140955" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="19">
+				<metadata-artifact status="no" details="" size="426" time="0" location="D:\Local_Repository\ivy-cache\org.apache\commons-exec\ivy-1.1.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\org.apache\commons-exec\ivys\ivy-1.1.xml" origin-is-local="false" origin-location="UNKNOWN"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="compile" rev="1.1" rev-constraint-default="1.1" rev-constraint-dynamic="1.1" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="commons-exec" type="jar" ext="jar" status="no" details="" size="52543" time="0" location="D:\Local_Repository\ivy-cache\org.apache\commons-exec\jars\commons-exec-1.1.jar">
+						<origin-location is-local="false" location="http://192.168.15.15/repository/org.apache/commons-exec/jars/commons-exec-1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache" name="commons-dbcp">
+			<revision name="1.2.1" status="release" pubdate="20121121152507" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="18">
+				<metadata-artifact status="no" details="" size="402" time="0" location="D:\Local_Repository\ivy-cache\org.apache\commons-dbcp\ivy-1.2.1.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\org.apache\commons-dbcp\ivys\ivy-1.2.1.xml" origin-is-local="false" origin-location="http://192.168.52.211/org.apache/commons-dbcp/ivys/ivy-1.2.1.xml"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="compile" rev="1.2.1" rev-constraint-default="1.2.1" rev-constraint-dynamic="1.2.1" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="commons-dbcp" type="jar" ext="jar" status="no" details="" size="107631" time="0" location="D:\Local_Repository\ivy-cache\org.apache\commons-dbcp\jars\commons-dbcp-1.2.1.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/org.apache/commons-dbcp/jars/commons-dbcp-1.2.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache" name="commons-jxpath">
+			<revision name="1.3-osgi" status="release" pubdate="20121121152805" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="17">
+				<metadata-artifact status="no" details="" size="409" time="0" location="D:\Local_Repository\ivy-cache\org.apache\commons-jxpath\ivy-1.3-osgi.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\org.apache\commons-jxpath\ivys\ivy-1.3-osgi.xml" origin-is-local="false" origin-location="http://192.168.52.211/org.apache/commons-jxpath/ivys/ivy-1.3-osgi.xml"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="compile" rev="1.3-osgi" rev-constraint-default="1.3-osgi" rev-constraint-dynamic="1.3-osgi" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="commons-jxpath" type="jar" ext="jar" status="no" details="" size="303720" time="0" location="D:\Local_Repository\ivy-cache\org.apache\commons-jxpath\jars\commons-jxpath-1.3-osgi.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/org.apache/commons-jxpath/jars/commons-jxpath-1.3-osgi.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache" name="commons-pool">
+			<revision name="1.3" status="release" pubdate="20121121152506" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="16">
+				<metadata-artifact status="no" details="" size="400" time="0" location="D:\Local_Repository\ivy-cache\org.apache\commons-pool\ivy-1.3.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\org.apache\commons-pool\ivys\ivy-1.3.xml" origin-is-local="false" origin-location="http://192.168.52.211/org.apache/commons-pool/ivys/ivy-1.3.xml"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="compile" rev="1.3" rev-constraint-default="1.3" rev-constraint-dynamic="1.3" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="commons-pool" type="jar" ext="jar" status="no" details="" size="62103" time="0" location="D:\Local_Repository\ivy-cache\org.apache\commons-pool\jars\commons-pool-1.3.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/org.apache/commons-pool/jars/commons-pool-1.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache" name="commons-logging">
+			<revision name="1.1.1" status="release" pubdate="20121121152506" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="15">
+				<metadata-artifact status="no" details="" size="408" time="0" location="D:\Local_Repository\ivy-cache\org.apache\commons-logging\ivy-1.1.1.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\org.apache\commons-logging\ivys\ivy-1.1.1.xml" origin-is-local="false" origin-location="http://192.168.52.211/org.apache/commons-logging/ivys/ivy-1.1.1.xml"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="compile" rev="1.1.1" rev-constraint-default="1.1.1" rev-constraint-dynamic="1.1.1" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="commons-logging" type="jar" ext="jar" status="no" details="" size="60841" time="0" location="D:\Local_Repository\ivy-cache\org.apache\commons-logging\jars\commons-logging-1.1.1.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/org.apache/commons-logging/jars/commons-logging-1.1.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache" name="commons-lang">
+			<revision name="2.4" status="release" pubdate="20121121152506" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="14">
+				<metadata-artifact status="no" details="" size="400" time="0" location="D:\Local_Repository\ivy-cache\org.apache\commons-lang\ivy-2.4.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\org.apache\commons-lang\ivys\ivy-2.4.xml" origin-is-local="false" origin-location="http://192.168.52.211/org.apache/commons-lang/ivys/ivy-2.4.xml"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="compile" rev="2.4" rev-constraint-default="2.4" rev-constraint-dynamic="2.4" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="commons-lang" type="jar" ext="jar" status="no" details="" size="261809" time="0" location="D:\Local_Repository\ivy-cache\org.apache\commons-lang\jars\commons-lang-2.4.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/org.apache/commons-lang/jars/commons-lang-2.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache" name="commons-compress">
+			<revision name="1.0" status="release" pubdate="20121121152806" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="13">
+				<metadata-artifact status="no" details="" size="408" time="0" location="D:\Local_Repository\ivy-cache\org.apache\commons-compress\ivy-1.0.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\org.apache\commons-compress\ivys\ivy-1.0.xml" origin-is-local="false" origin-location="http://192.168.52.211/org.apache/commons-compress/ivys/ivy-1.0.xml"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="compile" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="commons-compress" type="jar" ext="jar" status="no" details="" size="143847" time="0" location="D:\Local_Repository\ivy-cache\org.apache\commons-compress\jars\commons-compress-1.0.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/org.apache/commons-compress/jars/commons-compress-1.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache" name="commons-codec">
+			<revision name="1.4" status="release" pubdate="20121121152504" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="12">
+				<metadata-artifact status="no" details="" size="402" time="0" location="D:\Local_Repository\ivy-cache\org.apache\commons-codec\ivy-1.4.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\org.apache\commons-codec\ivys\ivy-1.4.xml" origin-is-local="false" origin-location="http://192.168.52.211/org.apache/commons-codec/ivys/ivy-1.4.xml"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="compile" rev="1.4" rev-constraint-default="1.4" rev-constraint-dynamic="1.4" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="commons-codec" type="jar" ext="jar" status="no" details="" size="58160" time="0" location="D:\Local_Repository\ivy-cache\org.apache\commons-codec\jars\commons-codec-1.4.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/org.apache/commons-codec/jars/commons-codec-1.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache" name="commons-attributes-api">
+			<revision name="2.1" status="release" pubdate="20121121152509" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="11">
+				<metadata-artifact status="no" details="" size="420" time="0" location="D:\Local_Repository\ivy-cache\org.apache\commons-attributes-api\ivy-2.1.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\org.apache\commons-attributes-api\ivys\ivy-2.1.xml" origin-is-local="false" origin-location="http://192.168.52.211/org.apache/commons-attributes-api/ivys/ivy-2.1.xml"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="compile" rev="2.1" rev-constraint-default="2.1" rev-constraint-dynamic="2.1" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="commons-attributes-api" type="jar" ext="jar" status="no" details="" size="36342" time="0" location="D:\Local_Repository\ivy-cache\org.apache\commons-attributes-api\jars\commons-attributes-api-2.1.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/org.apache/commons-attributes-api/jars/commons-attributes-api-2.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache" name="commons-beanutils-bean-collections">
+			<revision name="1.8.2" status="release" pubdate="20121121152509" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="10">
+				<metadata-artifact status="no" details="" size="446" time="0" location="D:\Local_Repository\ivy-cache\org.apache\commons-beanutils-bean-collections\ivy-1.8.2.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\org.apache\commons-beanutils-bean-collections\ivys\ivy-1.8.2.xml" origin-is-local="false" origin-location="http://192.168.52.211/org.apache/commons-beanutils-bean-collections/ivys/ivy-1.8.2.xml"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="compile" rev="1.8.2" rev-constraint-default="1.8.2" rev-constraint-dynamic="1.8.2" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="commons-beanutils-bean-collections" type="jar" ext="jar" status="no" details="" size="26576" time="0" location="D:\Local_Repository\ivy-cache\org.apache\commons-beanutils-bean-collections\jars\commons-beanutils-bean-collections-1.8.2.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/org.apache/commons-beanutils-bean-collections/jars/commons-beanutils-bean-collections-1.8.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache" name="commons-collections">
+			<revision name="3.2.1" status="release" pubdate="20121121152505" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="9">
+				<metadata-artifact status="no" details="" size="416" time="0" location="D:\Local_Repository\ivy-cache\org.apache\commons-collections\ivy-3.2.1.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\org.apache\commons-collections\ivys\ivy-3.2.1.xml" origin-is-local="false" origin-location="http://192.168.52.211/org.apache/commons-collections/ivys/ivy-3.2.1.xml"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="compile" rev="3.2.1" rev-constraint-default="3.2.1" rev-constraint-dynamic="3.2.1" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="commons-collections" type="jar" ext="jar" status="no" details="" size="575389" time="0" location="D:\Local_Repository\ivy-cache\org.apache\commons-collections\jars\commons-collections-3.2.1.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/org.apache/commons-collections/jars/commons-collections-3.2.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache" name="commons-beanutils">
+			<revision name="1.7.0" status="release" pubdate="20121121152445" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="8">
+				<metadata-artifact status="no" details="" size="412" time="0" location="D:\Local_Repository\ivy-cache\org.apache\commons-beanutils\ivy-1.7.0.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\org.apache\commons-beanutils\ivys\ivy-1.7.0.xml" origin-is-local="false" origin-location="http://192.168.52.211/org.apache/commons-beanutils/ivys/ivy-1.7.0.xml"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="compile" rev="1.7.0" rev-constraint-default="1.7.0" rev-constraint-dynamic="1.7.0" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="commons-beanutils" type="jar" ext="jar" status="no" details="" size="188671" time="0" location="D:\Local_Repository\ivy-cache\org.apache\commons-beanutils\jars\commons-beanutils-1.7.0.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/org.apache/commons-beanutils/jars/commons-beanutils-1.7.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="j2ee" name="j2ee">
+			<revision name="1.4" status="release" pubdate="20121121152414" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="7">
+				<metadata-artifact status="no" details="" size="378" time="0" location="D:\Local_Repository\ivy-cache\j2ee\j2ee\ivy-1.4.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\j2ee\j2ee\ivys\ivy-1.4.xml" origin-is-local="false" origin-location="http://192.168.52.211/j2ee/j2ee/ivys/ivy-1.4.xml"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="compile" rev="1.4" rev-constraint-default="1.4" rev-constraint-dynamic="1.4" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="j2ee" type="jar" ext="jar" status="no" details="" size="1728932" time="0" location="D:\Local_Repository\ivy-cache\j2ee\j2ee\jars\j2ee-1.4.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/j2ee/j2ee/jars/j2ee-1.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.tibco" name="tibjms">
+			<revision name="6.0.0" status="release" pubdate="20121121152824" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="6">
+				<metadata-artifact status="no" details="" size="389" time="0" location="D:\Local_Repository\ivy-cache\com.tibco\tibjms\ivy-6.0.0.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.tibco\tibjms\ivys\ivy-6.0.0.xml" origin-is-local="false" origin-location="http://192.168.52.211/com.tibco/tibjms/ivys/ivy-6.0.0.xml"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="compile" rev="6.0.0" rev-constraint-default="6.0.0" rev-constraint-dynamic="6.0.0" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="tibjms" type="jar" ext="jar" status="no" details="" size="327530" time="0" location="D:\Local_Repository\ivy-cache\com.tibco\tibjms\jars\tibjms-6.0.0.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/com.tibco/tibjms/jars/tibjms-6.0.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="if-crypto-metadata">
+			<revision name="4.3.20" status="release" pubdate="20121121154403" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="5">
+				<metadata-artifact status="no" details="" size="415" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\if-crypto-metadata\ivy-4.3.20.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.99bill\if-crypto-metadata\ivys\ivy-4.3.20.xml" origin-is-local="false" origin-location="http://192.168.15.220/com.99bill/if-crypto-metadata/ivys/ivy-4.3.20.xml"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="compile" rev="4.3.20" rev-constraint-default="4.3.20" rev-constraint-dynamic="4.3.20" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="if-crypto-metadata" type="jar" ext="jar" status="no" details="" size="51656" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\if-crypto-metadata\jars\if-crypto-metadata-4.3.20.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/com.99bill/if-crypto-metadata/jars/if-crypto-metadata-4.3.20.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="bank" name="PayProviderCommonAPI">
+			<revision name="1.0" status="release" pubdate="20121121152555" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="4">
+				<metadata-artifact status="no" details="" size="410" time="0" location="D:\Local_Repository\ivy-cache\bank\PayProviderCommonAPI\ivy-1.0.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\bank\PayProviderCommonAPI\ivys\ivy-1.0.xml" origin-is-local="false" origin-location="UNKNOWN"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="compile" rev="1.0" rev-constraint-default="1.0" rev-constraint-dynamic="1.0" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="PayProviderCommonAPI" type="jar" ext="jar" status="no" details="" size="41335" time="0" location="D:\Local_Repository\ivy-cache\bank\PayProviderCommonAPI\jars\PayProviderCommonAPI-1.0.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="if-jibx-schema-asap">
+			<revision name="1.0.2" status="release" pubdate="20121121154432" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="3">
+				<metadata-artifact status="no" details="" size="416" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\if-jibx-schema-asap\ivy-1.0.2.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.99bill\if-jibx-schema-asap\ivys\ivy-1.0.2.xml" origin-is-local="false" origin-location="UNKNOWN"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="compile" rev="1.0.2" rev-constraint-default="1.0.2" rev-constraint-dynamic="1.0.2" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="if-jibx-schema-asap" type="jar" ext="jar" status="no" details="" size="43748" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\if-jibx-schema-asap\jars\if-jibx-schema-asap-1.0.2.jar">
+						<origin-location is-local="false" location="UNKNOWN"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.99bill" name="if-crypto-sdk">
+			<revision name="3.3.2" status="release" pubdate="20121121154403" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="2">
+				<metadata-artifact status="no" details="" size="404" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\if-crypto-sdk\ivy-3.3.2.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\com.99bill\if-crypto-sdk\ivys\ivy-3.3.2.xml" origin-is-local="false" origin-location="http://192.168.52.211/com.99bill/if-crypto-sdk/ivys/ivy-3.3.2.xml"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="compile" rev="3.3.2" rev-constraint-default="3.3.2" rev-constraint-dynamic="3.3.2" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="if-crypto-sdk" type="jar" ext="jar" status="no" details="" size="75086" time="0" location="D:\Local_Repository\ivy-cache\com.99bill\if-crypto-sdk\jars\if-crypto-sdk-3.3.2.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/com.99bill/if-crypto-sdk/jars/if-crypto-sdk-3.3.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache" name="axis">
+			<revision name="1.4" status="release" pubdate="20121121152444" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="1">
+				<metadata-artifact status="no" details="" size="384" time="0" location="D:\Local_Repository\ivy-cache\org.apache\axis\ivy-1.4.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\org.apache\axis\ivys\ivy-1.4.xml" origin-is-local="false" origin-location="http://192.168.52.211/org.apache/axis/ivys/ivy-1.4.xml"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="compile" rev="1.4" rev-constraint-default="1.4" rev-constraint-dynamic="1.4" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="axis" type="jar" ext="jar" status="no" details="" size="1599570" time="0" location="D:\Local_Repository\ivy-cache\org.apache\axis\jars\axis-1.4.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/org.apache/axis/jars/axis-1.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache" name="poi">
+			<revision name="3.6" status="release" pubdate="20121121152629" resolver="Client-Resolver" artresolver="Client-Resolver" downloaded="false" searched="false" default="true" conf="default" position="0">
+				<metadata-artifact status="no" details="" size="382" time="0" location="D:\Local_Repository\ivy-cache\org.apache\poi\ivy-3.6.xml" searched="false" original-local-location="D:\Local_Repository\ivy-cache\org.apache\poi\ivys\ivy-3.6.xml" origin-is-local="false" origin-location="http://192.168.52.211/org.apache/poi/ivys/ivy-3.6.xml"/>
+				<caller organisation="com.99bill" name="QA_TA_BDCA" conf="compile" rev="3.6" rev-constraint-default="3.6" rev-constraint-dynamic="3.6" callerrev="working@NJ30101057-PC"/>
+				<artifacts>
+					<artifact name="poi" type="jar" ext="jar" status="no" details="" size="1539291" time="0" location="D:\Local_Repository\ivy-cache\org.apache\poi\jars\poi-3.6.jar">
+						<origin-location is-local="false" location="http://192.168.52.211/org.apache/poi/jars/poi-3.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>

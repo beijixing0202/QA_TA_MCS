@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fi/access/webservice/gatewayRefundQuery
+END
+GatewayRefundQueryServiceLocator.java
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fi/access/webservice/gatewayRefundQuery/GatewayRefundQueryServiceLocator.java
+END
+GatewayRefundQuerySoapBindingStub.java
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fi/access/webservice/gatewayRefundQuery/GatewayRefundQuerySoapBindingStub.java
+END
+GatewayRefundQuery.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fi/access/webservice/gatewayRefundQuery/GatewayRefundQuery.java
+END
+GatewayRefundQueryService.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fi/access/webservice/gatewayRefundQuery/GatewayRefundQueryService.java
+END
+GatewayRefundQueryProxy.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fi/access/webservice/gatewayRefundQuery/GatewayRefundQueryProxy.java
+END

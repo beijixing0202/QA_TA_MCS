@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fi/test
+END
+MsGatewayRefundTolerance.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fi/test/MsGatewayRefundTolerance.java
+END
+RechargeWithBankCard.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fi/test/RechargeWithBankCard.java
+END
+MsgatewayBankPay.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fi/test/MsgatewayBankPay.java
+END
+GatewayBankPay.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fi/test/GatewayBankPay.java
+END
+MsgatewayPayTolerance.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fi/test/MsgatewayPayTolerance.java
+END
+GatewayPrepaidCardPay.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fi/test/GatewayPrepaidCardPay.java
+END
+GateWay3AccountPay.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fi/test/GateWay3AccountPay.java
+END
+GatewayOfflinePay.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fi/test/GatewayOfflinePay.java
+END
+BDCA_DepositCardDirectPay.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fi/test/BDCA_DepositCardDirectPay.java
+END
+SingleRfdBankPay.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fi/test/SingleRfdBankPay.java
+END
+BDCA_DepositCardPay.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fi/test/BDCA_DepositCardPay.java
+END
+GateWay3AcctPayRfd.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fi/test/GateWay3AcctPayRfd.java
+END
+DepositCardClickPayRefund.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fi/test/DepositCardClickPayRefund.java
+END
+SingleRfdPrepaidCardPay.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fi/test/SingleRfdPrepaidCardPay.java
+END
+MsGatewayAdvanceRefund.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fi/test/MsGatewayAdvanceRefund.java
+END
+MsgatewayaccountPay.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fi/test/MsgatewayaccountPay.java
+END
+DepositCardClickFirstPay.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fi/test/DepositCardClickFirstPay.java
+END
+CreditCardInstallmentPay.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fi/test/CreditCardInstallmentPay.java
+END

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+        "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="TBkRecord">
+    <resultMap class="com.bill99.mcs.common.dto.TBkRecord" id="BaseResultMap">
+        <result column="ID_BK_RECORD" jdbcType="DECIMAL" property="idBkRecord" />
+        <result column="SYSTEM_ID" jdbcType="VARCHAR" property="systemId" />
+        <result column="BK_TYPE" jdbcType="VARCHAR" property="bkType" />
+        <result column="REFERENCE" jdbcType="VARCHAR" property="reference" />
+        <result column="STATUS" jdbcType="CHAR" property="status" />
+        <result column="BK_TIMES" jdbcType="DECIMAL" property="bkTimes" />
+        <result column="ATTR1" jdbcType="VARCHAR" property="attr1" />
+        <result column="ATTR2" jdbcType="VARCHAR" property="attr2" />
+        <result column="ATTR3" jdbcType="VARCHAR" property="attr3" />
+        <result column="ATTR4" jdbcType="VARCHAR" property="attr4" />
+        <result column="ATTR5" jdbcType="VARCHAR" property="attr5" />
+        <result column="ATTR6" jdbcType="VARCHAR" property="attr6" />
+        <result column="CRT_TIME" jdbcType="DATE" property="crtTime" />
+        <result column="UPD_TIME" jdbcType="DATE" property="updTime" />
+        <result column="ORIG_ID_BK_RECORD" jdbcType="DECIMAL" property="origIdBkRecord" />
+        <result column="REV_TYPE" jdbcType="VARCHAR" property="revType" />
+        <result column="BIZ_DATE" jdbcType="DATE" property="bizDate" />
+        <result column="RESP_CODE" jdbcType="CHAR" property="respCode" />
+        <result column="BK_PARAMS" jdbcType="VARCHAR" property="bkParams" />
+        <result column="ADDITIONAL_CODE" jdbcType="VARCHAR" property="additionalCode" />
+    </resultMap>
+    <sql id="BaseColumnList">
+        ID_BK_RECORD, SYSTEM_ID, BK_TYPE, REFERENCE, STATUS, BK_TIMES, ATTR1, ATTR2, ATTR3,
+        ATTR4, ATTR5, ATTR6, CRT_TIME, UPD_TIME, ORIG_ID_BK_RECORD, REV_TYPE, BIZ_DATE, RESP_CODE,
+        BK_PARAMS, ADDITIONAL_CODE
+    </sql>
+    <select id="getTBkRecord" parameterClass="com.bill99.mcs.common.dto.TBkRecord" resultMap="BaseResultMap">
+        select
+        <include refid="BaseColumnList"/>
+        from cpsacct.t_bk_record
+        <dynamic prepend="where">
+            <isNotEmpty prepend="and" property="reference">
+                REFERENCE=#reference#
+            </isNotEmpty>
+        </dynamic>
+    </select>
+</sqlMap>

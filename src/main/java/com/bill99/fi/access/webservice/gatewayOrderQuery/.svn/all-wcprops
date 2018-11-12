@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fi/access/webservice/gatewayOrderQuery
+END
+GatewayOrderQuerySoapBindingStub.java
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fi/access/webservice/gatewayOrderQuery/GatewayOrderQuerySoapBindingStub.java
+END
+GatewayOrderQuery.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fi/access/webservice/gatewayOrderQuery/GatewayOrderQuery.java
+END
+GatewayOrderQueryService.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fi/access/webservice/gatewayOrderQuery/GatewayOrderQueryService.java
+END
+GatewayOrderQueryServiceLocator.java
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/fi/access/webservice/gatewayOrderQuery/GatewayOrderQueryServiceLocator.java
+END

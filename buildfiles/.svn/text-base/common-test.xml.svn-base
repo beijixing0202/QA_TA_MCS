@@ -1,0 +1,28 @@
+<project name="common-app" default="" xmlns:ivy="antlib:org.apache.ivy.ant">
+
+	<property environment="env" />
+
+	<!--  Load publish version from file pubrevision.properties  -->
+	<property file="pubrevision.properties" />
+
+	<!-- set javac debug property -->
+	<property name="build.debug" value="on" />
+
+	<!-- build variables used -->
+	<property name="build.path" value="${basedir}/build" />
+	<property name="classes.path" value="${basedir}/classes" />	
+	<property name="lib.path" value="${basedir}/lib" />
+	<property name="ant.lib.path" value="${ant_home}/lib" />
+	<property name="testng.report.path" value="${basedir}/test-output" />
+	<property name="lib.local.dir" value="D:/TA/jars" />
+		
+	<!-- Loading ivy settings -->
+	<ivy:settings file="${ivy.settings.dir}/ivysettings.xml" />
+	
+	<path id="lib.path.id">
+	    <fileset dir="${lib.path}">
+			<include name="**/*.jar"/>
+			<include name="**/*.zip"/>
+		</fileset>
+	</path>
+</project>

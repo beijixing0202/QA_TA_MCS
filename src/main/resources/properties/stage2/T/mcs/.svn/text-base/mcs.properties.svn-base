@@ -1,0 +1,11 @@
+mcs.url=http://192.168.14.191:8084/mas/services/console/
+ids.url=http://ids.99bill.com:8085/ids
+
+quartz.cpsUser=cps_user
+quartz.cpsPass=99bill
+
+quartz.fscUser=cps_user
+quartz.fscPass=99bill
+
+#pix.consume.submit.url = http%3A%2F%2Fpic-inner.99bill.com%2Fguide%2FaggregatePay
+pix.consume.interface.url = http://192.168.14.88:8088/cap-mock/sendGuide.jsp

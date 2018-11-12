@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/opt/99billdoc/!svn/ver/463882/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/resources/ormapping/ibatis/stldb
+END
+TBkPePaymentOrderMapper.xml
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/resources/ormapping/ibatis/stldb/TBkPePaymentOrderMapper.xml
+END
+TBkPeDealMapper.xml
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/resources/ormapping/ibatis/stldb/TBkPeDealMapper.xml
+END
+TBkRecordMapper.xml
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/resources/ormapping/ibatis/stldb/TBkRecordMapper.xml
+END
+TBkApplyMapper.xml
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/resources/ormapping/ibatis/stldb/TBkApplyMapper.xml
+END
+TMcsCtrlMapper.xml
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/opt/99billdoc/!svn/ver/463882/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/resources/ormapping/ibatis/stldb/TMcsCtrlMapper.xml
+END

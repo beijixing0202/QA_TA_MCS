@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/ate/service/ate/mockHttp
+END
+PayConfirmHttpRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/ate/service/ate/mockHttp/PayConfirmHttpRequest.java
+END
+WithDrawHttpRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/ate/service/ate/mockHttp/WithDrawHttpRequest.java
+END
+ChooseFunctionPage.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/ate/service/ate/mockHttp/ChooseFunctionPage.java
+END
+PayInterfaceHttpRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/ate/service/ate/mockHttp/PayInterfaceHttpRequest.java
+END
+OrderHttpRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/ate/service/ate/mockHttp/OrderHttpRequest.java
+END
+RevokeHttpRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/ate/service/ate/mockHttp/RevokeHttpRequest.java
+END
+LoginHttp.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/ate/service/ate/mockHttp/LoginHttp.java
+END
+RechargeHttpRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/ate/service/ate/mockHttp/RechargeHttpRequest.java
+END
+CancelOrderHttpRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/ate/service/ate/mockHttp/CancelOrderHttpRequest.java
+END
+RefundHttpRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/ate/service/ate/mockHttp/RefundHttpRequest.java
+END

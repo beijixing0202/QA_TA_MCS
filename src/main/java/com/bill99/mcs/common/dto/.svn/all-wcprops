@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/opt/99billdoc/!svn/ver/465312/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/mcs/common/dto
+END
+TBkRecord.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/mcs/common/dto/TBkRecord.java
+END
+TBkPeDeal.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/mcs/common/dto/TBkPeDeal.java
+END
+Deal.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/mcs/common/dto/Deal.java
+END
+PospTxnInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/mcs/common/dto/PospTxnInfo.java
+END
+TBkPePaymentOrder.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/mcs/common/dto/TBkPePaymentOrder.java
+END
+PaymentOrder.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/mcs/common/dto/PaymentOrder.java
+END
+TStlOrder.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/mcs/common/dto/TStlOrder.java
+END
+TStlList.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/mcs/common/dto/TStlList.java
+END
+TxnCtrl.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/opt/99billdoc/!svn/ver/465312/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/mcs/common/dto/TxnCtrl.java
+END
+TMcsCtrl.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/mcs/common/dto/TMcsCtrl.java
+END
+TAcctTxn.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/mcs/common/dto/TAcctTxn.java
+END
+TClrTxnList.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/mcs/common/dto/TClrTxnList.java
+END
+Entry.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/mcs/common/dto/Entry.java
+END
+TBkApply.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/opt/99billdoc/!svn/ver/463836/PUBLIC/POA/QA/TP/SRC/AutoMation/QA_TA_MCS/src/main/java/com/bill99/mcs/common/dto/TBkApply.java
+END
